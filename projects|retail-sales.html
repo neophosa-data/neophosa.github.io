@@ -1,240 +1,912 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Retail Sales Analysis | Neo Phosa</title>
 
+    <meta name="description" content="Retail Sales Analysis project by Neo Phosa using SQL, Excel and Power BI.">
+
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <header>
-        <nav class="navbar">
+<!-- =========================
+     NAVIGATION
+========================= -->
 
-            <div class="logo">
-                Neo Phosa
-            </div>
+<header class="navbar">
+    <div class="container nav-container">
 
-            <ul class="nav-links">
-                <li><a href="index.html#home">Home</a></li>
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="index.html#services">Services</a></li>
-                <li><a href="index.html#portfolio">Portfolio</a></li>
-                <li><a href="index.html#skills">Skills</a></li>
-                <li><a href="index.html#resume">Resume</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
-            </ul>
+        <a href="index.html" class="logo">
+            Neo Phosa
+        </a>
 
+        <nav class="nav-links">
+            <a href="index.html#about">About</a>
+            <a href="index.html#projects">Projects</a>
+            <a href="index.html#approach">Approach</a>
+            <a href="index.html#skills">Skills</a>
+            <a href="index.html#contact">Contact</a>
         </nav>
-    </header>
 
+    </div>
+</header>
 
-    <main>
 
-        <div class="container project-content">
+<!-- =========================
+     CASE STUDY HERO
+========================= -->
 
-            <h1>1. Retail Sales Analysis</h1>
+<section class="case-hero">
 
+    <div class="container">
 
-            <section class="project-section">
+        <a href="index.html#projects" class="back-link">
+            ← Back to Projects
+        </a>
 
-                <h2>Project Overview</h2>
+        <p class="eyebrow">
+            RETAIL • SALES ANALYTICS
+        </p>
 
-                <p>
-                    This project analyses retail sales performance to identify
-                    sales trends, customer purchasing behaviour, and product
-                    performance. The goal was to transform raw sales data into
-                    meaningful insights that support better business decisions.
-                </p>
+        <h1>
+            Retail Sales Analysis
+        </h1>
 
-            </section>
+        <p class="case-hero-description">
+            Analysing retail sales performance, customer behaviour,
+            product categories and transaction trends using SQL and Power BI.
+        </p>
 
-
-            <section class="project-section">
-
-                <h2>Business Problem</h2>
-
-                <p>
-                    Retail businesses need to understand what drives sales and
-                    customer purchasing patterns. Without analysing sales data,
-                    it becomes difficult to identify high-performing products,
-                    seasonal trends, and opportunities to increase revenue.
-                </p>
-
-            </section>
-
-
-            <section class="project-section">
-
-                <h2>Objectives</h2>
-
-                <ul>
-                    <li>Analyse overall sales performance.</li>
-                    <li>Identify monthly sales trends.</li>
-                    <li>Evaluate product category performance.</li>
-                    <li>Understand customer purchasing behaviour.</li>
-                    <li>Provide recommendations to improve sales.</li>
-                </ul>
-
-            </section>
-
-
-            <section class="project-section">
-
-                <h2>Tools Used</h2>
-
-                <ul>
-                    <li>Excel</li>
-                    <li>SQL</li>
-                    <li>Power BI</li>
-                    <li>DAX</li>
-                </ul>
-
-            </section>
-
-
-            <section class="project-section">
-
-                <h2>Dataset Overview</h2>
-
-                <p>
-                    The dataset contains transactional retail sales data,
-                    including:
-                </p>
-
-                <ul>
-                    <li>Order Date</li>
-                    <li>Product Category</li>
-                    <li>Quantity Sold</li>
-                    <li>Sales Amount</li>
-                    <li>Customer ID</li>
-                    <li>Product Information</li>
-                </ul>
-
-            </section>
-
-
-            <section class="project-section">
-
-                <h2>Methodology</h2>
-
-                <ul>
-                    <li>Cleaned and validated the dataset.</li>
-                    <li>Used SQL for data cleaning and validation.</li>
-                    <li>Created calculated measures and KPIs.</li>
-                    <li>Built an interactive Power BI dashboard.</li>
-                    <li>Analysed sales trends and business performance.</li>
-                    <li>Developed recommendations based on the findings.</li>
-                </ul>
-
-            </section>
-
-
-            <!-- SQL QUERY SCREENSHOT -->
-
-            <section class="project-section">
-
-                <h2>Retail Sales SQL Query</h2>
-
-                <img
-                    src="Retail Sales Query.png"
-                    alt="Retail Sales SQL Query"
-                    class="project-image"
-                >
-
-            </section>
-
-
-            <!-- CLEANED DATA SCREENSHOT -->
-
-            <section class="project-section">
-
-                <h2>Retail Sales Cleaned Data</h2>
-
-                <img
-                    src="Cleaned Retail Sales Data.png"
-                    alt="Cleaned Retail Sales Data"
-                    class="project-image"
-                >
-
-            </section>
-
-
-            <!-- DASHBOARD -->
-
-            <section class="project-section">
-
-                <h2>Dashboard</h2>
-
-                <p>
-                    Embed Power BI dashboard or include dashboard screenshots here.
-                </p>
-
-                <img
-                    src="Pg 1 Retail Sales Dashboard.png"
-                    alt="Retail Sales Dashboard Page 1"
-                    class="project-image"
-                >
-
-                <img
-                    src="Pg 2 Retail Sales Dashboard.png"
-                    alt="Retail Sales Dashboard Page 2"
-                    class="project-image"
-                >
-
-            </section>
-
-
-            <section class="project-section">
-
-                <h2>Key Insights</h2>
-
-                <ul>
-                    <li>Total Sales: R456,000</li>
-                    <li>Total Transactions: 1,000</li>
-                    <li>Total Quantity Sold: 2,514</li>
-                    <li>Average Sale per Transaction: R456</li>
-                    <li>Sales varied across months, indicating seasonal purchasing patterns.</li>
-                    <li>Certain product categories generated higher revenue than others.</li>
-                </ul>
-
-            </section>
-
-
-            <section class="project-section">
-
-                <h2>Recommendations</h2>
-
-                <ul>
-                    <li>Increase inventory for high-performing products.</li>
-                    <li>Run promotions during slower sales periods.</li>
-                    <li>Focus marketing on top-selling categories.</li>
-                    <li>Monitor sales trends regularly.</li>
-                </ul>
-
-            </section>
-
-
+        <div class="project-tools">
+            <span>SQL</span>
+            <span>Excel</span>
+            <span>Power BI</span>
         </div>
 
-    </main>
+    </div>
+
+</section>
 
 
-    <footer>
+<!-- =========================
+     BUSINESS PROBLEM
+========================= -->
 
-        <div class="container">
+<section class="case-section">
+
+    <div class="container">
+
+        <p class="section-label">
+            THE BUSINESS PROBLEM
+        </p>
+
+        <h2 class="section-title">
+            Understanding Retail Sales Performance
+        </h2>
+
+        <div class="business-tell">
 
             <p>
-                © 2026 Neo Phosa. All Rights Reserved.
+                A retail business needs to understand how its sales are performing
+                across different products, periods, and transactions. Looking at
+                individual sales records makes it difficult to identify which
+                categories are generating the most revenue, when sales are strongest
+                or weakest, and how much customers are spending per transaction.
+            </p>
+
+            <p>
+                The objective of this project was to use SQL and Power BI to
+                transform raw retail sales data into useful business insights.
+                SQL was used to clean, validate, and analyse the data, while
+                Power BI was used to present the results through an interactive
+                dashboard.
+            </p>
+
+            <p>
+                The analysis helps the business understand its sales performance
+                and identify opportunities to improve revenue, inventory planning,
+                promotions, and product performance.
             </p>
 
         </div>
 
-    </footer>
+    </div>
+
+</section>
+
+
+<!-- =========================
+     BUSINESS QUESTIONS
+========================= -->
+
+<section class="case-section section-light">
+
+    <div class="container">
+
+        <p class="section-label">
+            BUSINESS QUESTIONS
+        </p>
+
+        <h2 class="section-title">
+            What I Wanted to Find Out
+        </h2>
+
+        <div class="question-list">
+
+            <div class="question-item">
+                <span>01</span>
+                <p>What are the total sales and transaction volumes?</p>
+            </div>
+
+            <div class="question-item">
+                <span>02</span>
+                <p>Which product categories generate the most revenue?</p>
+            </div>
+
+            <div class="question-item">
+                <span>03</span>
+                <p>How does sales performance change over time?</p>
+            </div>
+
+            <div class="question-item">
+                <span>04</span>
+                <p>How much revenue is generated per transaction?</p>
+            </div>
+
+            <div class="question-item">
+                <span>05</span>
+                <p>Which areas of sales performance could be improved?</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     THE DATA
+========================= -->
+
+<section class="case-section">
+
+    <div class="container">
+
+        <p class="section-label">
+            THE DATA
+        </p>
+
+        <h2 class="section-title">
+            Understanding the Dataset
+        </h2>
+
+        <p class="section-description">
+            The dataset contains individual retail transactions with information
+            about customers, products, quantities, prices and transaction values.
+        </p>
+
+        <div class="data-grid">
+
+            <div class="data-field">
+                <strong>Transaction ID</strong>
+                <span>Unique transaction identifier</span>
+            </div>
+
+            <div class="data-field">
+                <strong>Date</strong>
+                <span>Transaction date</span>
+            </div>
+
+            <div class="data-field">
+                <strong>Customer ID</strong>
+                <span>Customer identifier</span>
+            </div>
+
+            <div class="data-field">
+                <strong>Gender</strong>
+                <span>Customer gender</span>
+            </div>
+
+            <div class="data-field">
+                <strong>Age</strong>
+                <span>Customer age</span>
+            </div>
+
+            <div class="data-field">
+                <strong>Product Category</strong>
+                <span>Category purchased</span>
+            </div>
+
+            <div class="data-field">
+                <strong>Quantity</strong>
+                <span>Number of units purchased</span>
+            </div>
+
+            <div class="data-field">
+                <strong>Price per Unit</strong>
+                <span>Price of one unit</span>
+            </div>
+
+            <div class="data-field">
+                <strong>Total Amount</strong>
+                <span>Total transaction value</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     DATA CLEANING
+========================= -->
+
+<section class="case-section section-light">
+
+    <div class="container">
+
+        <p class="section-label">
+            DATA PREPARATION
+        </p>
+
+        <h2 class="section-title">
+            Data Cleaning & Preparation
+        </h2>
+
+        <p class="section-description">
+            Before analysing the data, I reviewed the dataset and prepared it
+            for analysis. The process focused on checking the structure,
+            data types, consistency and values required for the analysis.
+        </p>
+
+        <div class="image-grid">
+
+            <div class="image-card">
+
+                <img
+                    src="images/Raw Sales data.png"
+                    alt="Raw retail sales dataset"
+                >
+
+                <p class="image-caption">
+                    Raw retail sales data before preparation.
+                </p>
+
+            </div>
+
+
+            <div class="image-card">
+
+                <img
+                    src="images/Clean Sales data.png"
+                    alt="Cleaned retail sales dataset"
+                >
+
+                <p class="image-caption">
+                    Cleaned and prepared retail sales data.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     SQL ANALYSIS
+========================= -->
+
+<section class="case-section">
+
+    <div class="container">
+
+        <p class="section-label">
+            SQL ANALYSIS
+        </p>
+
+        <h2 class="section-title">
+            Analysing the Sales Data
+        </h2>
+
+        <p class="section-description">
+            I used SQL to calculate the main performance metrics and answer
+            the business questions before moving the results into Power BI.
+        </p>
+
+
+        <!-- Analysis 1 -->
+
+        <div class="analysis-grid">
+
+            <div class="analysis-card">
+
+                <div class="analysis-number">
+                    01
+                </div>
+
+                <h3>
+                    Total Sales Performance
+                </h3>
+
+                <p>
+                    I calculated total sales and total transactions to establish
+                    the overall sales performance of the business.
+                </p>
+
+                <div class="result">
+                    <strong>R456,000</strong>
+                    <span>Total Sales</span>
+                </div>
+
+                <div class="result">
+                    <strong>1,000</strong>
+                    <span>Total Transactions</span>
+                </div>
+
+                <img
+                    src="images/total sales performance.png"
+                    alt="SQL analysis showing total sales performance"
+                >
+
+            </div>
+
+
+            <!-- Analysis 2 -->
+
+            <div class="analysis-card">
+
+                <div class="analysis-number">
+                    02
+                </div>
+
+                <h3>
+                    Average Sale per Transaction
+                </h3>
+
+                <p>
+                    I calculated the average transaction value to understand
+                    how much revenue is generated from a typical sale.
+                </p>
+
+                <div class="result">
+                    <strong>R456</strong>
+                    <span>Average Sale</span>
+                </div>
+
+                <img
+                    src="images/average sale per transaction.png"
+                    alt="SQL analysis showing average sale per transaction"
+                >
+
+            </div>
+
+
+            <!-- Analysis 3 -->
+
+            <div class="analysis-card">
+
+                <div class="analysis-number">
+                    03
+                </div>
+
+                <h3>
+                    Sales by Product Category
+                </h3>
+
+                <p>
+                    I compared sales across product categories to identify
+                    which categories contribute the most revenue.
+                </p>
+
+                <img
+                    src="images/Sales by Product category.png"
+                    alt="SQL analysis showing sales by product category"
+                >
+
+            </div>
+
+
+            <!-- Analysis 4 -->
+
+            <div class="analysis-card">
+
+                <div class="analysis-number">
+                    04
+                </div>
+
+                <h3>
+                    Monthly Sales Performance
+                </h3>
+
+                <p>
+                    I analysed sales across months to identify changes in
+                    performance and understand sales patterns over time.
+                </p>
+
+                <img
+                    src="images/monthly sales performance.png"
+                    alt="SQL analysis showing monthly sales performance"
+                >
+
+            </div>
+
+
+            <!-- Analysis 5 -->
+
+            <div class="analysis-card">
+
+                <div class="analysis-number">
+                    05
+                </div>
+
+                <h3>
+                    Quantity Sold
+                </h3>
+
+                <p>
+                    I calculated the total quantity sold to compare sales
+                    revenue with the number of units purchased.
+                </p>
+
+                <div class="result">
+                    <strong>2,514</strong>
+                    <span>Units Sold</span>
+                </div>
+
+                <img
+                    src="images/Quantity sold.png"
+                    alt="SQL analysis showing quantity sold"
+                >
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     POWER BI DASHBOARD
+========================= -->
+
+<section class="case-section section-light">
+
+    <div class="container">
+
+        <p class="section-label">
+            POWER BI
+        </p>
+
+        <h2 class="section-title">
+            Building the Dashboard
+        </h2>
+
+        <p class="section-description">
+            After analysing the data in SQL, I used Power BI to turn the
+            results into an interactive dashboard. The dashboard makes it
+            easier to view sales performance across different categories,
+            periods and customer groups.
+        </p>
+
+
+        <!-- Dashboard Page 1 -->
+
+        <div class="dashboard-item">
+
+            <div class="dashboard-image">
+
+                <img
+                    src="images/Sale page 1.png"
+                    alt="Retail sales Power BI dashboard page 1"
+                >
+
+            </div>
+
+            <div class="dashboard-content">
+
+                <p class="section-label">
+                    DASHBOARD PAGE 01
+                </p>
+
+                <h3>
+                    Sales Performance Overview
+                </h3>
+
+                <p>
+                    This page provides an overall view of retail sales
+                    performance across months, product categories and
+                    customer demographics.
+                </p>
+
+                <p>
+                    The dashboard focuses on key performance measures such as
+                    total sales, number of transactions, quantity sold and
+                    average transaction value.
+                </p>
+
+                <p>
+                    Visuals allow the user to compare sales performance
+                    across categories and identify changes in performance
+                    over time.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Dashboard Page 2 -->
+
+        <div class="dashboard-item">
+
+            <div class="dashboard-image">
+
+                <img
+                    src="images/Sales page 2.png"
+                    alt="Retail sales Power BI dashboard page 2"
+                >
+
+            </div>
+
+            <div class="dashboard-content">
+
+                <p class="section-label">
+                    DASHBOARD PAGE 02
+                </p>
+
+                <h3>
+                    Customer Behaviour
+                </h3>
+
+                <p>
+                    The second page focuses on customer behaviour by
+                    age, gender, spending and quantity purchased.
+                </p>
+
+                <p>
+                    This allows the business to understand how different
+                    customer groups contribute to overall sales performance.
+                </p>
+
+                <p>
+                    The page also makes it easier to compare customer
+                    segments and identify differences in purchasing behaviour.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     KEY METRICS
+========================= -->
+
+<section class="case-section">
+
+    <div class="container">
+
+        <p class="section-label">
+            PROJECT RESULTS
+        </p>
+
+        <h2 class="section-title">
+            Sales Performance at a Glance
+        </h2>
+
+        <div class="kpi-grid">
+
+            <div class="kpi">
+                <strong>R456,000</strong>
+                <span>Total Sales</span>
+            </div>
+
+            <div class="kpi">
+                <strong>1,000</strong>
+                <span>Total Transactions</span>
+            </div>
+
+            <div class="kpi">
+                <strong>2,514</strong>
+                <span>Units Sold</span>
+            </div>
+
+            <div class="kpi">
+                <strong>R456</strong>
+                <span>Average Sale</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     WHAT THE DATA TELLS US
+========================= -->
+
+<section class="case-section section-light">
+
+    <div class="container">
+
+        <p class="section-label">
+            BUSINESS INTERPRETATION
+        </p>
+
+        <h2 class="section-title">
+            What the Data Tells Us
+        </h2>
+
+        <div class="business-tell">
+
+            <p>
+                The analysis shows that the business generated
+                <strong>R456,000 in total sales</strong> across
+                <strong>1,000 transactions</strong>, with
+                <strong>2,514 units sold</strong>.
+            </p>
+
+            <p>
+                Electronics generated the highest category sales at
+                approximately <strong>R156.9K</strong>, making it the
+                strongest category by revenue.
+            </p>
+
+            <p>
+                Clothing recorded the highest quantity sold, with
+                <strong>894 units</strong>, showing that a category can
+                have strong sales volume even when it is not the highest
+                revenue contributor.
+            </p>
+
+            <p>
+                Female customers generated approximately
+                <strong>R232.8K</strong> in sales compared with
+                <strong>R223.2K</strong> from male customers.
+            </p>
+
+            <p>
+                Customers aged <strong>46–55</strong> generated the highest
+                sales among the age groups, contributing approximately
+                <strong>R100.7K</strong>.
+            </p>
+
+            <p>
+                Overall, the analysis shows that sales performance is influenced
+                by product category, customer demographics and sales volume.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     RECOMMENDATIONS
+========================= -->
+
+<section class="case-section">
+
+    <div class="container">
+
+        <p class="section-label">
+            RECOMMENDATIONS
+        </p>
+
+        <h2 class="section-title">
+            What the Business Could Do
+        </h2>
+
+        <div class="recommendations">
+
+            <div class="recommendation">
+
+                <span>01</span>
+
+                <div>
+                    <h3>Focus on Strong Categories</h3>
+
+                    <p>
+                        Monitor high-revenue categories such as Electronics
+                        and use their performance to support inventory and
+                        promotional planning.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="recommendation">
+
+                <span>02</span>
+
+                <div>
+                    <h3>Monitor Sales Volume</h3>
+
+                    <p>
+                        Track both revenue and quantity sold because high
+                        sales volume does not always mean the highest revenue.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="recommendation">
+
+                <span>03</span>
+
+                <div>
+                    <h3>Understand Customer Segments</h3>
+
+                    <p>
+                        Use age and gender patterns to understand customer
+                        behaviour and support more targeted promotions.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="recommendation">
+
+                <span>04</span>
+
+                <div>
+                    <h3>Monitor Sales Trends</h3>
+
+                    <p>
+                        Continue monitoring monthly sales performance to
+                        identify changes in demand and support planning.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     WHAT I LEARNED
+========================= -->
+
+<section class="case-section section-light">
+
+    <div class="container">
+
+        <p class="section-label">
+            LEARNING
+        </p>
+
+        <h2 class="section-title">
+            What I Learned
+        </h2>
+
+        <ul class="learned-list">
+
+            <li>
+                How to use SQL to calculate and validate core sales metrics.
+            </li>
+
+            <li>
+                How to analyse sales performance across product categories
+                and customer segments.
+            </li>
+
+            <li>
+                How to compare revenue with transaction and quantity data.
+            </li>
+
+            <li>
+                How to structure a Power BI dashboard around business questions.
+            </li>
+
+            <li>
+                How to translate sales data into practical business
+                recommendations.
+            </li>
+
+        </ul>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CTA
+========================= -->
+
+<section class="cta">
+
+    <div class="container">
+
+        <div class="cta-content">
+
+            <p class="section-label">
+                MORE PROJECTS
+            </p>
+
+            <h2>
+                Interested in how I approach other data problems?
+            </h2>
+
+            <p>
+                Explore my other projects to see how I use SQL, Excel
+                and Power BI across different business scenarios.
+            </p>
+
+            <div class="cta-buttons">
+
+                <a href="index.html#projects" class="btn btn-white">
+                    View All Projects
+                </a>
+
+                <a href="index.html#contact" class="btn btn-outline-white">
+                    Get in Touch
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer class="footer">
+
+    <div class="container footer-container">
+
+        <div>
+            <strong>Neo Phosa</strong>
+            <p>
+                Data Analyst | Business Intelligence | SQL | Power BI | Excel
+            </p>
+        </div>
+
+        <p>
+            © 2026 Neo Phosa. All rights reserved.
+        </p>
+
+    </div>
+
+</footer>
+
 
 </body>
-
 </html>
