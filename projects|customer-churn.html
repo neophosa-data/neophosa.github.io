@@ -1,334 +1,1022 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Customer Churn Analysis | Neo Phosa</title>
 
+    <meta name="description" content="Customer Churn Analysis project by Neo Phosa using SQL, Excel and Power BI.">
+
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <header>
 
-        <nav class="navbar">
+<!-- =========================
+     NAVIGATION
+========================= -->
 
-            <div class="logo">
-                Neo Phosa
-            </div>
+<header class="navbar">
 
-            <ul class="nav-links">
+    <div class="container nav-container">
 
-                <li><a href="index.html#home">Home</a></li>
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="index.html#services">Services</a></li>
-                <li><a href="index.html#portfolio">Portfolio</a></li>
-                <li><a href="index.html#skills">Skills</a></li>
-                <li><a href="index.html#resume">Resume</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
+        <a href="index.html" class="logo">
+            Neo Phosa
+        </a>
 
-            </ul>
-
+        <nav class="nav-links">
+            <a href="index.html#about">About</a>
+            <a href="index.html#projects">Projects</a>
+            <a href="index.html#approach">Approach</a>
+            <a href="index.html#skills">Skills</a>
+            <a href="index.html#contact">Contact</a>
         </nav>
 
-    </header>
+    </div>
 
+</header>
 
-    <main>
 
-        <div class="container project-content">
+<!-- =========================
+     CASE STUDY HERO
+========================= -->
 
-            <h1>2. Customer Churn Analysis</h1>
+<section class="case-hero">
 
+    <div class="container">
 
-            <section class="project-section">
+        <a href="index.html#projects" class="back-link">
+            ← Back to Projects
+        </a>
 
-                <h2>Project Overview</h2>
+        <p class="eyebrow">
+            TELECOMMUNICATIONS • CUSTOMER ANALYTICS
+        </p>
 
-                <p>
-                    This project analyses customer churn to identify
-                    factors contributing to customer attrition and
-                    provide recommendations for improving customer
-                    retention.
-                </p>
+        <h1>
+            Customer Churn Analysis
+        </h1>
 
-            </section>
+        <p class="case-hero-description">
+            Analysing customer churn, retention patterns, customer usage
+            and service interactions using SQL and Power BI.
+        </p>
 
-
-            <section class="project-section">
-
-                <h2>Business Problem</h2>
-
-                <p>
-                    Customer churn directly impacts revenue and
-                    profitability. Understanding why customers leave
-                    enables businesses to develop effective retention
-                    strategies.
-                </p>
-
-            </section>
-
-
-            <section class="project-section">
-
-                <h2>Objectives</h2>
-
-                <ul>
-
-                    <li>Measure overall churn.</li>
-
-                    <li>Identify regions with high churn.</li>
-
-                    <li>Analyse customer behaviour.</li>
-
-                    <li>Identify patterns associated with churn.</li>
-
-                    <li>Recommend retention strategies.</li>
-
-                </ul>
-
-            </section>
-
-
-            <section class="project-section">
-
-                <h2>Tools Used</h2>
-
-                <ul>
-
-                    <li>Excel</li>
-
-                    <li>SQL</li>
-
-                    <li>Power BI</li>
-
-                    <li>DAX</li>
-
-                </ul>
-
-            </section>
-
-
-            <section class="project-section">
-
-                <h2>Dataset Overview</h2>
-
-                <p>
-                    The dataset includes customer information such as:
-                </p>
-
-                <ul>
-
-                    <li>State</li>
-
-                    <li>Area Code</li>
-
-                    <li>Account Length</li>
-
-                    <li>International Plan</li>
-
-                    <li>Voice Mail Plan</li>
-
-                    <li>Call Minutes</li>
-
-                    <li>Charges</li>
-
-                    <li>Customer Churn Status</li>
-
-                </ul>
-
-            </section>
-
-
-            <section class="project-section">
-
-                <h2>Methodology</h2>
-
-                <ul>
-
-                    <li>
-                        Cleaned missing and inconsistent data.
-                    </li>
-
-                    <li>
-                        Validated calculations using SQL.
-                    </li>
-
-                    <li>
-                        Created KPIs and DAX measures.
-                    </li>
-
-                    <li>
-                        Designed an interactive Power BI dashboard.
-                    </li>
-
-                    <li>
-                        Analysed customer behaviour across multiple
-                        dimensions.
-                    </li>
-
-                    <li>
-                        Developed recommendations based on the findings.
-                    </li>
-
-                </ul>
-
-            </section>
-
-
-            <!-- SQL QUERY -->
-
-            <section class="project-section">
-
-                <h2>Customer Churn SQL Query</h2>
-
-                <img
-                    src="Churn Query.png"
-                    alt="Customer Churn SQL Query"
-                    class="project-image"
-                >
-
-            </section>
-
-
-            <!-- CLEANED DATA -->
-
-            <section class="project-section">
-
-                <h2>Customer Churn Cleaned Data</h2>
-
-                <img
-                    src="Cleaned Churn data.png"
-                    alt="Cleaned Customer Churn Data"
-                    class="project-image"
-                >
-
-            </section>
-
-
-            <!-- DASHBOARD -->
-
-            <section class="project-section">
-
-                <h2>Dashboard</h2>
-
-                <p>
-                    Embed Power BI dashboard or include dashboard
-                    screenshots here.
-                </p>
-
-
-                <img
-                    src="Pg 1 Churn Dashboard.png"
-                    alt="Customer Churn Dashboard Page 1"
-                    class="project-image"
-                >
-
-
-                <img
-                    src="Pg 2 Churn Dashboard.png"
-                    alt="Customer Churn Dashboard Page 2"
-                    class="project-image"
-                >
-
-
-                <img
-                    src="Pg 3 Churn Dashboard.png"
-                    alt="Customer Churn Dashboard Page 3"
-                    class="project-image"
-                >
-
-            </section>
-
-
-            <!-- KEY INSIGHTS -->
-
-            <section class="project-section">
-
-                <h2>Key Insights</h2>
-
-                <ul>
-
-                    <li>
-                        Total Customers: 5,269
-                    </li>
-
-                    <li>
-                        Churned Customers: 708
-                    </li>
-
-                    <li>
-                        Retained Customers: 4,561
-                    </li>
-
-                    <li>
-                        Overall Churn Rate: 13.44%
-                    </li>
-
-                    <li>
-                        Churn varied across different states.
-                    </li>
-
-                    <li>
-                        Customers with certain service plans showed
-                        different churn patterns.
-                    </li>
-
-                </ul>
-
-            </section>
-
-
-            <!-- RECOMMENDATIONS -->
-
-            <section class="project-section">
-
-                <h2>Recommendations</h2>
-
-                <ul>
-
-                    <li>
-                        Focus retention campaigns in high-churn regions.
-                    </li>
-
-                    <li>
-                        Monitor customers showing early signs of churn.
-                    </li>
-
-                    <li>
-                        Improve customer engagement programmes.
-                    </li>
-
-                    <li>
-                        Review service offerings associated with
-                        higher churn.
-                    </li>
-
-                </ul>
-
-            </section>
-
-
+        <div class="project-tools">
+            <span>SQL</span>
+            <span>Excel</span>
+            <span>Power BI</span>
         </div>
 
-    </main>
+    </div>
+
+</section>
 
 
-    <footer>
+<!-- =========================
+     BUSINESS PROBLEM
+========================= -->
 
-        <div class="container">
+<section class="case-section">
+
+    <div class="container">
+
+        <p class="section-label">
+            THE BUSINESS PROBLEM
+        </p>
+
+        <h2 class="section-title">
+            Understanding Customer Churn
+        </h2>
+
+        <div class="business-tell">
 
             <p>
-                © 2026 Neo Phosa. All Rights Reserved.
+                Customer churn is an important business challenge because
+                losing existing customers can reduce recurring revenue and
+                increase the cost of acquiring replacements. Looking at
+                individual customer records does not easily reveal the
+                overall scale of churn or the patterns associated with
+                customers leaving.
+            </p>
+
+            <p>
+                The objective of this project was to analyse customer data
+                using SQL and Power BI to understand the size of the customer
+                base, identify churn levels, and examine patterns that could
+                help the business understand customer retention.
+            </p>
+
+            <p>
+                The analysis provides management with a clearer view of
+                customer retention performance and highlights areas where
+                targeted retention strategies could be considered.
             </p>
 
         </div>
 
-    </footer>
+    </div>
+
+</section>
+
+
+<!-- =========================
+     BUSINESS QUESTIONS
+========================= -->
+
+<section class="case-section section-light">
+
+    <div class="container">
+
+        <p class="section-label">
+            BUSINESS QUESTIONS
+        </p>
+
+        <h2 class="section-title">
+            What I Wanted to Find Out
+        </h2>
+
+        <div class="question-list">
+
+            <div class="question-item">
+                <span>01</span>
+                <p>How many customers are in the dataset?</p>
+            </div>
+
+            <div class="question-item">
+                <span>02</span>
+                <p>How many customers have churned?</p>
+            </div>
+
+            <div class="question-item">
+                <span>03</span>
+                <p>What is the overall customer churn rate?</p>
+            </div>
+
+            <div class="question-item">
+                <span>04</span>
+                <p>How many customers have been retained?</p>
+            </div>
+
+            <div class="question-item">
+                <span>05</span>
+                <p>What patterns can help the business understand customer retention?</p>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     THE DATA
+========================= -->
+
+<section class="case-section">
+
+    <div class="container">
+
+        <p class="section-label">
+            THE DATA
+        </p>
+
+        <h2 class="section-title">
+            Understanding the Dataset
+        </h2>
+
+        <p class="section-description">
+            The dataset contains customer information, service plans,
+            usage behaviour, charges and customer service interactions.
+            These fields allow customer churn to be examined from
+            different perspectives.
+        </p>
+
+        <div class="data-grid">
+
+            <div class="data-field">
+                <strong>State</strong>
+                <span>Customer state</span>
+            </div>
+
+            <div class="data-field">
+                <strong>Account Length</strong>
+                <span>Length of the customer account</span>
+            </div>
+
+            <div class="data-field">
+                <strong>Area Code</strong>
+                <span>Customer area code</span>
+            </div>
+
+            <div class="data-field">
+                <strong>International Plan</strong>
+                <span>Whether the customer has an international plan</span>
+            </div>
+
+            <div class="data-field">
+                <strong>Voicemail Plan</strong>
+                <span>Whether the customer has a voicemail plan</span>
+            </div>
+
+            <div class="data-field">
+                <strong>Number of Voicemail Messages</strong>
+                <span>Number of voicemail messages</span>
+            </div>
+
+            <div class="data-field">
+                <strong>Total Day Minutes</strong>
+                <span>Total daytime usage in minutes</span>
+            </div>
+
+            <div class="data-field">
+                <strong>Total Day Calls</strong>
+                <span>Total daytime calls</span>
+            </div>
+
+            <div class="data-field">
+                <strong>Total Day Charge</strong>
+                <span>Total daytime charge</span>
+            </div>
+
+            <div class="data-field">
+                <strong>Total Eve Minutes</strong>
+                <span>Total evening usage in minutes</span>
+            </div>
+
+            <div class="data-field">
+                <strong>Total Eve Calls</strong>
+                <span>Total evening calls</span>
+            </div>
+
+            <div class="data-field">
+                <strong>Total Eve Charge</strong>
+                <span>Total evening charge</span>
+            </div>
+
+            <div class="data-field">
+                <strong>Total Night Minutes</strong>
+                <span>Total night usage in minutes</span>
+            </div>
+
+            <div class="data-field">
+                <strong>Total Night Calls</strong>
+                <span>Total night calls</span>
+            </div>
+
+            <div class="data-field">
+                <strong>Total Night Charge</strong>
+                <span>Total night charge</span>
+            </div>
+
+            <div class="data-field">
+                <strong>Total International Minutes</strong>
+                <span>Total international usage in minutes</span>
+            </div>
+
+            <div class="data-field">
+                <strong>Total International Calls</strong>
+                <span>Total international calls</span>
+            </div>
+
+            <div class="data-field">
+                <strong>Total International Charge</strong>
+                <span>Total international charge</span>
+            </div>
+
+            <div class="data-field">
+                <strong>Customer Service Calls</strong>
+                <span>Number of customer service calls</span>
+            </div>
+
+            <div class="data-field">
+                <strong>Churn</strong>
+                <span>Whether the customer churned</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     DATA CLEANING
+========================= -->
+
+<section class="case-section section-light">
+
+    <div class="container">
+
+        <p class="section-label">
+            DATA PREPARATION
+        </p>
+
+        <h2 class="section-title">
+            Data Cleaning & Preparation
+        </h2>
+
+        <p class="section-description">
+            Before analysing the customer data, I reviewed the dataset
+            structure and prepared the fields required for analysis.
+            The process focused on data quality, consistency and making
+            the dataset suitable for SQL analysis and Power BI reporting.
+        </p>
+
+        <div class="image-grid">
+
+            <div class="image-card">
+
+                <img
+                    src="images/Raw Churn data.png"
+                    alt="Raw customer churn dataset"
+                >
+
+                <p class="image-caption">
+                    Raw customer churn data before preparation.
+                </p>
+
+            </div>
+
+
+            <div class="image-card">
+
+                <img
+                    src="images/1st Cleaned Churn data.png"
+                    alt="Cleaned customer churn dataset"
+                >
+
+                <p class="image-caption">
+                    Customer churn data after the initial cleaning process.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     SQL ANALYSIS
+========================= -->
+
+<section class="case-section">
+
+    <div class="container">
+
+        <p class="section-label">
+            SQL ANALYSIS
+        </p>
+
+        <h2 class="section-title">
+            Analysing Customer Retention
+        </h2>
+
+        <p class="section-description">
+            SQL was used to calculate the main churn and retention metrics
+            and to investigate customer patterns before building the
+            Power BI dashboard.
+        </p>
+
+
+        <div class="analysis-grid">
+
+
+            <!-- Analysis 1 -->
+
+            <div class="analysis-card">
+
+                <div class="analysis-number">
+                    01
+                </div>
+
+                <h3>
+                    Total Customers
+                </h3>
+
+                <p>
+                    I calculated the total number of customers in the dataset
+                    to establish the size of the customer base.
+                </p>
+
+                <div class="result">
+                    <strong>5,269</strong>
+                    <span>Total Customers</span>
+                </div>
+
+                <img
+                    src="images/total customers.png"
+                    alt="SQL analysis showing total customers"
+                >
+
+            </div>
+
+
+            <!-- Analysis 2 -->
+
+            <div class="analysis-card">
+
+                <div class="analysis-number">
+                    02
+                </div>
+
+                <h3>
+                    Churned Customers
+                </h3>
+
+                <p>
+                    I identified the number of customers who had churned
+                    to understand the scale of customer loss.
+                </p>
+
+                <div class="result">
+                    <strong>708</strong>
+                    <span>Churned Customers</span>
+                </div>
+
+                <img
+                    src="images/churned customers.png"
+                    alt="SQL analysis showing churned customers"
+                >
+
+            </div>
+
+
+            <!-- Analysis 3 -->
+
+            <div class="analysis-card">
+
+                <div class="analysis-number">
+                    03
+                </div>
+
+                <h3>
+                    Retained Customers
+                </h3>
+
+                <p>
+                    I calculated the number of customers who remained with
+                    the business to compare retention against churn.
+                </p>
+
+                <div class="result">
+                    <strong>4,561</strong>
+                    <span>Retained Customers</span>
+                </div>
+
+                <img
+                    src="images/retained customers.png"
+                    alt="SQL analysis showing retained customers"
+                >
+
+            </div>
+
+
+            <!-- Analysis 4 -->
+
+            <div class="analysis-card">
+
+                <div class="analysis-number">
+                    04
+                </div>
+
+                <h3>
+                    Overall Churn Rate
+                </h3>
+
+                <p>
+                    I calculated the percentage of customers who churned
+                    relative to the total customer base.
+                </p>
+
+                <div class="result">
+                    <strong>13.44%</strong>
+                    <span>Overall Churn Rate</span>
+                </div>
+
+                <img
+                    src="images/overall churn rate.png"
+                    alt="SQL analysis showing overall churn rate"
+                >
+
+            </div>
+
+
+            <!-- Analysis 5 -->
+
+            <div class="analysis-card">
+
+                <div class="analysis-number">
+                    05
+                </div>
+
+                <h3>
+                    Churn by Area Code
+                </h3>
+
+                <p>
+                    I compared customer churn across the different area
+                    codes in the dataset to identify differences in churn
+                    levels between geographic segments.
+                </p>
+
+                <img
+                    src="images/churn by area code.png"
+                    alt="SQL analysis showing churn by area code"
+                >
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     POWER BI DASHBOARD
+========================= -->
+
+<section class="case-section section-light">
+
+    <div class="container">
+
+        <p class="section-label">
+            POWER BI
+        </p>
+
+        <h2 class="section-title">
+            Building the Dashboard
+        </h2>
+
+        <p class="section-description">
+            After analysing the customer data in SQL, I used Power BI to
+            create an interactive dashboard focused on customer retention,
+            churn and customer behaviour.
+        </p>
+
+
+        <!-- Dashboard Page 1 -->
+
+        <div class="dashboard-item">
+
+            <div class="dashboard-image">
+
+                <img
+                    src="images/Churn page 1.png"
+                    alt="Customer churn Power BI dashboard page 1"
+                >
+
+            </div>
+
+            <div class="dashboard-content">
+
+                <p class="section-label">
+                    DASHBOARD PAGE 01
+                </p>
+
+                <h3>
+                    Churn & Retention Overview
+                </h3>
+
+                <p>
+                    This page provides an overview of customer retention
+                    and churn performance.
+                </p>
+
+                <p>
+                    It includes the total customer base, churn rate,
+                    churned and retained customers, geographic distribution,
+                    and customer plan information.
+                </p>
+
+                <p>
+                    The page gives management a quick view of the overall
+                    retention position before moving into more detailed
+                    customer behaviour.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- Dashboard Page 2 -->
+
+        <div class="dashboard-item">
+
+            <div class="dashboard-image">
+
+                <img
+                    src="images/Churn page 2.png"
+                    alt="Customer churn Power BI dashboard page 2"
+                >
+
+            </div>
+
+            <div class="dashboard-content">
+
+                <p class="section-label">
+                    DASHBOARD PAGE 02
+                </p>
+
+                <h3>
+                    Customer Behaviour
+                </h3>
+
+                <p>
+                    The second page examines customer behaviour using
+                    customer service interactions, voicemail usage,
+                    international usage and account length.
+                </p>
+
+                <p>
+                    These variables provide additional context for
+                    understanding differences between customers who
+                    churned and those who remained.
+                </p>
+
+                <p>
+                    The dashboard allows users to explore these patterns
+                    interactively rather than relying only on the overall
+                    churn rate.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     KEY METRICS
+========================= -->
+
+<section class="case-section">
+
+    <div class="container">
+
+        <p class="section-label">
+            PROJECT RESULTS
+        </p>
+
+        <h2 class="section-title">
+            Customer Retention at a Glance
+        </h2>
+
+        <div class="kpi-grid">
+
+            <div class="kpi">
+                <strong>5,269</strong>
+                <span>Total Customers</span>
+            </div>
+
+            <div class="kpi">
+                <strong>708</strong>
+                <span>Churned Customers</span>
+            </div>
+
+            <div class="kpi">
+                <strong>4,561</strong>
+                <span>Retained Customers</span>
+            </div>
+
+            <div class="kpi">
+                <strong>13.44%</strong>
+                <span>Churn Rate</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     WHAT THE DATA TELLS US
+========================= -->
+
+<section class="case-section section-light">
+
+    <div class="container">
+
+        <p class="section-label">
+            BUSINESS INTERPRETATION
+        </p>
+
+        <h2 class="section-title">
+            What the Data Tells Us
+        </h2>
+
+        <div class="business-tell">
+
+            <p>
+                The analysis shows a customer base of
+                <strong>5,269 customers</strong>, of which
+                <strong>708 customers churned</strong> and
+                <strong>4,561 customers were retained</strong>.
+            </p>
+
+            <p>
+                This results in an overall churn rate of
+                <strong>13.44%</strong>, providing the business with
+                a clear baseline for monitoring customer retention.
+            </p>
+
+            <p>
+                The analysis also shows an association between
+                <strong>customer service calls and churn</strong>.
+                Customers with more service interactions can therefore
+                be an important segment to monitor when investigating
+                retention.
+            </p>
+
+            <p>
+                Area code analysis also showed differences between
+                geographic segments. Area code <strong>415</strong>
+                contained 2,592 customers and 352 churned customers,
+                making it an important segment to examine further.
+            </p>
+
+            <p>
+                Overall, the analysis shows that customer churn can be
+                examined through customer service interactions, usage
+                behaviour and geographic segments rather than relying
+                on a single metric.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     RECOMMENDATIONS
+========================= -->
+
+<section class="case-section">
+
+    <div class="container">
+
+        <p class="section-label">
+            RECOMMENDATIONS
+        </p>
+
+        <h2 class="section-title">
+            What the Business Could Do
+        </h2>
+
+        <div class="recommendations">
+
+
+            <div class="recommendation">
+
+                <span>01</span>
+
+                <div>
+
+                    <h3>
+                        Investigate Customer Service Experience
+                    </h3>
+
+                    <p>
+                        Review customers with frequent service interactions
+                        to identify recurring issues that may contribute
+                        to dissatisfaction and churn.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="recommendation">
+
+                <span>02</span>
+
+                <div>
+
+                    <h3>
+                        Monitor Churn by Customer Segment
+                    </h3>
+
+                    <p>
+                        Track churn across area codes, plans and customer
+                        behaviour to identify segments that may require
+                        closer attention.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="recommendation">
+
+                <span>03</span>
+
+                <div>
+
+                    <h3>
+                        Identify Customers at Higher Risk
+                    </h3>
+
+                    <p>
+                        Use customer behaviour and service interaction
+                        patterns to identify customers who may benefit
+                        from targeted retention efforts.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="recommendation">
+
+                <span>04</span>
+
+                <div>
+
+                    <h3>
+                        Monitor Usage Patterns
+                    </h3>
+
+                    <p>
+                        Compare usage behaviour between churned and retained
+                        customers to better understand potential differences
+                        in customer engagement.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <div class="recommendation">
+
+                <span>05</span>
+
+                <div>
+
+                    <h3>
+                        Establish Recurring Churn Monitoring
+                    </h3>
+
+                    <p>
+                        Continue monitoring churn metrics through recurring
+                        reporting so changes in customer retention can be
+                        identified early.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     WHAT I LEARNED
+========================= -->
+
+<section class="case-section section-light">
+
+    <div class="container">
+
+        <p class="section-label">
+            LEARNING
+        </p>
+
+        <h2 class="section-title">
+            What I Learned
+        </h2>
+
+        <ul class="learned-list">
+
+            <li>
+                How to calculate and validate customer churn and retention
+                metrics using SQL.
+            </li>
+
+            <li>
+                How to segment customers using geographic, service and
+                usage-related variables.
+            </li>
+
+            <li>
+                How to analyse categorical and behavioural variables when
+                investigating customer churn.
+            </li>
+
+            <li>
+                How to structure a Power BI dashboard around customer
+                retention questions.
+            </li>
+
+            <li>
+                How to translate customer analytics into practical
+                retention recommendations.
+            </li>
+
+        </ul>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     CTA
+========================= -->
+
+<section class="cta">
+
+    <div class="container">
+
+        <div class="cta-content">
+
+            <p class="section-label">
+                MORE PROJECTS
+            </p>
+
+            <h2>
+                Interested in how I approach other data problems?
+            </h2>
+
+            <p>
+                Explore my other projects to see how I use SQL, Excel
+                and Power BI across different business scenarios.
+            </p>
+
+            <div class="cta-buttons">
+
+                <a href="index.html#projects" class="btn btn-white">
+                    View All Projects
+                </a>
+
+                <a href="index.html#contact" class="btn btn-outline-white">
+                    Get in Touch
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer class="footer">
+
+    <div class="container footer-container">
+
+        <div>
+
+            <strong>Neo Phosa</strong>
+
+            <p>
+                Data Analyst | Business Intelligence | SQL | Power BI | Excel
+            </p>
+
+        </div>
+
+        <p>
+            © 2026 Neo Phosa. All rights reserved.
+        </p>
+
+    </div>
+
+</footer>
+
 
 </body>
-
 </html>
