@@ -2,322 +2,1146 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Credit Risk Analysis | Neo Phosa</title>
 
     <link rel="stylesheet" href="style.css">
+
 </head>
+
 
 <body>
 
-    <header>
 
-        <nav class="navbar">
+<!-- =========================
+     NAVIGATION
+========================= -->
 
-            <div class="logo">
-                Neo Phosa
+<nav class="navbar">
+
+    <div class="container nav-container">
+
+        <a href="index.html" class="logo">
+            Neo Phosa
+        </a>
+
+        <div class="nav-links">
+
+            <a href="index.html#about">
+                About
+            </a>
+
+            <a href="index.html#projects">
+                Projects
+            </a>
+
+            <a href="index.html#approach">
+                Approach
+            </a>
+
+            <a href="index.html#skills">
+                Skills
+            </a>
+
+            <a href="index.html#contact">
+                Contact
+            </a>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+
+<!-- =========================
+     CASE STUDY HEADER
+========================= -->
+
+<header class="case-hero">
+
+    <div class="container">
+
+        <a href="index.html#projects" class="back-link">
+            ← Back to projects
+        </a>
+
+        <p class="section-label">
+            FINANCIAL SERVICES | RISK ANALYTICS
+        </p>
+
+        <h1>
+            Credit Risk Analysis
+        </h1>
+
+        <p class="section-description">
+            Using SQL and Power BI to understand loan exposure,
+            borrower characteristics and credit risk.
+        </p>
+
+    </div>
+
+</header>
+
+
+
+<!-- =========================
+     BUSINESS PROBLEM
+========================= -->
+
+<section class="case-section">
+
+    <div class="container">
+
+        <p class="section-label">
+            01 — BUSINESS PROBLEM
+        </p>
+
+        <h2>
+            Business Problem
+        </h2>
+
+        <p>
+            A financial institution needs to understand the level of risk
+            it takes when providing loans. Analysing thousands of loan
+            applications individually makes it difficult to identify
+            patterns in defaults, borrower characteristics, loan amounts,
+            and interest rates.
+        </p>
+
+        <br>
+
+        <p>
+            The objective of this project was to analyse loan application
+            data using SQL and Power BI to identify patterns associated
+            with credit risk and loan defaults. SQL was used to clean,
+            validate, and analyse the data before presenting the findings
+            in an interactive Power BI dashboard.
+        </p>
+
+        <br>
+
+        <p>
+            The analysis gives the business a clearer view of its loan
+            portfolio and helps identify areas where lending decisions
+            and risk management could potentially be improved.
+        </p>
+
+
+        <h2 style="margin-top:45px;">
+            What I Wanted to Find Out
+        </h2>
+
+        <ul class="question-list">
+
+            <li>
+                What is the overall loan default rate?
+            </li>
+
+            <li>
+                How much money has the institution lent?
+            </li>
+
+            <li>
+                What is the average loan amount?
+            </li>
+
+            <li>
+                What is the average applicant income?
+            </li>
+
+            <li>
+                What patterns can be identified among borrowers and loan risk?
+            </li>
+
+        </ul>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     DATA
+========================= -->
+
+<section class="case-section">
+
+    <div class="container">
+
+        <p class="section-label">
+            02 — THE DATA
+        </p>
+
+        <h2>
+            The Data
+        </h2>
+
+        <p>
+            The Credit Risk dataset contains borrower financial
+            characteristics, loan applications, credit history and
+            loan outcomes.
+        </p>
+
+
+        <div class="data-grid">
+
+            <div class="data-field">
+                Person Age — age of borrower
             </div>
 
-            <ul class="nav-links">
+            <div class="data-field">
+                Person Income — annual income
+            </div>
 
-                <li><a href="index.html#home">Home</a></li>
-                <li><a href="index.html#about">About</a></li>
-                <li><a href="index.html#services">Services</a></li>
-                <li><a href="index.html#portfolio">Portfolio</a></li>
-                <li><a href="index.html#skills">Skills</a></li>
-                <li><a href="index.html#resume">Resume</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
+            <div class="data-field">
+                Person Home Ownership — home ownership status
+            </div>
 
-            </ul>
+            <div class="data-field">
+                Person Employment Length — years employed
+            </div>
 
-        </nav>
+            <div class="data-field">
+                Person Intention — purpose of loan
+            </div>
 
-    </header>
+            <div class="data-field">
+                Loan Grade — credit risk grade
+            </div>
 
+            <div class="data-field">
+                Loan Amount — amount borrowed
+            </div>
 
-    <main>
+            <div class="data-field">
+                Loan Interest Rate — interest rate
+            </div>
 
-        <div class="container project-content">
+            <div class="data-field">
+                Loan Status — loan outcome/status
+            </div>
 
-            <h1>3. Credit Risk Analysis</h1>
+            <div class="data-field">
+                Loan Percent Income — loan amount relative to income
+            </div>
 
+            <div class="data-field">
+                CB Person Default File — previous default indicator
+            </div>
 
-            <section class="project-section">
+            <div class="data-field">
+                CB Person Credit History Length — credit history length
+            </div>
 
-                <h2>Project Overview</h2>
+            <div class="data-field">
+                Age Group — grouped age category
+            </div>
 
-                <p>
-                    This project analyses loan application data to evaluate
-                    lending risk, applicant characteristics, and default
-                    patterns that can support more informed credit decisions.
-                </p>
+        </div>
 
-            </section>
 
+        <div class="note">
 
-            <section class="project-section">
+            <strong>Tools used:</strong>
 
-                <h2>Business Problem</h2>
+            SQL · Excel · Power BI
 
-                <p>
-                    Financial institutions need to assess lending risk
-                    accurately. Poor credit decisions can increase default
-                    rates and financial losses.
-                </p>
+        </div>
 
-            </section>
+    </div>
 
+</section>
 
-            <section class="project-section">
 
-                <h2>Objectives</h2>
 
-                <ul>
+<!-- =========================
+     DATA CLEANING
+========================= -->
 
-                    <li>Analyse applicant profiles.</li>
+<section class="case-section">
 
-                    <li>Measure default rates.</li>
+    <div class="container">
 
-                    <li>Evaluate loan performance.</li>
+        <p class="section-label">
+            03 — DATA PREPARATION
+        </p>
 
-                    <li>Identify high-risk lending segments.</li>
+        <h2>
+            Data Cleaning & Preparation
+        </h2>
 
-                    <li>Support better lending decisions.</li>
+        <p>
+            Before performing the analysis, the dataset was reviewed,
+            cleaned and validated to make sure the information was
+            suitable for analysis.
+        </p>
 
-                </ul>
 
-            </section>
+        <div class="image-grid">
 
 
-            <section class="project-section">
+            <!-- RAW DATA -->
 
-                <h2>Tools Used</h2>
-
-                <ul>
-
-                    <li>Excel</li>
-
-                    <li>SQL</li>
-
-                    <li>Power BI</li>
-
-                    <li>DAX</li>
-
-                </ul>
-
-            </section>
-
-
-            <section class="project-section">
-
-                <h2>Dataset Overview</h2>
-
-                <p>
-                    The dataset contains:
-                </p>
-
-                <ul>
-
-                    <li>Applicant Income</li>
-
-                    <li>Loan Amount</li>
-
-                    <li>Interest Rate</li>
-
-                    <li>Loan Purpose</li>
-
-                    <li>Employment Information</li>
-
-                    <li>Credit History</li>
-
-                    <li>Loan Status</li>
-
-                </ul>
-
-            </section>
-
-
-            <section class="project-section">
-
-                <h2>Methodology</h2>
-
-                <ul>
-
-                    <li>
-                        Cleaned and validated the dataset.
-                    </li>
-
-                    <li>
-                        Processed and analysed data using SQL.
-                    </li>
-
-                    <li>
-                        Created KPIs and DAX calculations.
-                    </li>
-
-                    <li>
-                        Built an interactive Power BI dashboard.
-                    </li>
-
-                    <li>
-                        Analysed credit risk indicators.
-                    </li>
-
-                    <li>
-                        Developed recommendations based on the findings.
-                    </li>
-
-                </ul>
-
-            </section>
-
-
-            <!-- SQL QUERY -->
-
-            <section class="project-section">
-
-                <h2>Credit Risk SQL Query</h2>
+            <div class="image-card">
 
                 <img
-                    src="Credit Risk Query.png"
-                    alt="Credit Risk SQL Query"
-                    class="project-image"
+                    src="images/Raw Credit data.png"
+                    alt="Raw Credit Risk dataset"
+                    loading="lazy"
                 >
 
-            </section>
+                <div class="image-caption">
+
+                    Before — Raw Credit Risk Data
+
+                </div>
+
+            </div>
 
 
-            <!-- CLEANED DATA -->
+            <!-- CLEAN DATA -->
 
-<section class="project-section">
+            <div class="image-card">
 
-    <h2>Credit Risk Cleaned Data</h2>
+                <img
+                    src="images/Clean Credit data.png"
+                    alt="Cleaned Credit Risk dataset"
+                    loading="lazy"
+                >
 
-    <img
-        src="Cleaned Credit Risk data.png"
-        alt="Cleaned Credit Risk Data"
-        class="project-image"
-    >
+                <div class="image-caption">
 
-</section>
+                    After — Cleaned Credit Risk Data
 
+                </div>
 
-<!-- DASHBOARD -->
+            </div>
 
-<section class="project-section">
+        </div>
 
-    <h2>Dashboard</h2>
-
-    <p>
-        Embed Power BI dashboard or include dashboard screenshots here.
-    </p>
-
-    <img
-        src="Pg 1 Credit Dashboard.png"
-        alt="Credit Dashboard Page 1"
-        class="project-image"
-    >
-
-    <img
-        src="Pg 2 Credit Dashboard.png"
-        alt="Credit Dashboard Page 2"
-        class="project-image"
-    >
-
-    <img
-        src="Pg 3 Credit Dashboard.png"
-        alt="Credit Dashboard Page 3"
-        class="project-image"
-    >
+    </div>
 
 </section>
-            </section>
 
 
-            <!-- KEY INSIGHTS -->
 
-            <section class="project-section">
+<!-- =========================
+     SQL ANALYSIS
+========================= -->
 
-                <h2>Key Insights</h2>
+<section class="case-section">
 
-                <ul>
+    <div class="container">
 
-                    <li>
-                        Loan Applicants: 28,638
-                    </li>
+        <p class="section-label">
+            04 — SQL ANALYSIS
+        </p>
 
-                    <li>
-                        Total Loan Amount: R276.5 million
-                    </li>
+        <h2>
+            SQL Analysis
+        </h2>
 
-                    <li>
-                        Average Loan Amount: R9,656
-                    </li>
-
-                    <li>
-                        Average Applicant Income: R66,649
-                    </li>
-
-                    <li>
-                        Average Interest Rate: 11.04%
-                    </li>
-
-                    <li>
-                        Default Rate: 21.66%
-                    </li>
-
-                </ul>
-
-            </section>
+        <p>
+            SQL was used to answer the main business questions and
+            validate the numbers before building the Power BI dashboard.
+        </p>
 
 
-            <!-- RECOMMENDATIONS -->
+        <div class="analysis-grid">
 
-            <section class="project-section">
 
-                <h2>Recommendations</h2>
+            <!-- ANALYSIS 1 -->
 
-                <ul>
+            <article class="analysis-card">
 
-                    <li>
-                        Strengthen risk assessment for high-risk applicants.
-                    </li>
+                <div class="analysis-number">
+                    SQL Analysis 01
+                </div>
 
-                    <li>
-                        Review lending policies for high-default segments.
-                    </li>
+                <h3>
+                    Overall Default Rate
+                </h3>
 
-                    <li>
-                        Improve monitoring of loan performance.
-                    </li>
+                <p>
+                    <strong>
+                        Business Question:
+                    </strong>
 
-                    <li>
-                        Use applicant characteristics to support credit decisions.
-                    </li>
+                    What percentage of loan applications resulted
+                    in defaults?
+                </p>
 
-                </ul>
 
-            </section>
+                <div class="image-card">
+
+                    <img
+                        src="images/Overall default rate.png"
+                        alt="SQL query showing overall default rate"
+                        loading="lazy"
+                    >
+
+                    <div class="image-caption">
+                        Overall Default Rate SQL Analysis
+                    </div>
+
+                </div>
+
+
+                <div class="result">
+                    21.66% Default Rate
+                </div>
+
+                <p class="business-tell">
+
+                    <strong>
+                        What this tells the business:
+                    </strong>
+
+                    Approximately one in five applications resulted
+                    in a default. This highlights significant credit
+                    risk and the importance of effective borrower
+                    assessment.
+
+                </p>
+
+            </article>
+
+
+
+            <!-- ANALYSIS 2 -->
+
+            <article class="analysis-card">
+
+                <div class="analysis-number">
+                    SQL Analysis 02
+                </div>
+
+                <h3>
+                    Total Loan Exposure
+                </h3>
+
+                <p>
+                    <strong>
+                        Business Question:
+                    </strong>
+
+                    How much money has the institution provided
+                    through loans?
+                </p>
+
+
+                <div class="image-card">
+
+                    <img
+                        src="images/Total loan exposure.png"
+                        alt="SQL query showing total loan exposure"
+                        loading="lazy"
+                    >
+
+                    <div class="image-caption">
+                        Total Loan Exposure SQL Analysis
+                    </div>
+
+                </div>
+
+
+                <div class="result">
+                    R276.5 Million
+                </div>
+
+                <p class="business-tell">
+
+                    <strong>
+                        What this tells the business:
+                    </strong>
+
+                    The institution has significant financial
+                    exposure, so even small changes in default rates
+                    can have meaningful financial impact.
+
+                </p>
+
+            </article>
+
+
+
+            <!-- ANALYSIS 3 -->
+
+            <article class="analysis-card">
+
+                <div class="analysis-number">
+                    SQL Analysis 03
+                </div>
+
+                <h3>
+                    Average Loan Amount
+                </h3>
+
+                <p>
+                    <strong>
+                        Business Question:
+                    </strong>
+
+                    What is the average amount requested?
+                </p>
+
+
+                <div class="image-card">
+
+                    <img
+                        src="images/Average loan amount.png"
+                        alt="SQL query showing average loan amount"
+                        loading="lazy"
+                    >
+
+                    <div class="image-caption">
+                        Average Loan Amount SQL Analysis
+                    </div>
+
+                </div>
+
+
+                <div class="result">
+                    R9,656
+                </div>
+
+                <p class="business-tell">
+
+                    <strong>
+                        What this tells the business:
+                    </strong>
+
+                    This provides context for the size of individual
+                    loans and the potential financial impact of defaults.
+
+                </p>
+
+            </article>
+
+
+
+            <!-- ANALYSIS 4 -->
+
+            <article class="analysis-card">
+
+                <div class="analysis-number">
+                    SQL Analysis 04
+                </div>
+
+                <h3>
+                    Applicant Income
+                </h3>
+
+                <p>
+                    <strong>
+                        Business Question:
+                    </strong>
+
+                    What is the average applicant income?
+                </p>
+
+
+                <div class="image-card">
+
+                    <img
+                        src="images/Applicant income.png"
+                        alt="SQL query showing average applicant income"
+                        loading="lazy"
+                    >
+
+                    <div class="image-caption">
+                        Applicant Income SQL Analysis
+                    </div>
+
+                </div>
+
+
+                <div class="result">
+                    R66,649
+                </div>
+
+                <p class="business-tell">
+
+                    <strong>
+                        What this tells the business:
+                    </strong>
+
+                    Applicant income provides context for repayment
+                    capacity and can be compared with loan amounts
+                    and loan outcomes.
+
+                </p>
+
+            </article>
+
+
+
+            <!-- ANALYSIS 5 -->
+
+            <article class="analysis-card">
+
+                <div class="analysis-number">
+                    SQL Analysis 05
+                </div>
+
+                <h3>
+                    Average Interest Rate
+                </h3>
+
+                <p>
+                    <strong>
+                        Business Question:
+                    </strong>
+
+                    What is the average interest rate?
+                </p>
+
+
+                <div class="image-card">
+
+                    <img
+                        src="images/average interest rate.png"
+                        alt="SQL query showing average interest rate"
+                        loading="lazy"
+                    >
+
+                    <div class="image-caption">
+                        Average Interest Rate SQL Analysis
+                    </div>
+
+                </div>
+
+
+                <div class="result">
+                    11.04%
+                </div>
+
+                <p class="business-tell">
+
+                    <strong>
+                        What this tells the business:
+                    </strong>
+
+                    This shows the average pricing of the loan
+                    portfolio and can be compared with risk and
+                    default patterns.
+
+                </p>
+
+            </article>
 
 
         </div>
 
-    </main>
+    </div>
+
+</section>
 
 
-    <footer>
 
-        <div class="container">
+<!-- =========================
+     POWER BI DASHBOARD
+========================= -->
+
+<section class="case-section">
+
+    <div class="container">
+
+        <p class="section-label">
+            05 — POWER BI
+        </p>
+
+        <h2>
+            Power BI Dashboard
+        </h2>
+
+        <p>
+            The Power BI dashboard brings the analysis together into
+            interactive pages that make the loan portfolio easier
+            to explore and understand.
+        </p>
+
+
+
+        <!-- PAGE 1 -->
+
+        <div class="dashboard-item">
+
+            <h3>
+                Dashboard Page 1 — Portfolio Overview
+            </h3>
+
+
+            <div class="image-card">
+
+                <img
+                    src="images/Credit page 1.png"
+                    alt="Credit Risk Power BI dashboard page 1"
+                    loading="lazy"
+                >
+
+                <div class="image-caption">
+                    Credit Risk Dashboard — Page 1
+                </div>
+
+            </div>
+
 
             <p>
-                © 2026 Neo Phosa. All Rights Reserved.
+                This dashboard provides an overview of the loan portfolio,
+                including loan applications, loan amounts, interest rates
+                and default status. It also examines loan grades and home
+                ownership to provide a high-level view of the portfolio.
             </p>
 
         </div>
 
-    </footer>
+
+
+        <!-- PAGE 2 -->
+
+        <div class="dashboard-item">
+
+            <h3>
+                Dashboard Page 2 — Borrower Risk
+            </h3>
+
+
+            <div class="image-card">
+
+                <img
+                    src="images/Credit page 2.png"
+                    alt="Credit Risk Power BI dashboard page 2"
+                    loading="lazy"
+                >
+
+                <div class="image-caption">
+                    Credit Risk Dashboard — Page 2
+                </div>
+
+            </div>
+
+
+            <p>
+                This page analyses borrower risk across age groups,
+                income, employment length and loan grade. It provides
+                a more detailed view of how borrower characteristics
+                relate to loan status and potential credit risk.
+            </p>
+
+        </div>
+
+
+
+        <!-- PAGE 3 -->
+
+        <div class="dashboard-item">
+
+            <h3>
+                Dashboard Page 3 — Borrower Segments
+            </h3>
+
+
+            <div class="image-card">
+
+                <img
+                    src="images/Credit page 3.png"
+                    alt="Credit Risk Power BI dashboard page 3"
+                    loading="lazy"
+                >
+
+                <div class="image-caption">
+                    Credit Risk Dashboard — Page 3
+                </div>
+
+            </div>
+
+
+            <p>
+                This dashboard examines loan purposes, home ownership,
+                credit history and applicant age groups. It provides
+                additional insight into the composition of the loan
+                portfolio and how different borrower segments contribute
+                to lending activity.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     FINDINGS
+========================= -->
+
+<section class="case-section">
+
+    <div class="container">
+
+        <p class="section-label">
+            06 — FINDINGS
+        </p>
+
+        <h2>
+            Most Important Findings
+        </h2>
+
+
+        <div class="kpi-grid">
+
+
+            <div class="kpi">
+
+                <strong>
+                    28,638
+                </strong>
+
+                <span>
+                    LOAN APPLICANTS
+                </span>
+
+            </div>
+
+
+            <div class="kpi">
+
+                <strong>
+                    R276.5M
+                </strong>
+
+                <span>
+                    TOTAL LOAN AMOUNT
+                </span>
+
+            </div>
+
+
+            <div class="kpi">
+
+                <strong>
+                    21.66%
+                </strong>
+
+                <span>
+                    DEFAULT RATE
+                </span>
+
+            </div>
+
+
+            <div class="kpi">
+
+                <strong>
+                    R9,656
+                </strong>
+
+                <span>
+                    AVERAGE LOAN
+                </span>
+
+            </div>
+
+
+            <div class="kpi">
+
+                <strong>
+                    R66,649
+                </strong>
+
+                <span>
+                    AVERAGE APPLICANT INCOME
+                </span>
+
+            </div>
+
+
+            <div class="kpi">
+
+                <strong>
+                    11.04%
+                </strong>
+
+                <span>
+                    AVERAGE INTEREST RATE
+                </span>
+
+            </div>
+
+
+        </div>
+
+
+
+        <h2 style="margin-top:50px;">
+            What the Data Tells Us
+        </h2>
+
+
+        <p>
+            The data tells the story of how borrower characteristics
+            and loan attributes can be used to understand credit risk.
+        </p>
+
+        <br>
+
+        <p>
+            The dataset contains 28,638 loan applications, with a
+            total loan amount of approximately R276.5 million.
+            The loan status variable provides an important measure
+            for distinguishing between different loan outcomes and
+            assessing the level of credit risk within the portfolio.
+        </p>
+
+        <br>
+
+        <p>
+            The analysis looks at factors such as income, employment
+            length, loan amount, interest rate, loan grade, loan
+            purpose, home ownership, credit history, and previous
+            defaults.
+        </p>
+
+        <br>
+
+        <p>
+            Loan grade provides an important indication of borrower
+            risk, while loan-to-income levels help show how significant
+            a loan may be relative to a person's income. Previous
+            credit defaults and the length of a borrower's credit
+            history also provide additional information that can help
+            assess creditworthiness.
+        </p>
+
+        <br>
+
+        <p>
+            Overall, the numbers tell a story of different levels
+            of financial risk across borrowers. Analysing these
+            characteristics allows a business to better understand
+            which borrower profiles may represent higher or lower
+            credit risk.
+        </p>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     RECOMMENDATIONS
+========================= -->
+
+<section class="case-section">
+
+    <div class="container">
+
+        <p class="section-label">
+            07 — RECOMMENDATIONS
+        </p>
+
+        <h2>
+            Recommendations
+        </h2>
+
+
+        <ul class="recommendations">
+
+            <li>
+                Strengthen credit assessment for applicants showing
+                higher-risk characteristics.
+            </li>
+
+            <li>
+                Monitor default rates regularly across borrower segments.
+            </li>
+
+            <li>
+                Compare applicant income against requested loan amounts
+                when assessing affordability.
+            </li>
+
+            <li>
+                Analyse default patterns to improve future lending decisions.
+            </li>
+
+            <li>
+                Use portfolio-level risk monitoring to identify increases
+                in credit exposure early.
+            </li>
+
+        </ul>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     WHAT I LEARNED
+========================= -->
+
+<section class="case-section">
+
+    <div class="container">
+
+        <p class="section-label">
+            08 — LEARNING
+        </p>
+
+        <h2>
+            What I Learned
+        </h2>
+
+
+        <ul class="learned-list">
+
+            <li>
+                Learned how to analyse loan and borrower data using
+                SQL and Power BI.
+            </li>
+
+            <li>
+                Strengthened understanding of credit risk and borrower
+                segmentation.
+            </li>
+
+            <li>
+                Learned relationships between income, loan amounts,
+                interest rates and outcomes.
+            </li>
+
+            <li>
+                Improved ability to work with categorical and numerical
+                financial data.
+            </li>
+
+            <li>
+                Learned how credit history and previous defaults
+                contribute to risk assessment.
+            </li>
+
+            <li>
+                Improved ability to create financial KPIs and
+                risk indicators.
+            </li>
+
+            <li>
+                Strengthened Power BI skills for analysing interactive
+                credit-risk patterns.
+            </li>
+
+            <li>
+                Learned how data analysis can support lending decisions,
+                risk monitoring and portfolio management.
+            </li>
+
+        </ul>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     CASE STUDY CTA
+========================= -->
+
+<section class="section">
+
+    <div class="container">
+
+        <div class="cta">
+
+            <div>
+
+                <p class="section-label">
+                    MORE PROJECTS
+                </p>
+
+                <h2>
+                    Explore the rest of my portfolio.
+                </h2>
+
+                <p>
+                    See how I applied the same data-analysis process
+                    to retail sales, customer churn and ATM transactions.
+                </p>
+
+            </div>
+
+
+            <div class="cta-buttons">
+
+                <a
+                    href="index.html#projects"
+                    class="btn btn-white"
+                >
+                    View all projects →
+                </a>
+
+                <a
+                    href="index.html#contact"
+                    class="btn btn-outline-white"
+                >
+                    Get in touch →
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================
+     FOOTER
+========================= -->
+
+<footer>
+
+    <div class="container footer-container">
+
+        <div>
+
+            <strong>
+                Neo Phosa
+            </strong>
+
+            <p>
+                Data Analyst | Business Intelligence | SQL | Power BI | Excel
+            </p>
+
+        </div>
+
+
+        <div>
+
+            <p>
+                © 2026 Neo Phosa
+            </p>
+
+        </div>
+
+    </div>
+
+</footer>
+
 
 </body>
 
