@@ -1,986 +1,413 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
     <title>ATM Withdrawal Analysis | Neo Phosa</title>
 
-    <meta name="description" content="ATM Withdrawal Analysis project by Neo Phosa using SQL, Excel and Power BI.">
+    <link rel="stylesheet" href="../style.css">
 
-    <link rel="stylesheet" href="style.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
 </head>
+
 
 <body>
 
-
-<!-- =========================
-     NAVIGATION
-========================= -->
-
-<header class="navbar">
-
-    <div class="container nav-container">
-
-        <a href="index.html" class="logo">
-            Neo Phosa
-        </a>
-
-        <nav class="nav-links">
-            <a href="index.html#about">About</a>
-            <a href="index.html#projects">Projects</a>
-            <a href="index.html#approach">Approach</a>
-            <a href="index.html#skills">Skills</a>
-            <a href="index.html#contact">Contact</a>
-        </nav>
-
-    </div>
-
-</header>
-
-
-<!-- =========================
-     CASE STUDY HERO
-========================= -->
 
 <section class="case-hero">
 
     <div class="container">
 
-        <a href="index.html#projects" class="back-link">
-            ← Back to Projects
-        </a>
-
-        <p class="eyebrow">
-            BANKING • TRANSACTION ANALYTICS
-        </p>
-
-        <h1>
-            ATM Withdrawal Analysis
-        </h1>
-
-        <p class="case-hero-description">
-            Analysing ATM withdrawal activity, transaction values,
-            card networks, locations and withdrawal patterns using
-            SQL and Power BI.
-        </p>
-
-        <div class="project-tools">
-            <span>SQL</span>
-            <span>Excel</span>
-            <span>Power BI</span>
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     BUSINESS PROBLEM
-========================= -->
-
-<section class="case-section">
-
-    <div class="container">
-
-        <p class="section-label">
-            THE BUSINESS PROBLEM
-        </p>
-
-        <h2 class="section-title">
-            Understanding ATM Transaction Behaviour
-        </h2>
-
-        <div class="business-tell">
-
-            <p>
-                A financial institution processes a large number of ATM
-                transactions every day. Without analysing these transactions,
-                it can be difficult to understand withdrawal behaviour,
-                transaction volumes, withdrawal values, and differences
-                between payment networks such as Mastercard and Visa.
-            </p>
-
-            <p>
-                The objective of this project was to analyse ATM withdrawal
-                transactions using SQL and Power BI. SQL was used to clean,
-                validate, and analyse the transaction data, while Power BI
-                was used to identify trends and present the findings through
-                an interactive dashboard.
-            </p>
-
-            <p>
-                The analysis provides insight into ATM usage and transaction
-                behaviour, helping the business understand demand and
-                identify opportunities to improve ATM operations and
-                customer service.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     BUSINESS QUESTIONS
-========================= -->
-
-<section class="case-section section-light">
-
-    <div class="container">
-
-        <p class="section-label">
-            BUSINESS QUESTIONS
-        </p>
-
-        <h2 class="section-title">
-            What I Wanted to Find Out
-        </h2>
-
-        <div class="question-list">
-
-            <div class="question-item">
-                <span>01</span>
-                <p>How many ATM withdrawals were processed?</p>
-            </div>
-
-            <div class="question-item">
-                <span>02</span>
-                <p>What was the total amount withdrawn?</p>
-            </div>
-
-            <div class="question-item">
-                <span>03</span>
-                <p>What was the average withdrawal amount?</p>
-            </div>
-
-            <div class="question-item">
-                <span>04</span>
-                <p>How did withdrawal activity change over time?</p>
-            </div>
-
-            <div class="question-item">
-                <span>05</span>
-                <p>How did Mastercard and Visa withdrawal activity compare?</p>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     THE DATA
-========================= -->
-
-<section class="case-section">
-
-    <div class="container">
-
-        <p class="section-label">
-            THE DATA
-        </p>
-
-        <h2 class="section-title">
-            Understanding the Dataset
-        </h2>
-
-        <p class="section-description">
-            The dataset contains ATM transaction information covering
-            withdrawal volumes, transaction values, card networks,
-            locations and calendar-related fields.
-        </p>
-
-        <div class="data-grid">
-
-            <div class="data-field">
-                <strong>ATM Name</strong>
-                <span>ATM location or name</span>
-            </div>
-
-            <div class="data-field">
-                <strong>Transaction Date</strong>
-                <span>Date of the transaction</span>
-            </div>
-
-            <div class="data-field">
-                <strong>No of Withdrawals</strong>
-                <span>Number of withdrawals</span>
-            </div>
-
-            <div class="data-field">
-                <strong>Mastercard Withdrawals</strong>
-                <span>Withdrawals made using Mastercard</span>
-            </div>
-
-            <div class="data-field">
-                <strong>Visa Card Withdrawals</strong>
-                <span>Withdrawals made using Visa</span>
-            </div>
-
-            <div class="data-field">
-                <strong>Total Amount Withdrawn</strong>
-                <span>Total withdrawal value</span>
-            </div>
-
-            <div class="data-field">
-                <strong>Amount Withdrawn Mastercard</strong>
-                <span>Withdrawal value from Mastercard</span>
-            </div>
-
-            <div class="data-field">
-                <strong>Amount Withdrawn Visacard</strong>
-                <span>Withdrawal value from Visa</span>
-            </div>
-
-            <div class="data-field">
-                <strong>Weekday</strong>
-                <span>Day of the week</span>
-            </div>
-
-            <div class="data-field">
-                <strong>Festival Religion</strong>
-                <span>Festival or religious period</span>
-            </div>
-
-            <div class="data-field">
-                <strong>Working Day</strong>
-                <span>Working-day indicator</span>
-            </div>
-
-            <div class="data-field">
-                <strong>Holiday Sequence</strong>
-                <span>Holiday sequence indicator</span>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     DATA CLEANING
-========================= -->
-
-<section class="case-section section-light">
-
-    <div class="container">
-
-        <p class="section-label">
-            DATA PREPARATION
-        </p>
-
-        <h2 class="section-title">
-            Data Cleaning & Preparation
-        </h2>
-
-        <p class="section-description">
-            Before performing the analysis, I reviewed the transaction
-            data and prepared the fields required for analysis. The
-            process focused on data consistency, structure and ensuring
-            the transaction fields could be analysed correctly.
-        </p>
-
-        <div class="image-grid">
-
-            <div class="image-card">
-
-                <img
-                    src="images/Raw Withdrawals data.png"
-                    alt="Raw ATM withdrawal dataset"
-                >
-
-                <p class="image-caption">
-                    Raw ATM withdrawal data before preparation.
-                </p>
-
-            </div>
-
-
-            <div class="image-card">
-
-                <img
-                    src="images/Clean Withdrawals data.png"
-                    alt="Cleaned ATM withdrawal dataset"
-                >
-
-                <p class="image-caption">
-                    Cleaned and prepared ATM withdrawal data.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     SQL ANALYSIS
-========================= -->
-
-<section class="case-section">
-
-    <div class="container">
-
-        <p class="section-label">
-            SQL ANALYSIS
-        </p>
-
-        <h2 class="section-title">
-            Analysing ATM Transactions
-        </h2>
-
-        <p class="section-description">
-            SQL was used to calculate the main transaction metrics and
-            investigate withdrawal behaviour before presenting the
-            results in Power BI.
-        </p>
-
-
-        <div class="analysis-grid">
-
-
-            <!-- Analysis 1 -->
-
-            <div class="analysis-card">
-
-                <div class="analysis-number">
-                    01
-                </div>
-
-                <h3>
-                    Total Withdrawal Transactions
-                </h3>
-
-                <p>
-                    I calculated the total number of withdrawals processed
-                    across the dataset to understand overall ATM activity.
-                </p>
-
-                <div class="result">
-                    <strong>1,429,400</strong>
-                    <span>Total Withdrawals</span>
-                </div>
-
-                <img
-                    src="images/total withdrawals.png"
-                    alt="SQL analysis showing total ATM withdrawals"
-                >
-
-            </div>
-
-
-            <!-- Analysis 2 -->
-
-            <div class="analysis-card">
-
-                <div class="analysis-number">
-                    02
-                </div>
-
-                <h3>
-                    Total Amount Withdrawn
-                </h3>
-
-                <p>
-                    I calculated the total monetary value of all withdrawals
-                    to understand the overall transaction value processed
-                    through the ATMs.
-                </p>
-
-                <div class="result">
-                    <strong>R6.05B</strong>
-                    <span>Total Amount Withdrawn</span>
-                </div>
-
-                <img
-                    src="images/total amount withdrawn.png"
-                    alt="SQL analysis showing total amount withdrawn"
-                >
-
-            </div>
-
-
-            <!-- Analysis 3 -->
-
-            <div class="analysis-card">
-
-                <div class="analysis-number">
-                    03
-                </div>
-
-                <h3>
-                    Average Withdrawal Amount
-                </h3>
-
-                <p>
-                    I calculated the average withdrawal amount to understand
-                    the typical value associated with the transaction data.
-                </p>
-
-                <div class="result">
-                    <strong>R522,305.88</strong>
-                    <span>Average Withdrawal</span>
-                </div>
-
-                <img
-                    src="images/average withdrawal.png"
-                    alt="SQL analysis showing average withdrawal amount"
-                >
-
-            </div>
-
-
-            <!-- Analysis 4 -->
-
-            <div class="analysis-card">
-
-                <div class="analysis-number">
-                    04
-                </div>
-
-                <h3>
-                    Withdrawal Trends Over Time
-                </h3>
-
-                <p>
-                    I analysed withdrawal activity over time to identify
-                    changes in ATM transaction volumes and understand
-                    periods of higher or lower activity.
-                </p>
-
-                <img
-                    src="images/withdrawal trends overtime.png"
-                    alt="SQL analysis showing ATM withdrawal trends over time"
-                >
-
-            </div>
-
-
-            <!-- Analysis 5 -->
-
-            <div class="analysis-card">
-
-                <div class="analysis-number">
-                    05
-                </div>
-
-                <h3>
-                    Mastercard vs Visa
-                </h3>
-
-                <p>
-                    I compared withdrawal activity between Mastercard and
-                    Visa to understand the contribution of each card network
-                    to overall ATM activity.
-                </p>
-
-                <div class="result">
-                    <strong>54.78%</strong>
-                    <span>Mastercard Activity</span>
-                </div>
-
-                <img
-                    src="images/Mastercard vs Visa.png"
-                    alt="SQL analysis comparing Mastercard and Visa withdrawals"
-                >
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     POWER BI DASHBOARD
-========================= -->
-
-<section class="case-section section-light">
-
-    <div class="container">
-
-        <p class="section-label">
-            POWER BI
-        </p>
-
-        <h2 class="section-title">
-            Building the Dashboard
-        </h2>
-
-        <p class="section-description">
-            After analysing the transaction data in SQL, I used Power BI
-            to create an interactive dashboard for exploring ATM activity,
-            withdrawal values, locations, card networks and transaction
-            patterns.
-        </p>
-
-
-        <!-- Dashboard Page 1 -->
-
-        <div class="dashboard-item">
-
-            <div class="dashboard-image">
-
-                <img
-                    src="images/ATM page 1.png"
-                    alt="ATM withdrawal Power BI dashboard page 1"
-                >
-
-            </div>
-
-            <div class="dashboard-content">
-
-                <p class="section-label">
-                    DASHBOARD PAGE 01
-                </p>
-
-                <h3>
-                    ATM Transaction Overview
-                </h3>
-
-                <p>
-                    This page provides an overview of ATM withdrawal
-                    performance, including withdrawal volumes, transaction
-                    values and ATM activity.
-                </p>
-
-                <p>
-                    It also allows the user to compare card networks,
-                    weekdays and monthly withdrawal trends.
-                </p>
-
-                <p>
-                    The purpose of this page is to provide a quick view
-                    of the overall ATM transaction environment.
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <!-- Dashboard Page 2 -->
-
-        <div class="dashboard-item">
-
-            <div class="dashboard-image">
-
-                <img
-                    src="images/ATM page 2.png"
-                    alt="ATM withdrawal Power BI dashboard page 2"
-                >
-
-            </div>
-
-            <div class="dashboard-content">
-
-                <p class="section-label">
-                    DASHBOARD PAGE 02
-                </p>
-
-                <h3>
-                    ATM Activity & Transaction Patterns
-                </h3>
-
-                <p>
-                    The second page examines ATM activity by location,
-                    weekday, festival or religious periods and holiday
-                    sequence.
-                </p>
-
-                <p>
-                    These views help identify differences in ATM usage
-                    and highlight locations or periods with higher
-                    transaction activity.
-                </p>
-
-                <p>
-                    This provides additional context that can support
-                    operational planning and ATM monitoring.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     KEY METRICS
-========================= -->
-
-<section class="case-section">
-
-    <div class="container">
-
-        <p class="section-label">
-            PROJECT RESULTS
-        </p>
-
-        <h2 class="section-title">
-            ATM Activity at a Glance
-        </h2>
-
-        <div class="kpi-grid">
-
-            <div class="kpi">
-                <strong>1.43M</strong>
-                <span>Total Withdrawals</span>
-            </div>
-
-            <div class="kpi">
-                <strong>R6.05B</strong>
-                <span>Total Amount Withdrawn</span>
-            </div>
-
-            <div class="kpi">
-                <strong>R522,305.88</strong>
-                <span>Average Withdrawal</span>
-            </div>
-
-            <div class="kpi">
-                <strong>54.78%</strong>
-                <span>Mastercard Activity</span>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     WHAT THE DATA TELLS US
-========================= -->
-
-<section class="case-section section-light">
-
-    <div class="container">
-
-        <p class="section-label">
-            BUSINESS INTERPRETATION
-        </p>
-
-        <h2 class="section-title">
-            What the Data Tells Us
-        </h2>
-
-        <div class="business-tell">
-
-            <p>
-                The analysis shows a high volume of ATM activity, with
-                <strong>1,429,400 withdrawals</strong> recorded across
-                the dataset.
-            </p>
-
-            <p>
-                The total amount withdrawn was approximately
-                <strong>R6.05 billion</strong>, highlighting the scale
-                of transaction value processed through the ATM network.
-            </p>
-
-            <p>
-                The calculated average withdrawal amount was
-                <strong>R522,305.88</strong> based on the transaction
-                measure used in the analysis.
-            </p>
-
-            <p>
-                Mastercard represented approximately
-                <strong>54.78%</strong> of the card activity, allowing
-                the business to compare Mastercard and Visa usage.
-            </p>
-
-            <p>
-                Withdrawal activity also differed between weekdays and
-                weekends, with approximately <strong>893,391 weekday
-                withdrawals</strong> compared with <strong>536,009
-                weekend withdrawals</strong>.
-            </p>
-
-            <p>
-                Location-level analysis also showed differences in ATM
-                activity, with <strong>KK Nagar</strong> standing out
-                as a high-activity location in the dataset.
-            </p>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     RECOMMENDATIONS
-========================= -->
-
-<section class="case-section">
-
-    <div class="container">
-
-        <p class="section-label">
-            RECOMMENDATIONS
-        </p>
-
-        <h2 class="section-title">
-            What the Business Could Do
-        </h2>
-
-        <div class="recommendations">
-
-
-            <div class="recommendation">
-
-                <span>01</span>
-
-                <div>
-
-                    <h3>
-                        Monitor ATM Transaction Volumes
-                    </h3>
-
-                    <p>
-                        Track withdrawal volumes and values regularly to
-                        understand demand and identify changes in ATM usage.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="recommendation">
-
-                <span>02</span>
-
-                <div>
-
-                    <h3>
-                        Use Activity Patterns for Planning
-                    </h3>
-
-                    <p>
-                        Use weekday, monthly and holiday patterns to support
-                        ATM operational planning and resource allocation.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="recommendation">
-
-                <span>03</span>
-
-                <div>
-
-                    <h3>
-                        Compare Card Network Activity
-                    </h3>
-
-                    <p>
-                        Continue monitoring Mastercard and Visa activity
-                        to understand how customers use different payment
-                        networks.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="recommendation">
-
-                <span>04</span>
-
-                <div>
-
-                    <h3>
-                        Monitor High-Activity Locations
-                    </h3>
-
-                    <p>
-                        Pay closer attention to locations with consistently
-                        high transaction volumes when planning ATM operations
-                        and service requirements.
-                    </p>
-
-                </div>
-
-            </div>
-
-
-            <div class="recommendation">
-
-                <span>05</span>
-
-                <div>
-
-                    <h3>
-                        Build Recurring Transaction Reporting
-                    </h3>
-
-                    <p>
-                        Use recurring dashboards to monitor ATM performance
-                        and identify significant changes in transaction
-                        behaviour over time.
-                    </p>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     WHAT I LEARNED
-========================= -->
-
-<section class="case-section section-light">
-
-    <div class="container">
-
-        <p class="section-label">
-            LEARNING
-        </p>
-
-        <h2 class="section-title">
-            What I Learned
-        </h2>
-
-        <ul class="learned-list">
-
-            <li>
-                How to analyse high-volume transaction data using SQL.
-            </li>
-
-            <li>
-                How to compare transaction volumes with transaction values.
-            </li>
-
-            <li>
-                How to analyse payment network activity between Mastercard
-                and Visa.
-            </li>
-
-            <li>
-                How to analyse ATM activity across locations and time periods.
-            </li>
-
-            <li>
-                How to structure an operational Power BI dashboard around
-                transaction data.
-            </li>
-
-            <li>
-                How to translate transaction patterns into practical
-                business recommendations.
-            </li>
-
-        </ul>
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     CTA
-========================= -->
-
-<section class="cta">
-
-    <div class="container">
-
-        <div class="cta-content">
-
-            <p class="section-label">
-                MORE PROJECTS
-            </p>
-
-            <h2>
-                Interested in how I approach other data problems?
-            </h2>
-
-            <p>
-                Explore my other projects to see how I use SQL, Excel
-                and Power BI across different business scenarios.
-            </p>
-
-            <div class="cta-buttons">
-
-                <a href="index.html#projects" class="btn btn-white">
-                    View All Projects
-                </a>
-
-                <a href="index.html#contact" class="btn btn-outline-white">
-                    Get in Touch
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- =========================
-     FOOTER
-========================= -->
-
-<footer class="footer">
-
-    <div class="container footer-container">
-
-        <div>
-
-            <strong>Neo Phosa</strong>
-
-            <p>
-                Data Analyst | Business Intelligence | SQL | Power BI | Excel
-            </p>
-
-        </div>
+        <h1>ATM Withdrawal Analysis</h1>
 
         <p>
-            © 2026 Neo Phosa. All rights reserved.
+            SQL & Power BI analysis of ATM withdrawal activity and transaction patterns
         </p>
 
     </div>
 
-</footer>
+</section>
+
+
+<div class="container">
+
+
+<a href="../index.html" class="back-link">
+    ← Back to Portfolio
+</a>
+
+
+<section class="case-section">
+
+    <h2>Business Problem</h2>
+
+    <p>
+        A banking business needs to understand ATM withdrawal activity,
+        transaction volumes, withdrawal values and customer usage patterns.
+    </p>
+
+    <p>
+        The objective of this project was to analyse ATM withdrawal data
+        using SQL and Power BI to identify transaction trends, card usage
+        and withdrawal behaviour.
+    </p>
+
+</section>
+
+
+<section class="case-section">
+
+    <h2>Business Questions</h2>
+
+    <ul class="question-list">
+
+        <li>
+            How many ATM withdrawals were made?
+        </li>
+
+        <li>
+            What is the total amount withdrawn?
+        </li>
+
+        <li>
+            What is the average withdrawal amount?
+        </li>
+
+        <li>
+            How do withdrawals change over time?
+        </li>
+
+        <li>
+            How do Mastercard and Visa transactions compare?
+        </li>
+
+        <li>
+            Which locations record the highest withdrawal activity?
+        </li>
+
+    </ul>
+
+</section>
+
+
+<section class="case-section">
+
+    <h2>Dataset</h2>
+
+    <p>
+        The dataset contains ATM transaction information including
+        withdrawal amounts, transaction dates, ATM locations and
+        card types.
+    </p>
+
+</section>
+
+
+<section class="case-section">
+
+    <h2>Data Cleaning & Preparation</h2>
+
+    <p>
+        The raw ATM withdrawal data was reviewed and prepared using
+        SQL before calculating the main metrics and developing the
+        Power BI dashboard.
+    </p>
+
+
+    <div class="before-after-grid">
+
+
+        <div class="before-after-card">
+
+            <h3>Before</h3>
+
+            <img
+                src="../Raw Witdrawals data.png"
+                alt="Raw ATM Withdrawal Data"
+            >
+
+        </div>
+
+
+        <div class="before-after-card">
+
+            <h3>After</h3>
+
+            <img
+                src="../Clean Withdrawals data.png"
+                alt="Clean ATM Withdrawal Data"
+            >
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<section class="case-section">
+
+    <h2>SQL Analysis</h2>
+
+    <p>
+        SQL was used to calculate withdrawal metrics and analyse
+        transaction patterns across time, card types and locations.
+    </p>
+
+
+    <div class="sql-analysis">
+
+
+        <div class="sql-item">
+
+            <h3>Total Withdrawals</h3>
+
+            <div class="sql-image">
+
+                <img
+                    src="../total withdrawals.png"
+                    alt="SQL Total Withdrawals"
+                >
+
+            </div>
+
+        </div>
+
+
+        <div class="sql-item">
+
+            <h3>Total Amount Withdrawn</h3>
+
+            <div class="sql-image">
+
+                <img
+                    src="../total amount withdrawn.png"
+                    alt="SQL Total Amount Withdrawn"
+                >
+
+            </div>
+
+        </div>
+
+
+        <div class="sql-item">
+
+            <h3>Average Withdrawal</h3>
+
+            <div class="sql-image">
+
+                <img
+                    src="../average withdrawal.png"
+                    alt="SQL Average Withdrawal"
+                >
+
+            </div>
+
+        </div>
+
+
+        <div class="sql-item">
+
+            <h3>Withdrawal Trends Over Time</h3>
+
+            <div class="sql-image">
+
+                <img
+                    src="../withdrawal trends overtime.png"
+                    alt="SQL Withdrawal Trends Over Time"
+                >
+
+            </div>
+
+        </div>
+
+
+        <div class="sql-item">
+
+            <h3>Mastercard vs Visa</h3>
+
+            <div class="sql-image">
+
+                <img
+                    src="../Mastercard vs Visa.png"
+                    alt="SQL Mastercard vs Visa"
+                >
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<section class="case-section">
+
+    <h2>Power BI Dashboard</h2>
+
+    <p>
+        The ATM withdrawal analysis was visualised in Power BI through
+        an interactive dashboard showing withdrawal activity,
+        transaction trends and card usage.
+    </p>
+
+
+    <div class="dashboard-pages">
+
+
+        <div class="dashboard-page">
+
+            <h3>Dashboard Page 1</h3>
+
+            <div class="dashboard-image">
+
+                <img
+                    src="../ATM page 1.png"
+                    alt="ATM Withdrawal Dashboard Page 1"
+                >
+
+            </div>
+
+        </div>
+
+
+        <div class="dashboard-page">
+
+            <h3>Dashboard Page 2</h3>
+
+            <div class="dashboard-image">
+
+                <img
+                    src="../ATM page 2.png"
+                    alt="ATM Withdrawal Dashboard Page 2"
+                >
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<section class="case-section">
+
+    <h2>Results</h2>
+
+    <div class="kpi-grid">
+
+
+        <div class="kpi">
+
+            <strong>1,429,400</strong>
+
+            <span>Total Withdrawals</span>
+
+        </div>
+
+
+        <div class="kpi">
+
+            <strong>R6.05B</strong>
+
+            <span>Total Amount Withdrawn</span>
+
+        </div>
+
+
+        <div class="kpi">
+
+            <strong>54.78%</strong>
+
+            <span>Mastercard Share</span>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<section class="case-section">
+
+    <h2>Recommendations</h2>
+
+    <ul class="recommendations">
+
+        <li>
+            Monitor ATM withdrawal trends to support cash availability
+            and operational planning.
+        </li>
+
+        <li>
+            Compare transaction activity across locations to identify
+            areas with higher ATM usage.
+        </li>
+
+        <li>
+            Monitor card-type transaction patterns to understand
+            customer payment behaviour.
+        </li>
+
+        <li>
+            Track withdrawal values and volumes together when assessing
+            ATM performance.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<section class="case-section">
+
+    <h2>What I Learned</h2>
+
+    <ul class="learned-list">
+
+        <li>
+            Strengthened SQL aggregation and analysis skills.
+        </li>
+
+        <li>
+            Practised analysing banking transaction data.
+        </li>
+
+        <li>
+            Improved Power BI dashboard development.
+        </li>
+
+        <li>
+            Learned how to analyse transaction volume and monetary value together.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<div class="footer-link">
+
+    <a href="../index.html">
+        ← Back to Portfolio
+    </a>
+
+</div>
+
+
+</div>
 
 
 </body>
+
 </html>
