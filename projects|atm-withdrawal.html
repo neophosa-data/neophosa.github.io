@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,294 +11,218 @@
 
     <style>
         .case-hero {
-            padding: 150px 0 90px;
-            background: #f7f9fc;
+            background: #f5f7fb;
+            padding: 100px 20px 80px;
         }
 
-        .case-hero .container,
-        .case-section .container {
+        .case-hero-content {
             max-width: 1100px;
+            margin: auto;
         }
 
         .case-label {
-            display: inline-block;
-            margin-bottom: 20px;
-            color: #2563eb;
-            font-size: 14px;
+            color: var(--blue);
             font-weight: 700;
-            letter-spacing: 1.5px;
+            font-size: 14px;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
         }
 
         .case-hero h1 {
-            margin-bottom: 25px;
+            font-size: 52px;
+            line-height: 1.1;
+            margin-bottom: 20px;
+            color: var(--navy);
         }
 
-        .case-hero-description {
-            max-width: 760px;
+        .case-hero p {
+            max-width: 800px;
             font-size: 19px;
-            line-height: 1.8;
+            line-height: 1.7;
+            color: #5f6b7a;
         }
 
         .back-link {
             display: inline-block;
-            margin-bottom: 40px;
-            color: #2563eb;
+            margin-top: 25px;
+            color: var(--blue);
             font-weight: 600;
             text-decoration: none;
         }
 
-        .back-link:hover {
-            text-decoration: underline;
-        }
-
         .case-section {
-            padding: 90px 0;
+            padding: 75px 20px;
         }
 
-        .section-light {
-            background: #f7f9fc;
+        .case-container {
+            max-width: 1100px;
+            margin: auto;
         }
 
         .case-section h2 {
+            font-size: 32px;
+            color: var(--navy);
             margin-bottom: 20px;
         }
 
-        .section-intro {
-            max-width: 800px;
+        .case-section p {
+            font-size: 17px;
             line-height: 1.8;
+            color: #596575;
         }
 
-        .case-card {
-            background: #ffffff;
-            padding: 35px;
-            border-radius: 16px;
-            border: 1px solid #e5e7eb;
-            margin-top: 35px;
+        .question-list {
+            padding-left: 20px;
         }
 
-        .case-card p {
-            line-height: 1.8;
+        .question-list li {
+            margin-bottom: 12px;
+            color: #596575;
+            font-size: 17px;
         }
 
-        .questions-grid {
+        .dataset-grid,
+        .metric-grid,
+        .dashboard-grid {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-            margin-top: 40px;
+            gap: 25px;
+            margin-top: 30px;
         }
 
-        .question-card {
+        .dataset-card,
+        .metric-card,
+        .dashboard-card {
             background: #ffffff;
-            padding: 25px;
-            border-radius: 14px;
-            border: 1px solid #e5e7eb;
+            border-radius: 16px;
+            padding: 28px;
+            box-shadow: 0 8px 30px rgba(20, 35, 60, 0.08);
         }
 
-        .question-number {
-            color: #2563eb;
-            font-weight: 800;
+        .dataset-card h3,
+        .dashboard-card h3 {
+            color: var(--navy);
             margin-bottom: 10px;
         }
 
-        .data-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 18px;
-            margin-top: 40px;
+        .dataset-card p,
+        .dashboard-card p {
+            margin: 0;
         }
 
-        .data-field {
-            padding: 22px;
-            background: #ffffff;
-            border-radius: 12px;
-            border: 1px solid #e5e7eb;
-        }
-
-        .data-field strong {
-            display: block;
-            margin-bottom: 7px;
-        }
-
-        .data-field span {
-            color: #555;
-            font-size: 14px;
-        }
-
-        .image-grid {
+        .before-after {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 30px;
-            margin-top: 40px;
+            margin-top: 35px;
         }
 
         .image-card {
             background: #ffffff;
-            padding: 20px;
             border-radius: 16px;
-            border: 1px solid #e5e7eb;
+            padding: 20px;
+            box-shadow: 0 8px 30px rgba(20, 35, 60, 0.08);
+        }
+
+        .image-card h3 {
+            color: var(--navy);
+            margin-bottom: 15px;
         }
 
         .image-card img {
             width: 100%;
-            height: auto;
             display: block;
             border-radius: 10px;
         }
 
-        .image-caption {
-            text-align: center;
-            font-weight: 700;
-            margin-top: 15px;
+        .sql-result {
+            margin-top: 35px;
         }
 
-        .analysis-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 35px;
-            margin-top: 45px;
-        }
-
-        .analysis-card {
-            background: #ffffff;
-            padding: 35px;
-            border-radius: 18px;
-            border: 1px solid #e5e7eb;
-        }
-
-        .analysis-number {
-            color: #2563eb;
-            font-weight: 800;
-            margin-bottom: 10px;
-        }
-
-        .analysis-card h3 {
-            margin-bottom: 15px;
-        }
-
-        .analysis-card p {
-            line-height: 1.8;
-        }
-
-        .analysis-card img {
+        .sql-result img {
             width: 100%;
             max-width: 1100px;
-            height: auto;
             display: block;
-            margin: 30px auto 0;
-            border-radius: 10px;
+            margin: 20px auto 45px;
+            border-radius: 12px;
         }
 
-        .result {
-            display: inline-flex;
-            flex-direction: column;
-            margin: 20px 30px 0 0;
-        }
-
-        .result strong {
-            font-size: 28px;
-        }
-
-        .result span {
-            font-size: 14px;
-            margin-top: 5px;
-            color: #666;
-        }
-
-        .dashboard-item {
-            margin-top: 55px;
-            padding: 35px;
-            background: #ffffff;
-            border-radius: 18px;
-            border: 1px solid #e5e7eb;
-        }
-
-        .dashboard-image img {
+        .dashboard-image {
             width: 100%;
             max-width: 1200px;
-            height: auto;
             display: block;
-            margin: 0 auto 35px;
-            border-radius: 10px;
+            margin: 35px auto;
+            border-radius: 14px;
         }
 
-        .dashboard-content {
-            max-width: 900px;
+        .metric-card {
+            text-align: center;
         }
 
-        .dashboard-content p {
-            line-height: 1.8;
-        }
-
-        .kpi-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 20px;
-            margin-top: 40px;
-        }
-
-        .kpi-card {
-            background: #ffffff;
-            padding: 30px;
-            border-radius: 16px;
-            border: 1px solid #e5e7eb;
-        }
-
-        .kpi-card strong {
-            display: block;
-            font-size: 30px;
+        .metric-card h3 {
+            font-size: 34px;
+            color: var(--blue);
             margin-bottom: 8px;
         }
 
-        .kpi-card span {
-            color: #666;
+        .metric-card p {
+            font-size: 15px;
+            margin: 0;
         }
 
-        .case-list {
+        .recommendations {
             margin-top: 25px;
-            padding-left: 22px;
         }
 
-        .case-list li {
+        .recommendations li {
             margin-bottom: 14px;
+            color: #596575;
+            font-size: 17px;
             line-height: 1.7;
         }
 
+        .learning-list {
+            padding-left: 20px;
+        }
+
+        .learning-list li {
+            margin-bottom: 12px;
+            color: #596575;
+            font-size: 17px;
+        }
+
         .case-cta {
+            background: var(--navy);
+            padding: 80px 20px;
             text-align: center;
-            padding: 100px 20px;
-            background: #f7f9fc;
+        }
+
+        .case-cta h2 {
+            color: #ffffff;
+            margin-bottom: 15px;
         }
 
         .case-cta p {
+            color: #d8deea;
             max-width: 650px;
-            margin: 15px auto 30px;
-            line-height: 1.8;
+            margin: 0 auto 25px;
+            line-height: 1.7;
         }
 
-        @media (max-width: 800px) {
-            .case-hero {
-                padding: 120px 20px 70px;
+        @media (max-width: 768px) {
+            .case-hero h1 {
+                font-size: 38px;
             }
 
-            .case-section {
-                padding: 65px 20px;
-            }
-
-            .questions-grid,
-            .data-grid,
-            .image-grid,
-            .kpi-grid {
+            .dataset-grid,
+            .metric-grid,
+            .dashboard-grid,
+            .before-after {
                 grid-template-columns: 1fr;
             }
 
-            .analysis-card,
-            .dashboard-item,
-            .case-card {
-                padding: 22px;
-            }
-
-            .case-hero-description {
-                font-size: 17px;
+            .case-section {
+                padding: 55px 20px;
             }
         }
     </style>
@@ -306,11 +231,8 @@
 <body>
 
 <header class="navbar">
-    <div class="container">
-
-        <a href="index.html#home" class="logo">
-            Neo Phosa
-        </a>
+    <div class="container nav-container">
+        <a href="index.html#home" class="logo">Neo Phosa</a>
 
         <nav>
             <a href="index.html#home">Home</a>
@@ -319,680 +241,454 @@
             <a href="index.html#skills">Skills</a>
             <a href="index.html#contact">Contact</a>
         </nav>
-
     </div>
 </header>
 
 
 <!-- HERO -->
-
 <section class="case-hero">
+    <div class="case-hero-content">
 
-    <div class="container">
+        <div class="case-label">
+            BANKING • TRANSACTION ANALYTICS
+        </div>
+
+        <h1>ATM Withdrawal Analysis</h1>
+
+        <p>
+            Analysing ATM withdrawal activity, transaction values, card networks,
+            locations and withdrawal patterns using SQL and Power BI.
+        </p>
 
         <a href="index.html#projects" class="back-link">
             ← Back to Projects
         </a>
 
-        <span class="case-label">
-            BANKING • TRANSACTION ANALYTICS
-        </span>
-
-        <h1>
-            ATM Withdrawal Analysis
-        </h1>
-
-        <p class="case-hero-description">
-            Analysing ATM withdrawal activity, transaction values, card
-            networks, locations and withdrawal patterns using SQL and
-            Power BI.
-        </p>
-
     </div>
-
 </section>
 
 
 <!-- BUSINESS PROBLEM -->
-
 <section class="case-section">
-
-    <div class="container">
+    <div class="case-container">
 
         <h2>Business Problem</h2>
 
-        <div class="case-card">
+        <p>
+            A financial institution processes a large number of ATM transactions
+            every day. Without analysing these transactions, it can be difficult
+            to understand withdrawal behaviour, transaction volumes, withdrawal
+            values, and differences between payment networks such as Mastercard
+            and Visa.
+        </p>
 
-            <p>
-                A financial institution processes a large number of ATM
-                transactions every day. Without analysing these transactions,
-                it can be difficult to understand withdrawal behaviour,
-                transaction volumes, withdrawal values, and differences
-                between payment networks such as Mastercard and Visa.
-            </p>
+        <p>
+            The objective of this project was to analyse ATM withdrawal
+            transactions using SQL and Power BI. SQL was used to clean, validate,
+            and analyse the transaction data, while Power BI was used to identify
+            trends and present the findings through an interactive dashboard.
+        </p>
 
-            <p>
-                The objective of this project was to analyse ATM withdrawal
-                transactions using SQL and Power BI. SQL was used to clean,
-                validate, and analyse the transaction data, while Power BI
-                was used to identify trends and present the findings through
-                an interactive dashboard.
-            </p>
-
-            <p>
-                The analysis provides insight into ATM usage and transaction
-                behaviour, helping the business understand demand and identify
-                opportunities to improve ATM operations and customer service.
-            </p>
-
-        </div>
+        <p>
+            The analysis provides insight into ATM usage and transaction
+            behaviour, helping the business understand demand and identify
+            opportunities to improve ATM operations and customer service.
+        </p>
 
     </div>
-
 </section>
 
 
-<!-- QUESTIONS -->
-
-<section class="case-section section-light">
-
-    <div class="container">
+<!-- BUSINESS QUESTIONS -->
+<section class="case-section">
+    <div class="case-container">
 
         <h2>Business Questions</h2>
 
-        <p class="section-intro">
-            The analysis focused on answering the following questions:
-        </p>
-
-        <div class="questions-grid">
-
-            <div class="question-card">
-                <div class="question-number">01</div>
-                <p>How many ATM withdrawals were processed?</p>
-            </div>
-
-            <div class="question-card">
-                <div class="question-number">02</div>
-                <p>What was the total amount withdrawn?</p>
-            </div>
-
-            <div class="question-card">
-                <div class="question-number">03</div>
-                <p>What was the average withdrawal amount?</p>
-            </div>
-
-            <div class="question-card">
-                <div class="question-number">04</div>
-                <p>How did withdrawal activity change over time?</p>
-            </div>
-
-            <div class="question-card">
-                <div class="question-number">05</div>
-                <p>
-                    How did Mastercard and Visa withdrawal activity compare?
-                </p>
-            </div>
-
-        </div>
+        <ol class="question-list">
+            <li>How many ATM withdrawals were processed?</li>
+            <li>What was the total amount withdrawn?</li>
+            <li>What was the average withdrawal amount?</li>
+            <li>How did withdrawal activity change over time?</li>
+            <li>How did Mastercard and Visa withdrawal activity compare?</li>
+        </ol>
 
     </div>
-
 </section>
 
 
 <!-- DATASET -->
-
 <section class="case-section">
-
-    <div class="container">
+    <div class="case-container">
 
         <h2>Dataset</h2>
 
-        <p class="section-intro">
-            The dataset contains ATM transaction, card network, location and
-            time-related information used to analyse withdrawal activity.
+        <p>
+            The dataset contains ATM transaction information used to analyse
+            withdrawal activity, transaction values, card networks, locations
+            and time-based patterns.
         </p>
 
-        <div class="data-grid">
+        <div class="dataset-grid">
 
-            <div class="data-field">
-                <strong>ATM Name</strong>
-                <span>ATM location or identifier</span>
+            <div class="dataset-card">
+                <h3>ATM Name</h3>
+                <p>Identifies the ATM location where the transaction occurred.</p>
             </div>
 
-            <div class="data-field">
-                <strong>Transaction Date</strong>
-                <span>Date of ATM activity</span>
+            <div class="dataset-card">
+                <h3>Transaction Date</h3>
+                <p>Records the date of the ATM transaction.</p>
             </div>
 
-            <div class="data-field">
-                <strong>No of Withdrawals</strong>
-                <span>Number of withdrawals</span>
+            <div class="dataset-card">
+                <h3>No of Withdrawals</h3>
+                <p>Measures the number of withdrawals processed.</p>
             </div>
 
-            <div class="data-field">
-                <strong>Mastercard Withdrawals</strong>
-                <span>Mastercard withdrawal activity</span>
+            <div class="dataset-card">
+                <h3>Mastercard Withdrawals</h3>
+                <p>Records withdrawal activity using Mastercard.</p>
             </div>
 
-            <div class="data-field">
-                <strong>Visa Card Withdrawals</strong>
-                <span>Visa withdrawal activity</span>
+            <div class="dataset-card">
+                <h3>Visa Card Withdrawals</h3>
+                <p>Records withdrawal activity using Visa.</p>
             </div>
 
-            <div class="data-field">
-                <strong>Total Amount Withdrawn</strong>
-                <span>Total withdrawal value</span>
+            <div class="dataset-card">
+                <h3>Total Amount Withdrawn</h3>
+                <p>Measures the total monetary value of withdrawals.</p>
             </div>
 
-            <div class="data-field">
-                <strong>Amount Withdrawn Mastercard</strong>
-                <span>Mastercard withdrawal value</span>
+            <div class="dataset-card">
+                <h3>Amount Withdrawn Mastercard</h3>
+                <p>Measures withdrawal value associated with Mastercard.</p>
             </div>
 
-            <div class="data-field">
-                <strong>Amount Withdrawn Visacard</strong>
-                <span>Visa withdrawal value</span>
+            <div class="dataset-card">
+                <h3>Amount Withdrawn Visacard</h3>
+                <p>Measures withdrawal value associated with Visa.</p>
             </div>
 
-            <div class="data-field">
-                <strong>Weekday</strong>
-                <span>Day of the week</span>
+            <div class="dataset-card">
+                <h3>Weekday</h3>
+                <p>Identifies the day associated with the transaction.</p>
             </div>
 
-            <div class="data-field">
-                <strong>Festival Religion</strong>
-                <span>Festival or religious period</span>
+            <div class="dataset-card">
+                <h3>Festival Religion</h3>
+                <p>Provides festival or religious-period information.</p>
             </div>
 
-            <div class="data-field">
-                <strong>Working Day</strong>
-                <span>Working-day indicator</span>
+            <div class="dataset-card">
+                <h3>Working Day</h3>
+                <p>Identifies whether the transaction occurred on a working day.</p>
             </div>
 
-            <div class="data-field">
-                <strong>Holiday Sequence</strong>
-                <span>Holiday sequence information</span>
+            <div class="dataset-card">
+                <h3>Holiday Sequence</h3>
+                <p>Captures the transaction's position around holiday periods.</p>
             </div>
 
         </div>
 
     </div>
-
 </section>
 
 
 <!-- DATA CLEANING -->
-
-<section class="case-section section-light">
-
-    <div class="container">
+<section class="case-section">
+    <div class="case-container">
 
         <h2>Data Cleaning</h2>
 
-        <p class="section-intro">
-            The ATM transaction data was reviewed and cleaned before analysis
-            to ensure it was suitable for SQL analysis and Power BI reporting.
+        <p>
+            The raw dataset was reviewed and cleaned before analysis. This
+            ensured that the fields used for SQL analysis and Power BI reporting
+            were consistent and suitable for analysis.
         </p>
 
-        <div class="image-grid">
+        <div class="before-after">
 
             <div class="image-card">
-
-                <img
-                    src="Raw Witdrawals data.png"
-                    alt="ATM withdrawal data before cleaning"
-                >
-
-                <div class="image-caption">
-                    Before
-                </div>
-
+                <h3>Before</h3>
+                <img src="Raw Witdrawals data.png" alt="Raw ATM withdrawal data">
             </div>
 
             <div class="image-card">
-
-                <img
-                    src="Clean Withdrawals data.png"
-                    alt="ATM withdrawal data after cleaning"
-                >
-
-                <div class="image-caption">
-                    After
-                </div>
-
+                <h3>After</h3>
+                <img src="Clean Withdrawals data.png" alt="Cleaned ATM withdrawal data">
             </div>
 
         </div>
 
     </div>
-
 </section>
 
 
 <!-- SQL ANALYSIS -->
-
 <section class="case-section">
-
-    <div class="container">
+    <div class="case-container">
 
         <h2>SQL Analysis</h2>
 
-        <p class="section-intro">
-            SQL was used to analyse withdrawal volumes, transaction values,
-            trends and card-network activity.
-        </p>
+        <div class="sql-result">
 
-        <div class="analysis-grid">
+            <h3>Total Withdrawal Transactions</h3>
 
+            <p>
+                The analysis measured the total number of ATM withdrawals
+                processed across the dataset.
+            </p>
 
-            <div class="analysis-card">
-
-                <div class="analysis-number">01</div>
-
-                <h3>Total Withdrawal Transactions</h3>
-
-                <p>
-                    The total number of ATM withdrawals was calculated to
-                    understand the overall volume of ATM activity.
-                </p>
-
-                <div class="result">
-                    <strong>1,429,400</strong>
-                    <span>Total Withdrawals</span>
-                </div>
-
-                <img
-                    src="total withdrawals.png"
-                    alt="SQL analysis showing total ATM withdrawals"
-                >
-
-            </div>
+            <img src="total withdrawals.png"
+                 alt="Total ATM withdrawals SQL analysis">
 
 
-            <div class="analysis-card">
+            <h3>Total Amount Withdrawn</h3>
 
-                <div class="analysis-number">02</div>
+            <p>
+                The total monetary value of ATM withdrawals was calculated to
+                understand the overall transaction value processed.
+            </p>
 
-                <h3>Total Amount Withdrawn</h3>
-
-                <p>
-                    The total amount withdrawn was calculated to understand
-                    the overall monetary value processed through the ATM
-                    network.
-                </p>
-
-                <div class="result">
-                    <strong>R6.05B</strong>
-                    <span>Total Amount Withdrawn</span>
-                </div>
-
-                <img
-                    src="total amount withdrawn.png"
-                    alt="SQL analysis showing total amount withdrawn"
-                >
-
-            </div>
+            <img src="total amount withdrawn.png"
+                 alt="Total amount withdrawn SQL analysis">
 
 
-            <div class="analysis-card">
+            <h3>Average Withdrawal Amount</h3>
 
-                <div class="analysis-number">03</div>
+            <p>
+                The average withdrawal amount was calculated to understand the
+                typical transaction value.
+            </p>
 
-                <h3>Average Withdrawal Amount</h3>
-
-                <p>
-                    The average withdrawal amount was calculated to understand
-                    the average transaction value within the dataset.
-                </p>
-
-                <div class="result">
-                    <strong>R522,305.88</strong>
-                    <span>Average Withdrawal Amount</span>
-                </div>
-
-                <img
-                    src="average withdrawal.png"
-                    alt="SQL analysis showing average withdrawal amount"
-                >
-
-            </div>
+            <img src="average withdrawal.png"
+                 alt="Average ATM withdrawal SQL analysis">
 
 
-            <div class="analysis-card">
+            <h3>Withdrawal Trends Over Time</h3>
 
-                <div class="analysis-number">04</div>
+            <p>
+                Withdrawal activity was analysed over time to identify changes
+                in transaction behaviour.
+            </p>
 
-                <h3>Withdrawal Trends Over Time</h3>
-
-                <p>
-                    Withdrawal activity was analysed over time to identify
-                    changes in ATM usage and transaction patterns.
-                </p>
-
-                <img
-                    src="withdrawal trends overtime.png"
-                    alt="SQL analysis showing ATM withdrawal trends over time"
-                >
-
-            </div>
+            <img src="withdrawal trends overtime.png"
+                 alt="ATM withdrawal trends over time">
 
 
-            <div class="analysis-card">
+            <h3>Mastercard vs Visa</h3>
 
-                <div class="analysis-number">05</div>
+            <p>
+                Mastercard and Visa withdrawal activity were compared to
+                understand the distribution between the two card networks.
+            </p>
 
-                <h3>Mastercard vs Visa</h3>
-
-                <p>
-                    ATM activity was compared between Mastercard and Visa to
-                    understand differences in card-network usage.
-                </p>
-
-                <div class="result">
-                    <strong>54.78%</strong>
-                    <span>Mastercard Activity</span>
-                </div>
-
-                <img
-                    src="Mastercard vs Visa.png"
-                    alt="SQL analysis comparing Mastercard and Visa"
-                >
-
-            </div>
+            <img src="Mastercard vs Visa.png"
+                 alt="Mastercard versus Visa ATM withdrawal analysis">
 
         </div>
 
     </div>
-
 </section>
 
 
 <!-- POWER BI -->
-
-<section class="case-section section-light">
-
-    <div class="container">
+<section class="case-section">
+    <div class="case-container">
 
         <h2>Power BI Dashboard</h2>
 
-        <p class="section-intro">
-            Power BI was used to transform the SQL analysis into an
-            interactive dashboard covering ATM transactions, card networks,
-            locations and transaction patterns.
-        </p>
+        <div class="dashboard-card">
 
+            <h3>Page 1 — ATM Transaction Overview</h3>
 
-        <div class="dashboard-item">
-
-            <div class="dashboard-image">
-
-                <img
-                    src="ATM page 1.png"
-                    alt="ATM withdrawal Power BI dashboard page 1"
-                >
-
-            </div>
-
-            <div class="dashboard-content">
-
-                <h3>Page 1 — ATM Transaction Overview</h3>
-
-                <p>
-                    This page provides an overview of withdrawal volumes,
-                    transaction values and ATM activity. It also allows
-                    comparison of card networks, weekdays and monthly
-                    withdrawal trends.
-                </p>
-
-            </div>
+            <p>
+                The first dashboard page provides an overview of ATM withdrawal
+                volumes, transaction values and ATM activity. It allows users to
+                compare card networks, weekdays and monthly withdrawal trends.
+            </p>
 
         </div>
 
+        <img class="dashboard-image"
+             src="ATM page 1.png"
+             alt="ATM Power BI dashboard page 1">
 
-        <div class="dashboard-item">
 
-            <div class="dashboard-image">
+        <div class="dashboard-card">
 
-                <img
-                    src="ATM page 2.png"
-                    alt="ATM withdrawal Power BI dashboard page 2"
-                >
+            <h3>Page 2 — ATM Activity & Transaction Patterns</h3>
 
-            </div>
-
-            <div class="dashboard-content">
-
-                <h3>Page 2 — ATM Activity & Transaction Patterns</h3>
-
-                <p>
-                    This page analyses ATM activity by location, weekday,
-                    festival or religious periods and holiday sequence to
-                    identify differences in transaction behaviour.
-                </p>
-
-            </div>
+            <p>
+                The second page focuses on ATM activity and transaction
+                patterns, including location, weekday, festival or religious
+                periods and holiday sequence.
+            </p>
 
         </div>
+
+        <img class="dashboard-image"
+             src="ATM page 2.png"
+             alt="ATM Power BI dashboard page 2">
 
     </div>
-
 </section>
 
 
 <!-- KEY METRICS -->
-
 <section class="case-section">
-
-    <div class="container">
+    <div class="case-container">
 
         <h2>Key Metrics</h2>
 
-        <div class="kpi-grid">
+        <div class="metric-grid">
 
-            <div class="kpi-card">
-                <strong>1.43M</strong>
-                <span>Total Withdrawals</span>
+            <div class="metric-card">
+                <h3>1.43M</h3>
+                <p>Total withdrawals</p>
             </div>
 
-            <div class="kpi-card">
-                <strong>R6.05B</strong>
-                <span>Total Amount Withdrawn</span>
+            <div class="metric-card">
+                <h3>R6.05B</h3>
+                <p>Total amount withdrawn</p>
             </div>
 
-            <div class="kpi-card">
-                <strong>R522,305.88</strong>
-                <span>Average Withdrawal</span>
+            <div class="metric-card">
+                <h3>R522,305.88</h3>
+                <p>Average withdrawal amount</p>
             </div>
 
-            <div class="kpi-card">
-                <strong>54.78%</strong>
-                <span>Mastercard Activity</span>
+            <div class="metric-card">
+                <h3>54.78%</h3>
+                <p>Mastercard activity</p>
             </div>
 
         </div>
 
     </div>
-
 </section>
 
 
 <!-- BUSINESS INTERPRETATION -->
-
-<section class="case-section section-light">
-
-    <div class="container">
+<section class="case-section">
+    <div class="case-container">
 
         <h2>Business Interpretation</h2>
 
-        <div class="case-card">
+        <p>
+            The dataset contains 1,429,400 withdrawals with a total withdrawal
+            value of approximately R6.05 billion. The calculated average
+            withdrawal amount was R522,305.88 based on the transaction measure
+            used in the analysis.
+        </p>
 
-            <p>
-                The dataset contained 1,429,400 ATM withdrawals, representing
-                significant transaction activity across the analysed period.
-            </p>
+        <p>
+            Mastercard represented 54.78% of withdrawal activity. Withdrawal
+            activity was also higher on weekdays, with 893,391 withdrawals
+            compared with 536,009 on weekends.
+        </p>
 
-            <p>
-                The total amount withdrawn was approximately R6.05 billion,
-                highlighting the scale of monetary activity processed through
-                the ATM network.
-            </p>
-
-            <p>
-                The average withdrawal amount was R522,305.88 based on the
-                transaction measure used in the SQL analysis.
-            </p>
-
-            <p>
-                Mastercard accounted for 54.78% of the analysed card activity,
-                compared with Visa.
-            </p>
-
-            <p>
-                Weekday withdrawals were higher than weekend withdrawals,
-                with 893,391 weekday withdrawals compared with 536,009
-                weekend withdrawals.
-            </p>
-
-            <p>
-                KK Nagar was one of the high-activity ATM locations in the
-                dataset.
-            </p>
-
-        </div>
+        <p>
+            ATM location and time-based patterns can help identify areas with
+            higher transaction activity and support better monitoring of ATM
+            demand.
+        </p>
 
     </div>
-
 </section>
 
 
 <!-- RECOMMENDATIONS -->
-
 <section class="case-section">
-
-    <div class="container">
+    <div class="case-container">
 
         <h2>Recommendations</h2>
 
-        <div class="case-card">
+        <ul class="recommendations">
 
-            <ul class="case-list">
+            <li>
+                Monitor ATM transaction volumes to identify periods of high
+                demand.
+            </li>
 
-                <li>
-                    Monitor ATM transaction volumes to support cash and
-                    operational planning.
-                </li>
+            <li>
+                Use withdrawal patterns to support ATM operational planning.
+            </li>
 
-                <li>
-                    Use withdrawal activity patterns to improve ATM resource
-                    planning.
-                </li>
+            <li>
+                Compare Mastercard and Visa activity when monitoring transaction
+                behaviour.
+            </li>
 
-                <li>
-                    Compare Mastercard and Visa activity to understand card
-                    network usage.
-                </li>
+            <li>
+                Monitor high-activity ATM locations to support better resource
+                planning.
+            </li>
 
-                <li>
-                    Monitor high-activity ATM locations and ensure sufficient
-                    availability during peak periods.
-                </li>
+            <li>
+                Establish recurring transaction reporting to monitor changes in
+                ATM usage over time.
+            </li>
 
-                <li>
-                    Build recurring transaction reporting to monitor ATM
-                    performance over time.
-                </li>
-
-            </ul>
-
-        </div>
+        </ul>
 
     </div>
-
 </section>
 
 
 <!-- WHAT I LEARNED -->
-
-<section class="case-section section-light">
-
-    <div class="container">
+<section class="case-section">
+    <div class="case-container">
 
         <h2>What I Learned</h2>
 
-        <div class="case-card">
+        <ul class="learning-list">
 
-            <ul class="case-list">
+            <li>Strengthened my SQL data cleaning and analysis workflow.</li>
 
-                <li>
-                    Using SQL to analyse high-volume ATM transaction data.
-                </li>
+            <li>Improved my ability to analyse financial transaction data.</li>
 
-                <li>
-                    Calculating transaction volume and monetary KPIs.
-                </li>
+            <li>Practised analysing transaction volumes and monetary values.</li>
 
-                <li>
-                    Analysing transaction trends over time.
-                </li>
+            <li>Learned how to compare transaction behaviour across card networks.</li>
 
-                <li>
-                    Comparing Mastercard and Visa activity.
-                </li>
+            <li>Improved my understanding of time-based transaction analysis.</li>
 
-                <li>
-                    Analysing ATM activity across locations and time periods.
-                </li>
+            <li>Strengthened my Power BI dashboard development and reporting skills.</li>
 
-                <li>
-                    Presenting transaction analysis through an interactive
-                    Power BI dashboard.
-                </li>
-
-            </ul>
-
-        </div>
+        </ul>
 
     </div>
-
 </section>
 
 
 <!-- CTA -->
-
 <section class="case-cta">
 
-    <div class="container">
+    <h2>Interested in working together?</h2>
 
-        <h2>Interested in working together?</h2>
+    <p>
+        I use SQL, Excel and Power BI to clean data, analyse business problems
+        and build interactive dashboards that turn data into useful insights.
+    </p>
 
-        <p>
-            I use SQL, Power BI and data analysis to turn business data into
-            clear insights and practical reporting.
-        </p>
-
-        <a href="index.html#contact" class="btn">
-            Get In Touch
-        </a>
-
-    </div>
+    <a href="index.html#contact" class="btn btn-primary">
+        Get In Touch
+    </a>
 
 </section>
 
 
 <!-- FOOTER -->
-
 <footer class="footer">
-
     <div class="container">
-
-        <p>
-            © 2026 Neo Phosa. All rights reserved.
-        </p>
-
+        <p>© 2026 Neo Phosa. All rights reserved.</p>
     </div>
-
 </footer>
 
 </body>
 </html>
+```
