@@ -6,16 +6,24 @@
 
     <title>Neo Phosa | Data Analyst Portfolio</title>
 
+    <meta name="description" content="Neo Phosa — Data Analyst and Business Intelligence portfolio showcasing SQL, Power BI and Excel projects.">
+
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
+
 
 <!-- =========================
      NAVIGATION
 ========================= -->
 
-<nav class="navbar">
+<header class="navbar">
 
     <div class="container nav-container">
 
@@ -23,58 +31,13 @@
             Neo Phosa
         </a>
 
-        <div class="nav-links">
+        <nav class="nav-links">
             <a href="#about">About</a>
             <a href="#projects">Projects</a>
             <a href="#approach">Approach</a>
             <a href="#skills">Skills</a>
             <a href="#contact">Contact</a>
-        </div>
-
-    </div>
-
-</nav>
-
-
-<!-- =========================
-     HERO
-========================= -->
-
-<header class="hero">
-
-    <div class="container hero-content">
-
-        <p class="eyebrow">
-            DATA ANALYST PORTFOLIO
-        </p>
-
-        <h1>
-            Neo Phosa
-        </h1>
-
-        <h2>
-            Data Analyst | Business Intelligence | SQL | Power BI | Excel
-        </h2>
-
-        <p class="hero-statement">
-            I turn data into answers businesses can actually use.
-        </p>
-
-        <p class="hero-description">
-            Welcome to my portfolio.
-        </p>
-
-        <div class="hero-buttons">
-
-            <a href="#projects" class="btn btn-primary">
-                View my projects →
-            </a>
-
-            <a href="#contact" class="btn btn-secondary">
-                Get in touch →
-            </a>
-
-        </div>
+        </nav>
 
     </div>
 
@@ -82,41 +45,44 @@
 
 
 <!-- =========================
-     ABOUT / INTRO
+     HERO
 ========================= -->
 
-<section class="section" id="about">
+<section class="hero" id="about">
 
-    <div class="container">
+    <div class="container hero-container">
 
-        <p class="section-label">
-            MY APPROACH
-        </p>
+        <div class="hero-content">
 
-        <h2 class="section-title">
-            More than just dashboards.
-        </h2>
-
-        <div class="intro-text">
-
-            <p>
-                Rather than simply showing dashboards, I want to show you how I approach a business problem using data.
+            <p class="eyebrow">
+                DATA ANALYST • BUSINESS INTELLIGENCE
             </p>
 
-            <p>
-                For each project, I start by asking:
-                <strong>What is the business trying to understand?</strong>
+            <h1>
+                Neo Phosa
+            </h1>
+
+            <h2>
+                Data Analyst | Business Intelligence | SQL | Power BI | Excel
+            </h2>
+
+            <p class="hero-description">
+                I analyse data, uncover meaningful patterns and transform
+                information into clear dashboards and business insights
+                using SQL, Power BI and Excel.
             </p>
 
-            <p>
-                I then take the raw data, clean and validate it, analyze the important patterns,
-                build a dashboard that makes the results easy to understand, and finally turn
-                those findings into recommendations.
-            </p>
+            <div class="hero-buttons">
 
-            <p>
-                Here are some of the problems I've worked on.
-            </p>
+                <a href="#projects" class="btn btn-primary">
+                    View My Projects
+                </a>
+
+                <a href="#contact" class="btn btn-outline">
+                    Get in Touch
+                </a>
+
+            </div>
 
         </div>
 
@@ -129,261 +95,159 @@
      PROJECTS
 ========================= -->
 
-<section class="section section-light" id="projects">
+<section class="section" id="projects">
 
     <div class="container">
 
         <p class="section-label">
-            PORTFOLIO
+            SELECTED PROJECTS
         </p>
 
         <h2 class="section-title">
-            My Projects
+            Data Analytics Projects
         </h2>
 
         <p class="section-description">
-            Real-world data analytics projects where I use SQL, Excel and Power BI
-            to turn raw data into business insights.
+            A selection of projects demonstrating my ability to clean,
+            analyse and visualise data using SQL, Excel and Power BI.
         </p>
 
 
         <div class="projects-grid">
 
 
-            <!-- CREDIT RISK -->
+            <!-- Credit Risk -->
 
             <article class="project-card">
 
-                <div class="project-top">
+                <div class="project-card-content">
 
-                    <span class="project-category">
-                        Financial Services | Risk Analytics
-                    </span>
+                    <p class="project-category">
+                        BANKING • CREDIT RISK
+                    </p>
 
                     <h3>
                         Credit Risk Analysis
                     </h3>
 
-                    <p class="project-question">
-                        What does our loan application data tell us about credit risk,
-                        and what patterns can we identify from borrowers who default?
-                    </p>
-
                     <p>
-                        Analyzed 28,638 loan applications to understand lending exposure,
-                        default patterns and borrower characteristics.
+                        Analysing borrower characteristics, loan exposure,
+                        interest rates and default risk using SQL and Power BI.
                     </p>
 
-                </div>
-
-
-                <div class="project-metrics">
-
-                    <div>
-                        <strong>R276.5M</strong>
-                        <span>Loan Amount</span>
+                    <div class="project-tags">
+                        <span>SQL</span>
+                        <span>Excel</span>
+                        <span>Power BI</span>
                     </div>
 
-                    <div>
-                        <strong>21.66%</strong>
-                        <span>Default Rate</span>
-                    </div>
-
-                    <div>
-                        <strong>28,638</strong>
-                        <span>Applicants</span>
-                    </div>
+                    <a href="projects/credit-risk.html" class="project-link">
+                        View Case Study →
+                    </a>
 
                 </div>
-
-
-                <div class="project-tools">
-                    SQL · Excel · Power BI
-                </div>
-
-
-                <a href="projects|credit-risk.html" class="project-link">
-                    View Case Study →
-                </a>
 
             </article>
 
 
-
-            <!-- RETAIL -->
+            <!-- Retail Sales -->
 
             <article class="project-card">
 
-                <div class="project-top">
+                <div class="project-card-content">
 
-                    <span class="project-category">
-                        Retail | Sales Analytics
-                    </span>
+                    <p class="project-category">
+                        RETAIL • SALES ANALYTICS
+                    </p>
 
                     <h3>
                         Retail Sales Analysis
                     </h3>
 
-                    <p class="project-question">
-                        How is the business performing, and what does our sales data
-                        tell us about customer purchasing?
-                    </p>
-
                     <p>
-                        Analyzed transaction data to understand sales performance,
-                        customer activity and purchasing patterns.
+                        Analysing sales performance, product categories,
+                        customer demographics and transaction behaviour.
                     </p>
 
-                </div>
-
-
-                <div class="project-metrics">
-
-                    <div>
-                        <strong>R456K</strong>
-                        <span>Sales</span>
+                    <div class="project-tags">
+                        <span>SQL</span>
+                        <span>Excel</span>
+                        <span>Power BI</span>
                     </div>
 
-                    <div>
-                        <strong>1,000</strong>
-                        <span>Transactions</span>
-                    </div>
-
-                    <div>
-                        <strong>2,514</strong>
-                        <span>Units</span>
-                    </div>
+                    <a href="projects/retail-sales.html" class="project-link">
+                        View Case Study →
+                    </a>
 
                 </div>
-
-
-                <div class="project-tools">
-                    SQL · Excel · Power BI
-                </div>
-
-
-                <a href="projects|retail-sales.html" class="project-link">
-                    View Case Study →
-                </a>
 
             </article>
 
 
-
-            <!-- CUSTOMER CHURN -->
+            <!-- Customer Churn -->
 
             <article class="project-card">
 
-                <div class="project-top">
+                <div class="project-card-content">
 
-                    <span class="project-category">
-                        Telecommunications | Customer Analytics
-                    </span>
+                    <p class="project-category">
+                        TELECOM • CUSTOMER ANALYTICS
+                    </p>
 
                     <h3>
                         Customer Churn Analysis
                     </h3>
 
-                    <p class="project-question">
-                        How many customers are leaving, and where is churn happening?
-                    </p>
-
                     <p>
-                        Analyzed customer data to understand churn levels and identify
-                        patterns that could help improve retention.
+                        Analysing customer retention, churn behaviour,
+                        service interactions and customer segments.
                     </p>
 
-                </div>
-
-
-                <div class="project-metrics">
-
-                    <div>
-                        <strong>5,269</strong>
-                        <span>Customers</span>
+                    <div class="project-tags">
+                        <span>SQL</span>
+                        <span>Excel</span>
+                        <span>Power BI</span>
                     </div>
 
-                    <div>
-                        <strong>708</strong>
-                        <span>Churned</span>
-                    </div>
-
-                    <div>
-                        <strong>13.44%</strong>
-                        <span>Churn Rate</span>
-                    </div>
+                    <a href="projects/customer-churn.html" class="project-link">
+                        View Case Study →
+                    </a>
 
                 </div>
-
-
-                <div class="project-tools">
-                    SQL · Excel · Power BI
-                </div>
-
-
-                <a href="projects|customer-churn.html" class="project-link">
-                    View Case Study →
-                </a>
 
             </article>
 
 
-
-            <!-- ATM -->
+            <!-- ATM Withdrawals -->
 
             <article class="project-card">
 
-                <div class="project-top">
+                <div class="project-card-content">
 
-                    <span class="project-category">
-                        Banking | Transaction Analytics
-                    </span>
+                    <p class="project-category">
+                        BANKING • TRANSACTION ANALYTICS
+                    </p>
 
                     <h3>
                         ATM Withdrawal Analysis
                     </h3>
 
-                    <p class="project-question">
-                        What does ATM transaction data tell us about customer
-                        withdrawal behavior?
-                    </p>
-
                     <p>
-                        Analyzed ATM transactions to understand withdrawal volumes,
-                        transaction values and payment-network activity.
+                        Analysing ATM withdrawal activity, transaction values,
+                        card networks, locations and transaction patterns.
                     </p>
 
-                </div>
-
-
-                <div class="project-metrics">
-
-                    <div>
-                        <strong>1.43M</strong>
-                        <span>Transactions</span>
+                    <div class="project-tags">
+                        <span>SQL</span>
+                        <span>Excel</span>
+                        <span>Power BI</span>
                     </div>
 
-                    <div>
-                        <strong>R6B+</strong>
-                        <span>Withdrawn</span>
-                    </div>
-
-                    <div>
-                        <strong>R522,305.88</strong>
-                        <span>Avg. Withdrawal</span>
-                    </div>
+                    <a href="projects/atm-withdrawals.html" class="project-link">
+                        View Case Study →
+                    </a>
 
                 </div>
-
-
-                <div class="project-tools">
-                    SQL · Excel · Power BI
-                </div>
-
-
-                <a href="projects|atm-withdrawal.html" class="project-link">
-                    View Case Study →
-                </a>
 
             </article>
 
@@ -395,42 +259,40 @@
 
 
 <!-- =========================
-     HOW I APPROACH DATA
+     APPROACH
 ========================= -->
 
-<section class="section" id="approach">
+<section class="section section-light" id="approach">
 
     <div class="container">
 
         <p class="section-label">
-            MY PROCESS
+            MY APPROACH
         </p>
 
         <h2 class="section-title">
-            How I Approach Data Problems
+            From Raw Data to Business Insight
         </h2>
 
         <p class="section-description">
-            A structured process from understanding the business problem
-            to communicating the result.
+            I follow a structured workflow to turn raw data into reliable
+            analysis and clear business dashboards.
         </p>
 
 
         <div class="approach-grid">
 
-
             <div class="approach-card">
 
-                <span class="step-number">
-                    01
-                </span>
+                <span>01</span>
 
                 <h3>
-                    Understand the problem
+                    Understand
                 </h3>
 
                 <p>
-                    What does the business actually need to know?
+                    Understand the business problem, dataset and key
+                    questions that need to be answered.
                 </p>
 
             </div>
@@ -438,16 +300,15 @@
 
             <div class="approach-card">
 
-                <span class="step-number">
-                    02
-                </span>
+                <span>02</span>
 
                 <h3>
-                    Understand the data
+                    Clean
                 </h3>
 
                 <p>
-                    What information is available, and can I trust it?
+                    Clean and prepare the data to improve consistency
+                    and ensure reliable analysis.
                 </p>
 
             </div>
@@ -455,17 +316,15 @@
 
             <div class="approach-card">
 
-                <span class="step-number">
-                    03
-                </span>
+                <span>03</span>
 
                 <h3>
-                    Clean the data
+                    Analyse
                 </h3>
 
                 <p>
-                    Identify duplicates, missing values, inconsistent formats
-                    and other data-quality issues.
+                    Use SQL and analytical techniques to identify
+                    patterns, trends and important metrics.
                 </p>
 
             </div>
@@ -473,67 +332,18 @@
 
             <div class="approach-card">
 
-                <span class="step-number">
-                    04
-                </span>
+                <span>04</span>
 
                 <h3>
-                    Analyze
+                    Visualise
                 </h3>
 
                 <p>
-                    Use SQL and Excel to explore data and calculate metrics
-                    that answer business questions.
+                    Build Power BI dashboards that communicate the
+                    results clearly and support decision-making.
                 </p>
 
             </div>
-
-
-            <div class="approach-card">
-
-                <span class="step-number">
-                    05
-                </span>
-
-                <h3>
-                    Build
-                </h3>
-
-                <p>
-                    Create an interactive Power BI dashboard that makes
-                    the results easy to understand.
-                </p>
-
-            </div>
-
-
-            <div class="approach-card">
-
-                <span class="step-number">
-                    06
-                </span>
-
-                <h3>
-                    Explain
-                </h3>
-
-                <p>
-                    Explain the findings and what actions the data can support.
-                </p>
-
-            </div>
-
-        </div>
-
-
-        <div class="process-goal">
-
-            <strong>
-                Goal:
-            </strong>
-
-            Don't just show the data.
-            Explain what the data is saying.
 
         </div>
 
@@ -546,7 +356,7 @@
      SKILLS
 ========================= -->
 
-<section class="section section-light" id="skills">
+<section class="section" id="skills">
 
     <div class="container">
 
@@ -555,11 +365,51 @@
         </p>
 
         <h2 class="section-title">
-            What I Work With
+            Tools & Capabilities
         </h2>
 
-
         <div class="skills-grid">
+
+            <div class="skill-card">
+
+                <h3>
+                    SQL
+                </h3>
+
+                <p>
+                    Data cleaning, joins, aggregations, views,
+                    filtering and analytical queries.
+                </p>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <h3>
+                    Power BI
+                </h3>
+
+                <p>
+                    Interactive dashboards, data modelling,
+                    relationships, DAX and KPI reporting.
+                </p>
+
+            </div>
+
+
+            <div class="skill-card">
+
+                <h3>
+                    Excel
+                </h3>
+
+                <p>
+                    Data cleaning, analysis, calculations and
+                    preparation for reporting.
+                </p>
+
+            </div>
 
 
             <div class="skill-card">
@@ -568,53 +418,10 @@
                     Data Analysis
                 </h3>
 
-                <div class="skill-list">
-
-                    <span>SQL</span>
-                    <span>Excel</span>
-                    <span>Data Cleaning</span>
-                    <span>Data Validation</span>
-                    <span>Exploratory Data Analysis</span>
-                    <span>KPI Development</span>
-
-                </div>
-
-            </div>
-
-
-            <div class="skill-card">
-
-                <h3>
-                    Business Intelligence
-                </h3>
-
-                <div class="skill-list">
-
-                    <span>Power BI</span>
-                    <span>Dashboard Development</span>
-                    <span>Data Visualization</span>
-                    <span>Interactive Reporting</span>
-                    <span>Business Reporting</span>
-
-                </div>
-
-            </div>
-
-
-            <div class="skill-card">
-
-                <h3>
-                    Business Thinking
-                </h3>
-
-                <div class="skill-list">
-
-                    <span>Problem Solving</span>
-                    <span>Identifying Trends</span>
-                    <span>Translating Data Into Insights</span>
-                    <span>Communicating Findings</span>
-
-                </div>
+                <p>
+                    Exploratory analysis, KPI development,
+                    trend analysis and business interpretation.
+                </p>
 
             </div>
 
@@ -629,43 +436,34 @@
      CTA
 ========================= -->
 
-<section class="section">
+<section class="cta">
 
     <div class="container">
 
-        <div class="cta">
+        <div class="cta-content">
 
-            <div>
+            <p class="section-label">
+                LET'S CONNECT
+            </p>
 
-                <p class="section-label">
-                    LET'S WORK WITH DATA
-                </p>
+            <h2>
+                Have a data problem that needs solving?
+            </h2>
 
-                <h2>
-                    Let's Talk About Data
-                </h2>
-
-                <p>
-                    If you have data but aren't sure what it's telling you,
-                    that's where I can help.
-                </p>
-
-                <p class="cta-line">
-                    Clean the data. Understand the numbers.
-                    Find the insight. Make better decisions.
-                </p>
-
-            </div>
-
+            <p>
+                I am open to Data Analyst and Business Intelligence
+                opportunities where I can use data to support better
+                business decisions.
+            </p>
 
             <div class="cta-buttons">
 
-                <a href="#projects" class="btn btn-white">
-                    View my projects →
+                <a href="#contact" class="btn btn-white">
+                    Get in Touch
                 </a>
 
-                <a href="#contact" class="btn btn-outline-white">
-                    Get in touch →
+                <a href="#projects" class="btn btn-outline-white">
+                    View Projects
                 </a>
 
             </div>
@@ -683,27 +481,22 @@
 
 <section class="section" id="contact">
 
-    <div class="container contact-grid">
+    <div class="container">
 
-        <div class="contact-info">
+        <p class="section-label">
+            CONTACT
+        </p>
 
-            <p class="section-label">
-                CONTACT
-            </p>
+        <h2 class="section-title">
+            Let's Talk
+        </h2>
 
-            <h2 class="section-title">
-                Get in touch
-            </h2>
+        <p class="section-description">
+            If you would like to discuss a Data Analyst or Business
+            Intelligence opportunity, feel free to get in touch.
+        </p>
 
-            <p>
-                If you have a data project, reporting challenge or business
-                question, send me a message.
-            </p>
-
-        </div>
-
-
-        <form class="contact-form" action="#" method="POST">
+        <form class="contact-form">
 
             <div class="form-group">
 
@@ -716,7 +509,6 @@
                     id="name"
                     name="name"
                     placeholder="Your name"
-                    required
                 >
 
             </div>
@@ -733,7 +525,6 @@
                     id="email"
                     name="email"
                     placeholder="Your email"
-                    required
                 >
 
             </div>
@@ -741,56 +532,15 @@
 
             <div class="form-group">
 
-                <label for="service">
-                    What can I help you with?
-                </label>
-
-                <select id="service" name="service">
-
-                    <option value="">
-                        Select an option
-                    </option>
-
-                    <option>
-                        Data Analysis
-                    </option>
-
-                    <option>
-                        Power BI Dashboard
-                    </option>
-
-                    <option>
-                        SQL Analysis
-                    </option>
-
-                    <option>
-                        Excel Reporting
-                    </option>
-
-                    <option>
-                        Business Intelligence
-                    </option>
-
-                    <option>
-                        Other
-                    </option>
-
-                </select>
-
-            </div>
-
-
-            <div class="form-group">
-
                 <label for="message">
-                    Tell me about your project
+                    Message
                 </label>
 
                 <textarea
                     id="message"
                     name="message"
-                    placeholder="Write your message here..."
-                    required
+                    rows="6"
+                    placeholder="Your message"
                 ></textarea>
 
             </div>
@@ -811,11 +561,12 @@
      FOOTER
 ========================= -->
 
-<footer>
+<footer class="footer">
 
     <div class="container footer-container">
 
         <div>
+
             <strong>
                 Neo Phosa
             </strong>
@@ -823,14 +574,12 @@
             <p>
                 Data Analyst | Business Intelligence | SQL | Power BI | Excel
             </p>
+
         </div>
 
-
-        <div>
-            <p>
-                © 2026 Neo Phosa
-            </p>
-        </div>
+        <p>
+            © 2026 Neo Phosa. All rights reserved.
+        </p>
 
     </div>
 
