@@ -1,479 +1,500 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Retail Sales Analysis | Neo Phosa</title>
 
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            background: #f7f8fa;
-            color: #222;
-            line-height: 1.6;
-        }
-
-        .case-hero {
-            background: #111827;
-            color: white;
-            padding: 70px 20px;
-            text-align: center;
-        }
-
-        .case-hero h1 {
-            font-size: 42px;
-            margin-bottom: 15px;
-        }
-
-        .case-hero p {
-            font-size: 18px;
-            color: #d1d5db;
-        }
-
-        .container {
-            max-width: 1100px;
-            margin: auto;
-            padding: 0 20px;
-        }
-
-        .back-link {
-            display: inline-block;
-            margin: 30px 0;
-            text-decoration: none;
-            color: #2563eb;
-            font-weight: bold;
-        }
-
-        .case-section {
-            background: white;
-            padding: 35px;
-            margin-bottom: 25px;
-            border-radius: 12px;
-            box-shadow: 0 3px 12px rgba(0,0,0,0.06);
-        }
-
-        .case-section h2 {
-            font-size: 28px;
-            margin-bottom: 20px;
-            color: #111827;
-        }
-
-        .case-section p {
-            margin-bottom: 15px;
-        }
-
-        .question-list,
-        .recommendations,
-        .learned-list {
-            padding-left: 22px;
-        }
-
-        .question-list li,
-        .recommendations li,
-        .learned-list li {
-            margin-bottom: 10px;
-        }
-
-        .data-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-            gap: 15px;
-            margin-top: 20px;
-        }
-
-        .data-field {
-            background: #f3f4f6;
-            padding: 15px;
-            border-radius: 8px;
-        }
-
-        .data-field strong {
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        .image-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 20px;
-            margin-top: 25px;
-        }
-
-        .image-card {
-            background: #f9fafb;
-            padding: 15px;
-            border-radius: 10px;
-            border: 1px solid #e5e7eb;
-        }
-
-        .image-card img {
-            width: 100%;
-            height: auto;
-            display: block;
-            border-radius: 8px;
-        }
-
-        .image-caption {
-            margin-top: 10px;
-            font-weight: bold;
-            text-align: center;
-            color: #374151;
-        }
-
-        .kpi-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
-            gap: 15px;
-            margin-top: 20px;
-        }
-
-        .kpi {
-            background: #f3f4f6;
-            padding: 22px;
-            border-radius: 10px;
-            text-align: center;
-        }
-
-        .kpi strong {
-            display: block;
-            font-size: 25px;
-            color: #111827;
-            margin-bottom: 5px;
-        }
-
-        .kpi span {
-            color: #6b7280;
-            font-size: 14px;
-        }
-
-        .footer-link {
-            text-align: center;
-            padding: 30px 0 60px;
-        }
-
-        .footer-link a {
-            display: inline-block;
-            background: #111827;
-            color: white;
-            text-decoration: none;
-            padding: 13px 24px;
-            border-radius: 7px;
-            font-weight: bold;
-        }
-
-        @media (max-width: 600px) {
-            .case-hero h1 {
-                font-size: 32px;
-            }
-
-            .case-section {
-                padding: 25px 20px;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="../style.css">
 </head>
 
 <body>
 
-    <section class="case-hero">
-        <div class="container">
-            <h1>Retail Sales Analysis</h1>
-            <p>SQL & Power BI analysis of retail sales performance and customer trends</p>
-        </div>
-    </section>
+<section class="case-hero">
 
     <div class="container">
 
-        <a href="../index.html" class="back-link">← Back to Portfolio</a>
-
-        <!-- BUSINESS PROBLEM -->
-        <section class="case-section">
-            <h2>Business Problem</h2>
-
-            <p>
-                A retail business needs to understand its sales performance,
-                product categories, customer segments and sales trends.
-                Without analysing the available transaction data, it can be
-                difficult to identify which products and customer groups are
-                contributing most to revenue.
-            </p>
-
-            <p>
-                The objective of this project was to analyse retail transaction
-                data using SQL and Power BI to identify sales patterns,
-                customer characteristics and product performance.
-            </p>
-
-            <p>
-                SQL was used to clean, validate and analyse the data before
-                the results were presented through an interactive Power BI dashboard.
-            </p>
-        </section>
-
-
-        <!-- BUSINESS QUESTIONS -->
-        <section class="case-section">
-            <h2>Business Questions</h2>
-
-            <ul class="question-list">
-                <li>What are the total sales and number of transactions?</li>
-                <li>Which product categories generate the most sales?</li>
-                <li>How many units are being sold?</li>
-                <li>What is the average sale per transaction?</li>
-                <li>How do sales change over time?</li>
-                <li>Which customer segments contribute most to sales?</li>
-            </ul>
-        </section>
-
-
-        <!-- DATASET -->
-        <section class="case-section">
-            <h2>Dataset</h2>
-
-            <p>
-                The dataset contains retail transaction information including
-                customer details, product categories, quantities, prices and
-                transaction dates.
-            </p>
-
-            <div class="data-grid">
-
-                <div class="data-field">
-                    <strong>Transaction ID</strong>
-                    Unique transaction identifier
-                </div>
-
-                <div class="data-field">
-                    <strong>Date</strong>
-                    Transaction date
-                </div>
-
-                <div class="data-field">
-                    <strong>Customer ID</strong>
-                    Customer identifier
-                </div>
-
-                <div class="data-field">
-                    <strong>Gender</strong>
-                    Customer gender
-                </div>
-
-                <div class="data-field">
-                    <strong>Age</strong>
-                    Customer age
-                </div>
-
-                <div class="data-field">
-                    <strong>Product Category</strong>
-                    Product category purchased
-                </div>
-
-                <div class="data-field">
-                    <strong>Quantity</strong>
-                    Number of units purchased
-                </div>
-
-                <div class="data-field">
-                    <strong>Price per Unit</strong>
-                    Price per individual unit
-                </div>
-
-                <div class="data-field">
-                    <strong>Total Amount</strong>
-                    Total transaction amount
-                </div>
-
-            </div>
-        </section>
+        <h1>Retail Sales Analysis</h1>
 
+        <p>
+            SQL & Power BI analysis of retail sales performance and customer trends
+        </p>
 
-        <!-- DATA CLEANING -->
-        <section class="case-section">
-            <h2>Data Cleaning & Preparation</h2>
+    </div>
 
-            <p>
-                The raw transaction data was reviewed and prepared before
-                analysis. SQL was used to clean and validate the dataset
-                before creating the Power BI dashboard.
-            </p>
+</section>
 
-            <div class="image-grid">
 
-                <div class="image-card">
-                    <img src="../Raw Sales data.png" alt="Raw Sales Data">
-                    <p class="image-caption">Raw Sales Data</p>
-                </div>
+<div class="container">
 
-                <div class="image-card">
-                    <img src="../Clean Sales data.png" alt="Clean Sales Data">
-                    <p class="image-caption">Clean Sales Data</p>
-                </div>
+<a href="../index.html" class="back-link">
+    ← Back to Portfolio
+</a>
 
-            </div>
-        </section>
 
+<!-- =====================================================
+     BUSINESS PROBLEM
+===================================================== -->
 
-        <!-- SQL ANALYSIS -->
-        <section class="case-section">
-            <h2>SQL Analysis</h2>
+<section class="case-section">
 
-            <p>
-                SQL was used to calculate key sales metrics and analyse
-                product, customer and time-based performance.
-            </p>
+    <h2>Business Problem</h2>
 
-            <div class="image-grid">
+    <p>
+        A retail business needs to understand its sales performance,
+        product categories, customer segments and sales trends.
+        Without analysing the available transaction data, it can be
+        difficult to identify which products and customer groups are
+        contributing most to revenue.
+    </p>
 
-                <div class="image-card">
-                    <img src="../total sales performance.png" alt="Total Sales Performance">
-                    <p class="image-caption">Total Sales Performance</p>
-                </div>
+    <p>
+        The objective of this project was to analyse retail transaction
+        data using SQL and Power BI to identify sales patterns,
+        customer characteristics and product performance.
+    </p>
 
-                <div class="image-card">
-                    <img src="../average sale per transaction.png" alt="Average Sale per Transaction">
-                    <p class="image-caption">Average Sale per Transaction</p>
-                </div>
+    <p>
+        SQL was used to clean, validate and analyse the data before
+        the results were presented through an interactive Power BI dashboard.
+    </p>
 
-                <div class="image-card">
-                    <img src="../Sales by Product category.png" alt="Sales by Product Category">
-                    <p class="image-caption">Sales by Product Category</p>
-                </div>
+</section>
 
-                <div class="image-card">
-                    <img src="../monthly sales performance.png" alt="Monthly Sales Performance">
-                    <p class="image-caption">Monthly Sales Performance</p>
-                </div>
 
-                <div class="image-card">
-                    <img src="../Quantity sold.png" alt="Quantity Sold">
-                    <p class="image-caption">Quantity Sold</p>
-                </div>
+<!-- =====================================================
+     BUSINESS QUESTIONS
+===================================================== -->
 
-            </div>
-        </section>
+<section class="case-section">
 
+    <h2>Business Questions</h2>
 
-        <!-- POWER BI DASHBOARD -->
-        <section class="case-section">
-            <h2>Power BI Dashboard</h2>
+    <ul class="question-list">
 
-            <p>
-                The analysed retail data was visualised in Power BI through
-                an interactive dashboard designed to present sales performance,
-                product categories and customer trends.
-            </p>
+        <li>
+            What are the total sales and number of transactions?
+        </li>
 
-            <div class="image-grid">
+        <li>
+            Which product categories generate the most sales?
+        </li>
 
-                <div class="image-card">
-                    <img src="../Sales page 1.png" alt="Retail Sales Dashboard Page 1">
-                    <p class="image-caption">Retail Sales Dashboard — Page 1</p>
-                </div>
+        <li>
+            How many units are being sold?
+        </li>
 
-                <div class="image-card">
-                    <img src="../Sales page 2.png" alt="Retail Sales Dashboard Page 2">
-                    <p class="image-caption">Retail Sales Dashboard — Page 2</p>
-                </div>
+        <li>
+            What is the average sale per transaction?
+        </li>
 
-            </div>
-        </section>
+        <li>
+            How do sales change over time?
+        </li>
 
+        <li>
+            Which customer segments contribute most to sales?
+        </li>
 
-        <!-- RESULTS -->
-        <section class="case-section">
-            <h2>Results</h2>
+    </ul>
 
-            <div class="kpi-grid">
+</section>
 
-                <div class="kpi">
-                    <strong>R456K</strong>
-                    <span>Total Sales</span>
-                </div>
 
-                <div class="kpi">
-                    <strong>1,000</strong>
-                    <span>Transactions</span>
-                </div>
+<!-- =====================================================
+     DATASET
+===================================================== -->
 
-                <div class="kpi">
-                    <strong>2,514</strong>
-                    <span>Units Sold</span>
-                </div>
+<section class="case-section">
 
-                <div class="kpi">
-                    <strong>R456</strong>
-                    <span>Average Sale</span>
-                </div>
+    <h2>Dataset</h2>
 
-                <div class="kpi">
-                    <strong>R156.9K</strong>
-                    <span>Electronics Sales</span>
-                </div>
+    <p>
+        The dataset contains retail transaction information including
+        customer details, product categories, quantities, prices and
+        transaction dates.
+    </p>
 
-                <div class="kpi">
-                    <strong>894</strong>
-                    <span>Clothing Units Sold</span>
-                </div>
-
-            </div>
-        </section>
-
-
-        <!-- RECOMMENDATIONS -->
-        <section class="case-section">
-            <h2>Recommendations</h2>
-
-            <ul class="recommendations">
-                <li>
-                    Focus on strong-performing product categories and
-                    identify opportunities to increase their contribution.
-                </li>
-
-                <li>
-                    Monitor sales volumes alongside revenue to understand
-                    changes in purchasing behaviour.
-                </li>
-
-                <li>
-                    Analyse customer segments to better understand which
-                    groups contribute most to sales.
-                </li>
-
-                <li>
-                    Monitor sales trends over time to support inventory
-                    and sales planning.
-                </li>
-            </ul>
-        </section>
-
-
-        <!-- WHAT I LEARNED -->
-        <section class="case-section">
-            <h2>What I Learned</h2>
-
-            <ul class="learned-list">
-                <li>Strengthened SQL aggregation and analysis skills.</li>
-                <li>Practised analysing sales and customer data.</li>
-                <li>Improved Power BI dashboard development.</li>
-                <li>Learned how to turn transaction data into business metrics.</li>
-                <li>Improved the process of validating dashboard results against SQL calculations.</li>
-            </ul>
-        </section>
-
-
-        <div class="footer-link">
-            <a href="../index.html">← Back to Portfolio</a>
+    <div class="data-grid">
+
+        <div class="data-field">
+            <strong>Transaction ID</strong>
+            Unique transaction identifier
+        </div>
+
+        <div class="data-field">
+            <strong>Date</strong>
+            Transaction date
+        </div>
+
+        <div class="data-field">
+            <strong>Customer ID</strong>
+            Customer identifier
+        </div>
+
+        <div class="data-field">
+            <strong>Gender</strong>
+            Customer gender
+        </div>
+
+        <div class="data-field">
+            <strong>Age</strong>
+            Customer age
+        </div>
+
+        <div class="data-field">
+            <strong>Product Category</strong>
+            Product category purchased
+        </div>
+
+        <div class="data-field">
+            <strong>Quantity</strong>
+            Number of units purchased
+        </div>
+
+        <div class="data-field">
+            <strong>Price per Unit</strong>
+            Price per individual unit
+        </div>
+
+        <div class="data-field">
+            <strong>Total Amount</strong>
+            Total transaction amount
         </div>
 
     </div>
 
+</section>
+
+
+<!-- =====================================================
+     DATA CLEANING
+===================================================== -->
+
+<section class="case-section">
+
+    <h2>Data Cleaning & Preparation</h2>
+
+    <p>
+        The raw transaction data was reviewed and prepared before
+        analysis. SQL was used to clean and validate the dataset
+        before creating the Power BI dashboard.
+    </p>
+
+
+    <div class="before-after-grid">
+
+        <div class="before-after-card">
+
+            <h3>Before</h3>
+
+            <img
+                src="../Raw Sales data.png"
+                alt="Raw Retail Sales Data"
+            >
+
+        </div>
+
+
+        <div class="before-after-card">
+
+            <h3>After</h3>
+
+            <img
+                src="../Clean Sales data.png"
+                alt="Clean Retail Sales Data"
+            >
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     SQL ANALYSIS
+===================================================== -->
+
+<section class="case-section">
+
+    <h2>SQL Analysis</h2>
+
+    <p>
+        SQL was used to calculate key sales metrics and analyse
+        product, customer and time-based performance.
+    </p>
+
+
+    <div class="sql-analysis">
+
+
+        <div class="sql-item">
+
+            <h3>Total Sales Performance</h3>
+
+            <div class="sql-image">
+
+                <img
+                    src="../total sales performance.png"
+                    alt="SQL Total Sales Performance"
+                >
+
+            </div>
+
+        </div>
+
+
+        <div class="sql-item">
+
+            <h3>Average Sale per Transaction</h3>
+
+            <div class="sql-image">
+
+                <img
+                    src="../average sale per transaction.png"
+                    alt="SQL Average Sale per Transaction"
+                >
+
+            </div>
+
+        </div>
+
+
+        <div class="sql-item">
+
+            <h3>Sales by Product Category</h3>
+
+            <div class="sql-image">
+
+                <img
+                    src="../Sales by Product category.png"
+                    alt="SQL Sales by Product Category"
+                >
+
+            </div>
+
+        </div>
+
+
+        <div class="sql-item">
+
+            <h3>Monthly Sales Performance</h3>
+
+            <div class="sql-image">
+
+                <img
+                    src="../monthly sales performance.png"
+                    alt="SQL Monthly Sales Performance"
+                >
+
+            </div>
+
+        </div>
+
+
+        <div class="sql-item">
+
+            <h3>Quantity Sold</h3>
+
+            <div class="sql-image">
+
+                <img
+                    src="../Quantity sold.png"
+                    alt="SQL Quantity Sold"
+                >
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     POWER BI
+===================================================== -->
+
+<section class="case-section">
+
+    <h2>Power BI Dashboard</h2>
+
+    <p>
+        The analysed retail data was visualised in Power BI through
+        an interactive dashboard designed to present sales performance,
+        product categories and customer trends.
+    </p>
+
+
+    <div class="dashboard-pages">
+
+
+        <div class="dashboard-page">
+
+            <h3>Dashboard Page 1</h3>
+
+            <div class="dashboard-image">
+
+                <img
+                    src="../Sales page 1.png"
+                    alt="Retail Sales Dashboard Page 1"
+                >
+
+            </div>
+
+        </div>
+
+
+        <div class="dashboard-page">
+
+            <h3>Dashboard Page 2</h3>
+
+            <div class="dashboard-image">
+
+                <img
+                    src="../Sales page 2.png"
+                    alt="Retail Sales Dashboard Page 2"
+                >
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     RESULTS
+===================================================== -->
+
+<section class="case-section">
+
+    <h2>Results</h2>
+
+    <div class="kpi-grid">
+
+        <div class="kpi">
+            <strong>R456K</strong>
+            <span>Total Sales</span>
+        </div>
+
+        <div class="kpi">
+            <strong>1,000</strong>
+            <span>Transactions</span>
+        </div>
+
+        <div class="kpi">
+            <strong>2,514</strong>
+            <span>Units Sold</span>
+        </div>
+
+        <div class="kpi">
+            <strong>R456</strong>
+            <span>Average Sale</span>
+        </div>
+
+        <div class="kpi">
+            <strong>R156.9K</strong>
+            <span>Electronics Sales</span>
+        </div>
+
+        <div class="kpi">
+            <strong>894</strong>
+            <span>Clothing Units Sold</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     RECOMMENDATIONS
+===================================================== -->
+
+<section class="case-section">
+
+    <h2>Recommendations</h2>
+
+    <ul class="recommendations">
+
+        <li>
+            Focus on strong-performing product categories and
+            identify opportunities to increase their contribution.
+        </li>
+
+        <li>
+            Monitor sales volumes alongside revenue to understand
+            changes in purchasing behaviour.
+        </li>
+
+        <li>
+            Analyse customer segments to better understand which
+            groups contribute most to sales.
+        </li>
+
+        <li>
+            Monitor sales trends over time to support inventory
+            and sales planning.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<!-- =====================================================
+     WHAT I LEARNED
+===================================================== -->
+
+<section class="case-section">
+
+    <h2>What I Learned</h2>
+
+    <ul class="learned-list">
+
+        <li>
+            Strengthened SQL aggregation and analysis skills.
+        </li>
+
+        <li>
+            Practised analysing sales and customer data.
+        </li>
+
+        <li>
+            Improved Power BI dashboard development.
+        </li>
+
+        <li>
+            Learned how to turn transaction data into business metrics.
+        </li>
+
+        <li>
+            Improved the process of validating dashboard results
+            against SQL calculations.
+        </li>
+
+    </ul>
+
+</section>
+
+
+<div class="footer-link">
+
+    <a href="../index.html">
+        ← Back to Portfolio
+    </a>
+
+</div>
+
+</div>
+
 </body>
 </html>
-```
