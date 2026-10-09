@@ -207,72 +207,76 @@ p {
 /* =========================
    CERTIFICATIONS
 ========================= */
-/* Compact certificate cards — all three in one row */
-
-.certificate-grid {
+.certifications-grid {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 20px;
+    gap: 24px;
     align-items: stretch;
 }
 
 .certificate-card {
+    min-width: 0;
     display: flex;
     flex-direction: column;
-    min-width: 0;
-    overflow: hidden;
+    padding: 22px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: white;
+    box-shadow: 0 5px 20px rgba(20, 43, 74, 0.04);
+}
+
+.certificate-card h3 {
+    margin: 0 0 14px;
+    font-size: 1.08rem;
+}
+
+.certificate-card p {
+    color: var(--muted);
+    font-size: 0.93rem;
 }
 
 .certificate-preview {
     width: 100%;
-    height: 170px;
-    flex-shrink: 0;
+    height: 300px;
+    margin-top: auto;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     background: #f8fafc;
-    border-bottom: 1px solid var(--border);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+}
+
+.certificate-preview a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.certificate-preview img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }
 
 .certificate-preview iframe {
     display: block;
     width: 100%;
     height: 100%;
-    border: none;
+    border: 0;
+    background: white;
 }
 
-.certificate-card .project-card-content {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    padding: 16px;
+.certificate-link {
+    display: inline-block;
+    margin-top: 14px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
 }
 
-.certificate-card .project-card-content h3 {
-    font-size: 1rem;
-    line-height: 1.4;
-    margin-bottom: 10px;
-}
-
-.certificate-card .project-card-content p {
-    font-size: 0.85rem;
-    line-height: 1.5;
-    margin-bottom: 14px;
-}
-
-.certificate-card .project-link {
-    margin-top: auto;
-    font-size: 0.9rem;
-}
-
-/* Smaller screens */
-@media (max-width: 700px) {
-    .certificate-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .certificate-preview {
-        height: 200px;
-    }
-}
 /* =========================
    PROJECTS
 ========================= */
@@ -634,4 +638,3 @@ p {
         padding: 10px;
     }
 }
-
