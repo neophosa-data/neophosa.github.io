@@ -1,323 +1,900 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Neo Phosa — Data Analyst, Business Analyst and Business Intelligence portfolio.">
+
+    <meta name="description" content="Neo Phosa's portfolio showcasing Business Analysis, Data Analysis, SQL, Power BI, Excel, process mapping, requirements analysis and data modelling projects.">
+
     <title>Neo Phosa | Data Analyst & Business Analyst</title>
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header class="navbar">
-    <div class="container nav-container">
-        <a href="index.html" class="logo">NEO PHOSA</a>
-        <nav class="nav-links">
-            <a href="#about">About</a>
-            <a href="#certifications">Certifications</a>
-            <a href="#projects">Projects</a>
-            <a href="#skills">Skills</a>
-            <a href="#contact">Contact</a>
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
+    <header class="site-header">
+        <nav class="navbar container">
+
+            <a href="#home" class="logo">NEO PHOSA</a>
+
+            <button
+                class="menu-toggle"
+                id="menu-toggle"
+                type="button"
+                aria-label="Toggle navigation"
+                aria-expanded="false">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#approach">My Approach</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
         </nav>
-    </div>
-</header>
+    </header>
 
-<main>
-    <!-- HERO -->
-    <section class="hero">
-        <div class="container hero-content">
-            <p class="eyebrow">DATA & BUSINESS SOLUTIONS</p>
-            <h1>NEO PHOSA</h1>
-            <h2>DATA ANALYST | BUSINESS ANALYST | BUSINESS INTELLIGENCE</h2>
-            <p class="hero-skills">
-                SQL · Power BI · Excel · DAX · Requirements Analysis · Process Mapping · Data Modelling
-            </p>
-            <p class="hero-description">
-                I bridge the gap between business needs and data-driven solutions,
-                turning business problems into clear requirements, structured processes,
-                analytical insights, and practical BI solutions.
-            </p>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">View Projects</a>
-                <a href="#contact" class="btn btn-outline">Get in Touch</a>
+
+    <main>
+
+        <!-- =========================
+             HERO
+        ========================== -->
+
+        <section class="hero" id="home">
+
+            <div class="container hero-content">
+
+                <p class="eyebrow">WELCOME TO MY PORTFOLIO</p>
+
+                <h1>NEO PHOSA</h1>
+
+                <h2>
+                    DATA ANALYST | BUSINESS ANALYST |
+                    BUSINESS INTELLIGENCE
+                </h2>
+
+                <p class="hero-tools">
+                    SQL · Power BI · Excel · DAX · Requirements Analysis ·
+                    Process Mapping · Data Modelling
+                </p>
+
+                <p class="hero-description">
+                    I bridge the gap between business needs and data-driven
+                    solutions, turning business problems into clear
+                    requirements, structured processes, analytical insights,
+                    and practical BI solutions.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#projects" class="button button-primary">
+                        View Projects
+                    </a>
+
+                    <a href="#contact" class="button button-outline">
+                        Get in Touch
+                    </a>
+
+                </div>
+
             </div>
-        </div>
-    </section>
 
-    <!-- ABOUT -->
-    <section class="section" id="about">
-        <div class="container">
-            <p class="eyebrow">ABOUT ME</p>
-            <h2>From Business Problems to Data-Driven Solutions</h2>
-            <p class="section-intro">
-                I combine business understanding, analytical thinking and technical
-                skills to understand business problems, define requirements, analyse
-                data and support better decision-making.
-            </p>
-        </div>
-    </section>
+        </section>
 
-    <!-- CERTIFICATIONS -->
-    <section class="section section-light" id="certifications">
-        <div class="container">
-            <p class="eyebrow">PROFESSIONAL DEVELOPMENT</p>
-            <h2>Certifications &amp; Credentials</h2>
 
-            <div class="certifications-grid">
+        <!-- =========================
+             CERTIFICATIONS
+        ========================== -->
 
-                <article class="certificate-card">
-                    <h3>Microsoft Business Analyst Professional Certificate</h3>
-                    <p>
-                        Focus: Requirements gathering, business process analysis,
-                        stakeholder management, process modelling, solution requirements
-                        and business improvement.
-                    </p>
-                    <div class="certificate-preview">
-                        <a href="BA%20Certificate.png" target="_blank" rel="noopener">
-                            <img src="BA%20Certificate.png"
-                                 alt="Microsoft Business Analyst Professional Certificate"
-                                 loading="lazy">
-                        </a>
-                    </div>
-                    <a class="certificate-link"
-                       href="BA%20Certificate.png"
-                       target="_blank" rel="noopener">View Certificate</a>
-                </article>
+        <section class="section certifications-section" id="certifications">
 
-                <article class="certificate-card">
-                    <h3>Microsoft Power BI Data Analyst Professional Certificate</h3>
-                    <p>
-                        Focus: Data preparation, data modelling, DAX, Power BI dashboards,
-                        KPI reporting and business intelligence.
-                    </p>
-                    <div class="certificate-preview">
-                        <iframe src="Power%20bi%20certificate.pdf"
-                                title="Microsoft Power BI Certificate"
-                                loading="lazy"></iframe>
-                    </div>
-                    <a class="certificate-link"
-                       href="Power%20bi%20certificate.pdf"
-                       target="_blank" rel="noopener">View Certificate</a>
-                </article>
+            <div class="container">
 
-                <article class="certificate-card">
-                    <h3>Microsoft Data Analysis with SQL, Excel &amp; Power BI</h3>
-                    <p>
-                        Focus: SQL analysis, data cleaning, Excel analysis,
-                        Power BI reporting and end-to-end data analysis.
-                    </p>
-                    <div class="certificate-preview">
-                        <iframe src="sql%2C%20excel%20%26%20power%20bi.pdf"
+                <div class="section-heading">
+
+                    <p class="section-label">PROFESSIONAL DEVELOPMENT</p>
+
+                    <h2>Certifications &amp; Credentials</h2>
+
+                </div>
+
+
+                <div class="certificate-grid">
+
+
+                    <!-- BUSINESS ANALYST CERTIFICATE -->
+
+                    <article class="project-card certificate-card">
+
+                        <div class="certificate-preview">
+
+                            <iframe
+                                src="BA%20Certificate.pdf#toolbar=0&navpanes=0&scrollbar=0&view=Fit"
+                                title="Microsoft Business Analyst Professional Certificate"
+                                loading="lazy">
+                            </iframe>
+
+                        </div>
+
+                        <div class="project-card-content">
+
+                            <h3>
+                                Microsoft Business Analyst Professional
+                                Certificate
+                            </h3>
+
+                            <p>
+                                <strong>Focus:</strong>
+                                Requirements gathering, business process
+                                analysis, stakeholder management, process
+                                modelling, solution requirements and
+                                business improvement.
+                            </p>
+
+                            <a
+                                class="project-link"
+                                href="BA%20Certificate.pdf"
+                                target="_blank"
+                                rel="noopener">
+                                View Certificate →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- POWER BI CERTIFICATE -->
+
+                    <article class="project-card certificate-card">
+
+                        <div class="certificate-preview">
+
+                            <iframe
+                                src="Power%20bi%20certificate.pdf#toolbar=0&navpanes=0&scrollbar=0&view=Fit"
+                                title="Microsoft Power BI Data Analyst Professional Certificate"
+                                loading="lazy">
+                            </iframe>
+
+                        </div>
+
+                        <div class="project-card-content">
+
+                            <h3>
+                                Microsoft Power BI Data Analyst
+                                Professional Certificate
+                            </h3>
+
+                            <p>
+                                <strong>Focus:</strong>
+                                Data preparation, data modelling, DAX,
+                                Power BI dashboards, KPI reporting and
+                                business intelligence.
+                            </p>
+
+                            <a
+                                class="project-link"
+                                href="Power%20bi%20certificate.pdf"
+                                target="_blank"
+                                rel="noopener">
+                                View Certificate →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- SQL, EXCEL AND POWER BI CERTIFICATE -->
+
+                    <article class="project-card certificate-card">
+
+                        <div class="certificate-preview">
+
+                            <iframe
+                                src="sql%2C%20excel%20%26%20power%20bi.pdf#toolbar=0&navpanes=0&scrollbar=0&view=Fit"
                                 title="Microsoft Data Analysis with SQL, Excel and Power BI Certificate"
-                                loading="lazy"></iframe>
+                                loading="lazy">
+                            </iframe>
+
+                        </div>
+
+                        <div class="project-card-content">
+
+                            <h3>
+                                Microsoft Data Analysis with SQL,
+                                Excel &amp; Power BI
+                            </h3>
+
+                            <p>
+                                <strong>Focus:</strong>
+                                SQL analysis, data cleaning, Excel analysis,
+                                Power BI reporting and end-to-end data analysis.
+                            </p>
+
+                            <a
+                                class="project-link"
+                                href="sql%2C%20excel%20%26%20power%20bi.pdf"
+                                target="_blank"
+                                rel="noopener">
+                                View Certificate →
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PROJECTS
+        ========================== -->
+
+        <section class="section projects-section" id="projects">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">MY WORK</p>
+
+                    <h2>Projects</h2>
+
+                    <p class="section-description">
+                        Explore my Business Analysis, Data Analysis and
+                        Business Intelligence projects.
+                    </p>
+
+                </div>
+
+
+                <!-- BUSINESS ANALYSIS PROJECTS -->
+
+                <div class="project-category">
+
+                    <div class="category-heading">
+
+                        <h3>Business Analysis</h3>
+
+                        <p>
+                            Projects demonstrating requirements analysis,
+                            process mapping, data modelling and
+                            business improvement.
+                        </p>
+
                     </div>
-                    <a class="certificate-link"
-                       href="sql%2C%20excel%20%26%20power%20bi.pdf"
-                       target="_blank" rel="noopener">View Certificate</a>
-                </article>
+
+
+                    <div class="project-grid">
+
+
+                        <!-- PROJECT 1 -->
+
+                        <article class="project-card">
+
+                            <div class="project-card-content">
+
+                                <span class="project-number">
+                                    BUSINESS ANALYSIS · 01
+                                </span>
+
+                                <h3>
+                                    Business Process Analysis
+                                </h3>
+
+                                <h4>
+                                    Business Process Mapping &amp;
+                                    Data Modelling
+                                </h4>
+
+                                <p class="project-tools">
+                                    Requirements Analysis · Process Mapping ·
+                                    Gap Analysis · Data Modelling · Visio
+                                </p>
+
+                                <p>
+                                    Analysed a business process to understand
+                                    its activities, stakeholders, information
+                                    requirements and process gaps. Developed
+                                    current-state and future-state process maps
+                                    and a structured data model.
+                                </p>
+
+                                <a
+                                    href="business-process-analysis.html"
+                                    class="project-link">
+                                    View Case Study →
+                                </a>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- PROJECT 2 -->
+
+                        <article class="project-card">
+
+                            <div class="project-card-content">
+
+                                <span class="project-number">
+                                    BUSINESS ANALYSIS · 02
+                                </span>
+
+                                <h3>
+                                    Business Requirements &amp;
+                                    Solution Analysis
+                                </h3>
+
+                                <h4>
+                                    Requirements Analysis &amp;
+                                    Solution Design
+                                </h4>
+
+                                <p class="project-tools">
+                                    Requirements Gathering · Stakeholder
+                                    Analysis · Functional Requirements ·
+                                    Process Analysis
+                                </p>
+
+                                <p>
+                                    Identified stakeholder needs and translated
+                                    them into business, functional and reporting
+                                    requirements to support a structured
+                                    solution recommendation.
+                                </p>
+
+                                <a
+                                    href="business-requirements-solution-analysis.html"
+                                    class="project-link">
+                                    View Case Study →
+                                </a>
+
+                            </div>
+
+                        </article>
+
+
+                    </div>
+
+                </div>
+
+
+                <!-- DATA ANALYSIS AND BUSINESS INTELLIGENCE -->
+
+                <div class="project-category">
+
+                    <div class="category-heading">
+
+                        <h3>Data Analysis &amp; Business Intelligence</h3>
+
+                        <p>
+                            Projects demonstrating SQL, Excel, Power BI,
+                            DAX, data modelling and analytical problem-solving.
+                        </p>
+
+                    </div>
+
+
+                    <div class="project-grid">
+
+
+                        <!-- PROJECT 3: CREDIT RISK -->
+
+                        <article class="project-card">
+
+                            <div class="project-card-content">
+
+                                <span class="project-number">
+                                    03 · BANKING · CREDIT RISK
+                                </span>
+
+                                <h3>
+                                    Credit Risk Analysis &amp;
+                                    Lending Portfolio Optimization
+                                </h3>
+
+                                <p class="project-tools">
+                                    SQL · Excel · Power BI · Risk Analysis ·
+                                    Data Modelling
+                                </p>
+
+                                <p>
+                                    Analysed lending data to understand loan
+                                    exposure, default patterns, borrower
+                                    characteristics and credit-risk indicators.
+                                </p>
+
+                                <div class="project-metrics">
+
+                                    <div class="metric">
+                                        <strong>R276.5M</strong>
+                                        <span>Loan Exposure</span>
+                                    </div>
+
+                                    <div class="metric">
+                                        <strong>21.66%</strong>
+                                        <span>Default Rate</span>
+                                    </div>
+
+                                    <div class="metric">
+                                        <strong>28,638</strong>
+                                        <span>Loan Records</span>
+                                    </div>
+
+                                </div>
+
+                                <a
+                                    href="credit-risk.html"
+                                    class="project-link">
+                                    View Case Study →
+                                </a>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- PROJECT 4: RETAIL SALES -->
+
+                        <article class="project-card">
+
+                            <div class="project-card-content">
+
+                                <span class="project-number">
+                                    04 · RETAIL · SALES ANALYTICS
+                                </span>
+
+                                <h3>
+                                    Retail Sales Performance &amp;
+                                    Commercial Optimization
+                                </h3>
+
+                                <p class="project-tools">
+                                    SQL · Excel · Power BI · KPI Reporting ·
+                                    Commercial Analysis
+                                </p>
+
+                                <p>
+                                    Analysed transactional sales data to
+                                    identify revenue drivers, product
+                                    performance and customer purchasing
+                                    patterns to support commercial decisions.
+                                </p>
+
+                                <div class="project-metrics">
+
+                                    <div class="metric">
+                                        <strong>R456K</strong>
+                                        <span>Total Sales</span>
+                                    </div>
+
+                                    <div class="metric">
+                                        <strong>2,514</strong>
+                                        <span>Units Sold</span>
+                                    </div>
+
+                                    <div class="metric">
+                                        <strong>1,000</strong>
+                                        <span>Transactions</span>
+                                    </div>
+
+                                </div>
+
+                                <a
+                                    href="retail-sales.html"
+                                    class="project-link">
+                                    View Case Study →
+                                </a>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- PROJECT 5: CUSTOMER CHURN -->
+
+                        <article class="project-card">
+
+                            <div class="project-card-content">
+
+                                <span class="project-number">
+                                    05 · TELECOM · CUSTOMER ANALYTICS
+                                </span>
+
+                                <h3>
+                                    Customer Retention &amp;
+                                    Churn Analysis
+                                </h3>
+
+                                <p class="project-tools">
+                                    SQL · Excel · Power BI · Customer
+                                    Analytics · Risk Analysis
+                                </p>
+
+                                <p>
+                                    Analysed customer behaviour, service
+                                    interactions and usage patterns to
+                                    understand customer churn and identify
+                                    opportunities for retention improvements.
+                                </p>
+
+                                <div class="project-metrics">
+
+                                    <div class="metric">
+                                        <strong>5,269</strong>
+                                        <span>Customers</span>
+                                    </div>
+
+                                    <div class="metric">
+                                        <strong>13.44%</strong>
+                                        <span>Churn Rate</span>
+                                    </div>
+
+                                    <div class="metric">
+                                        <strong>708</strong>
+                                        <span>Churned</span>
+                                    </div>
+
+                                </div>
+
+                                <a
+                                    href="customer-churn.html"
+                                    class="project-link">
+                                    View Case Study →
+                                </a>
+
+                            </div>
+
+                        </article>
+
+
+                        <!-- PROJECT 6: ATM WITHDRAWALS -->
+
+                        <article class="project-card">
+
+                            <div class="project-card-content">
+
+                                <span class="project-number">
+                                    06 · BANKING · TRANSACTION ANALYTICS
+                                </span>
+
+                                <h3>
+                                    ATM Network Performance &amp;
+                                    Cash Flow Optimization
+                                </h3>
+
+                                <p class="project-tools">
+                                    SQL · Excel · Power BI ·
+                                    Operational Analysis
+                                </p>
+
+                                <p>
+                                    Analysed ATM transaction activity,
+                                    withdrawal value, transaction timing
+                                    and card-network distribution to support
+                                    operational and cash-management decisions.
+                                </p>
+
+                                <div class="project-metrics">
+
+                                    <div class="metric">
+                                        <strong>R6.05B</strong>
+                                        <span>Withdrawal Value</span>
+                                    </div>
+
+                                    <div class="metric">
+                                        <strong>1.43M</strong>
+                                        <span>Withdrawals</span>
+                                    </div>
+
+                                    <div class="metric">
+                                        <strong>54.78%</strong>
+                                        <span>Mastercard Activity</span>
+                                    </div>
+
+                                </div>
+
+                                <a
+                                    href="atm-withdrawal.html"
+                                    class="project-link">
+                                    View Case Study →
+                                </a>
+
+                            </div>
+
+                        </article>
+
+
+                    </div>
+
+                </div>
 
             </div>
+
+        </section>
+
+
+        <!-- =========================
+             MY APPROACH
+        ========================== -->
+
+        <section class="section approach-section" id="approach">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">HOW I WORK</p>
+
+                    <h2>From Business Problem to Business Solution</h2>
+
+                </div>
+
+
+                <div class="approach-grid">
+
+
+                    <article class="approach-card">
+
+                        <span class="approach-number">01</span>
+
+                        <h3>Understand</h3>
+
+                        <p>
+                            Understand the business problem, stakeholders
+                            and desired outcome.
+                        </p>
+
+                    </article>
+
+
+                    <article class="approach-card">
+
+                        <span class="approach-number">02</span>
+
+                        <h3>Define &amp; Map</h3>
+
+                        <p>
+                            Gather requirements, define scope and map
+                            current-state processes.
+                        </p>
+
+                    </article>
+
+
+                    <article class="approach-card">
+
+                        <span class="approach-number">03</span>
+
+                        <h3>Clean &amp; Model</h3>
+
+                        <p>
+                            Clean, structure and model data to create
+                            a reliable analytical foundation.
+                        </p>
+
+                    </article>
+
+
+                    <article class="approach-card">
+
+                        <span class="approach-number">04</span>
+
+                        <h3>Analyse &amp; Visualize</h3>
+
+                        <p>
+                            Use SQL, Excel and Power BI to identify trends,
+                            risks, gaps and performance drivers.
+                        </p>
+
+                    </article>
+
+
+                    <article class="approach-card">
+
+                        <span class="approach-number">05</span>
+
+                        <h3>Recommend</h3>
+
+                        <p>
+                            Translate findings into practical recommendations
+                            that support business decisions.
+                        </p>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             SKILLS
+        ========================== -->
+
+        <section class="section skills-section" id="skills">
+
+            <div class="container">
+
+                <div class="section-heading">
+
+                    <p class="section-label">CAPABILITIES</p>
+
+                    <h2>Skills &amp; Tools</h2>
+
+                </div>
+
+
+                <div class="skills-grid">
+
+
+                    <article class="skill-card">
+
+                        <h3>Business Analysis</h3>
+
+                        <div class="skill-tags">
+                            <span>Requirements Gathering</span>
+                            <span>Requirements Documentation</span>
+                            <span>Stakeholder Analysis</span>
+                            <span>Process Mapping</span>
+                            <span>Gap Analysis</span>
+                            <span>Root-Cause Analysis</span>
+                            <span>Process Improvement</span>
+                            <span>Business Process Analysis</span>
+                            <span>Data Modelling</span>
+                        </div>
+
+                    </article>
+
+
+                    <article class="skill-card">
+
+                        <h3>Data Analysis</h3>
+
+                        <div class="skill-tags">
+                            <span>SQL</span>
+                            <span>Excel</span>
+                            <span>Data Cleaning</span>
+                            <span>Exploratory Data Analysis</span>
+                            <span>KPI Analysis</span>
+                            <span>Trend Analysis</span>
+                            <span>Risk Analysis</span>
+                        </div>
+
+                    </article>
+
+
+                    <article class="skill-card">
+
+                        <h3>Business Intelligence</h3>
+
+                        <div class="skill-tags">
+                            <span>Power BI</span>
+                            <span>DAX</span>
+                            <span>Data Modelling</span>
+                            <span>Dashboard Development</span>
+                            <span>KPI Reporting</span>
+                            <span>Data Visualization</span>
+                        </div>
+
+                    </article>
+
+
+                    <article class="skill-card">
+
+                        <h3>Tools</h3>
+
+                        <div class="skill-tags">
+                            <span>SQL</span>
+                            <span>Power BI</span>
+                            <span>Excel</span>
+                            <span>Microsoft Visio</span>
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTACT
+        ========================== -->
+
+        <section class="section contact-section" id="contact">
+
+            <div class="container">
+
+                <div class="contact-card">
+
+                    <p class="section-label">LET'S CONNECT</p>
+
+                    <h2>
+                        Have a business or data problem that needs solving?
+                    </h2>
+
+                    <p>
+                        I'm open to Data Analyst, Business Analyst and
+                        Business Intelligence opportunities where I can
+                        combine business understanding, analytical thinking
+                        and technical skills to support better decisions.
+                    </p>
+
+                    <a
+                        href="#projects"
+                        class="button button-primary">
+                        View Projects
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer class="site-footer">
+
+        <div class="container footer-content">
+
+            <p>© 2026 Neo Phosa. All rights reserved.</p>
+
+            <a href="#home">Back to Top ↑</a>
+
         </div>
-    </section>
 
-    <!-- PROJECTS -->
-    <section class="section" id="projects">
-        <div class="container">
-            <p class="eyebrow">PORTFOLIO</p>
-            <h2>Projects</h2>
+    </footer>
 
-            <div class="project-category">
-                <h3>Business Analysis</h3>
-                <p>Projects demonstrating requirements analysis, process mapping, data modelling and business improvement.</p>
-            </div>
 
-            <div class="projects-grid">
+    <!-- MOBILE NAVIGATION -->
 
-                <article class="project-card">
-                    <span class="project-number">01</span>
-                    <p class="project-category-label">BUSINESS ANALYSIS</p>
-                    <h3>BUSINESS PROCESS ANALYSIS</h3>
-                    <h4>Business Process Mapping &amp; Data Modelling</h4>
-                    <p>Requirements Analysis · Process Mapping · Gap Analysis · Data Modelling · Microsoft Visio</p>
-                    <p>
-                        Analyse the existing process, identify business requirements,
-                        document process flows, identify gaps and create a structured data model.
-                    </p>
-                    <a href="business-process-analysis.html" class="text-link">View Case Study →</a>
-                </article>
+    <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const navLinks = document.getElementById("nav-links");
 
-                <article class="project-card">
-                    <span class="project-number">02</span>
-                    <p class="project-category-label">BUSINESS ANALYSIS</p>
-                    <h3>BUSINESS REQUIREMENTS &amp; SOLUTION ANALYSIS</h3>
-                    <h4>Requirements Analysis &amp; Solution Design</h4>
-                    <p>Requirements Gathering · Stakeholder Analysis · Functional Requirements · Process Analysis · Solution Design</p>
-                    <p>
-                        Analyse stakeholder needs and translate them into clearly
-                        defined business, functional and reporting requirements.
-                    </p>
-                    <a href="business-requirements-solution-analysis.html" class="text-link">View Case Study →</a>
-                </article>
+        menuToggle.addEventListener("click", function () {
+            const isOpen = navLinks.classList.toggle("active");
 
-            </div>
+            menuToggle.setAttribute("aria-expanded", isOpen);
+        });
 
-            <div class="project-category data-category">
-                <h3>Data Analysis &amp; Business Intelligence</h3>
-                <p>Projects demonstrating SQL, Excel, Power BI, DAX, data modelling and analytical problem-solving.</p>
-            </div>
-
-            <div class="projects-grid">
-
-                <article class="project-card">
-                    <span class="project-number">03</span>
-                    <p class="project-category-label">BANKING • CREDIT RISK</p>
-                    <h3>Credit Risk Analysis &amp; Lending Portfolio Optimization</h3>
-                    <p>SQL · Excel · Power BI · Risk Analysis · Data Modelling</p>
-                    <p>
-                        <strong>Dataset:</strong> 28,638 loan records<br>
-                        <strong>Total Loan Exposure:</strong> R276.5M<br>
-                        <strong>Default Rate:</strong> 21.66%<br>
-                        <strong>Average Loan:</strong> R9,656<br>
-                        <strong>Average Income:</strong> R66,649<br>
-                        <strong>Average Interest Rate:</strong> 11.04%
-                    </p>
-                    <a href="credit-risk.html" class="text-link">View Case Study →</a>
-                </article>
-
-                <article class="project-card">
-                    <span class="project-number">04</span>
-                    <p class="project-category-label">RETAIL • SALES ANALYTICS</p>
-                    <h3>Retail Sales Performance &amp; Commercial Optimization</h3>
-                    <p>SQL · Excel · Power BI · KPI Reporting · Commercial Analysis</p>
-                    <p>
-                        <strong>Dataset:</strong> 1,000 transactions<br>
-                        <strong>Total Sales:</strong> R456,000<br>
-                        <strong>Units Sold:</strong> 2,514<br>
-                        <strong>Average Transaction Value:</strong> R456<br>
-                        <strong>Electronics Revenue:</strong> R156.9K
-                    </p>
-                    <a href="retail-sales.html" class="text-link">View Case Study →</a>
-                </article>
-
-                <article class="project-card">
-                    <span class="project-number">05</span>
-                    <p class="project-category-label">TELECOM • CUSTOMER ANALYTICS</p>
-                    <h3>Customer Retention &amp; Churn Analysis</h3>
-                    <p>SQL · Excel · Power BI · Customer Analytics · Risk Analysis</p>
-                    <p>
-                        <strong>Dataset:</strong> 5,269 customers<br>
-                        <strong>Churned:</strong> 708<br>
-                        <strong>Retained:</strong> 4,561<br>
-                        <strong>Churn Rate:</strong> 13.44%
-                    </p>
-                    <a href="customer-churn.html" class="text-link">View Case Study →</a>
-                </article>
-
-                <article class="project-card">
-                    <span class="project-number">06</span>
-                    <p class="project-category-label">BANKING • TRANSACTION ANALYTICS</p>
-                    <h3>ATM Network Performance &amp; Cash Flow Optimization</h3>
-                    <p>SQL · Excel · Power BI · Operational Analysis</p>
-                    <p>
-                        <strong>Dataset:</strong> 11,589 records; 1.43M withdrawals<br>
-                        <strong>Withdrawal Value:</strong> R6.05B<br>
-                        <strong>Withdrawals:</strong> 1.43M<br>
-                        <strong>Mastercard Activity:</strong> 54.78%
-                    </p>
-                    <a href="atm-withdrawal.html" class="text-link">View Case Study →</a>
-                </article>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- APPROACH -->
-    <section class="section section-light" id="approach">
-        <div class="container">
-            <p class="eyebrow">HOW I WORK</p>
-            <h2>From Business Problem to Business Solution</h2>
-
-            <div class="approach-grid">
-                <article class="approach-card">
-                    <span>01</span>
-                    <h3>Understand</h3>
-                    <p>Understand the business problem, stakeholders and desired outcome.</p>
-                </article>
-                <article class="approach-card">
-                    <span>02</span>
-                    <h3>Define &amp; Map</h3>
-                    <p>Gather requirements, define scope and map current-state processes.</p>
-                </article>
-                <article class="approach-card">
-                    <span>03</span>
-                    <h3>Clean &amp; Model</h3>
-                    <p>Clean, structure and model data to create a reliable analytical foundation.</p>
-                </article>
-                <article class="approach-card">
-                    <span>04</span>
-                    <h3>Analyse &amp; Visualize</h3>
-                    <p>Use SQL, Excel and Power BI to identify trends, risks, gaps and performance drivers.</p>
-                </article>
-                <article class="approach-card">
-                    <span>05</span>
-                    <h3>Recommend</h3>
-                    <p>Translate findings into practical recommendations that support business decisions.</p>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- SKILLS -->
-    <section class="section" id="skills">
-        <div class="container">
-            <p class="eyebrow">CAPABILITIES</p>
-            <h2>Skills</h2>
-
-            <div class="skills-grid">
-                <article class="skill-card">
-                    <h3>Business Analysis</h3>
-                    <p>Requirements Gathering; Requirements Documentation; Stakeholder Analysis; Process Mapping; Gap Analysis; Root-Cause Analysis; Process Improvement; Business Process Analysis; Data Modelling</p>
-                </article>
-                <article class="skill-card">
-                    <h3>Data Analysis</h3>
-                    <p>SQL; Excel; Data Cleaning; Exploratory Data Analysis; KPI Analysis; Trend Analysis; Risk Analysis</p>
-                </article>
-                <article class="skill-card">
-                    <h3>Business Intelligence</h3>
-                    <p>Power BI; DAX; Data Modelling; Dashboard Development; KPI Reporting; Data Visualization</p>
-                </article>
-                <article class="skill-card">
-                    <h3>Tools</h3>
-                    <p>SQL · Power BI · Excel · Microsoft Visio</p>
-                </article>
-            </div>
-        </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section class="section cta" id="contact">
-        <div class="container">
-            <p class="eyebrow">LET’S CONNECT</p>
-            <h2>Have a business or data problem that needs solving?</h2>
-            <p>
-                I’m open to Data Analyst, Business Analyst and Business Intelligence
-                opportunities where I can combine business understanding, analytical
-                thinking and technical skills to support better decisions.
-            </p>
-            <div class="hero-buttons">
-                <a href="mailto:" class="btn btn-primary">Get in Touch</a>
-                <a href="#projects" class="btn btn-outline">View Projects</a>
-            </div>
-        </div>
-    </section>
-</main>
-
-<footer class="footer">
-    <div class="container">
-        <p>© 2026 Neo Phosa. All rights reserved.</p>
-    </div>
-</footer>
+        document.querySelectorAll(".nav-links a").forEach(function (link) {
+            link.addEventListener("click", function () {
+                navLinks.classList.remove("active");
+                menuToggle.setAttribute("aria-expanded", "false");
+            });
+        });
+    </script>
 
 </body>
 </html>
