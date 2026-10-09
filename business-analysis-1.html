@@ -1,1 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Business Process Analysis | Neo Phosa</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .case-hero .container,
+        .case-section .container {
+            max-width: 1100px;
+        }
+
+        .case-label {
+            display: inline-block;
+            margin-bottom: 20px;
+            color: #2563eb;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+        }
+
+        .case-hero h1 {
+            margin-bottom: 25px;
+        }
+
+        .case-hero-description {
+            max-width: 760px;
+            font-size: 19px;
+            line-height: 1.8;
+        }
+
+        .case-card {
+            background: #ffffff;
+            padding: 35px;
+            border-radius: 16px;
+            border: 1px solid #e5e7eb;
+            margin-top: 30px;
+        }
+
+        .case-card p {
+            margin-bottom: 18px;
+            line-height: 1.8;
+        }
+
+        .case-list {
+            margin-top: 20px;
+            padding-left: 22px;
+        }
+
+        .case-list li {
+            margin-bottom: 12px;
+        }
+
+        .case-image-grid {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 30px;
+            margin-top: 35px;
+        }
+
+        .case-image-card {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 14px;
+            border: 1px solid #e5e7eb;
+        }
+
+        .case-image-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 8px;
+        }
+
+        .image-caption {
+            text-align: center;
+            font-weight: 700;
+            margin-top: 15px;
+        }
+
+        .case-table-wrap {
+            overflow-x: auto;
+            margin-top: 25px;
+        }
+
+        .case-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #ffffff;
+        }
+
+        .case-table th,
+        .case-table td {
+            padding: 15px;
+            text-align: left;
+            border: 1px solid #e5e7eb;
+        }
+
+        .case-table th {
+            background: #eff6ff;
+            color: #0f172a;
+        }
+
+        @media (max-width: 800px) {
+            .case-image-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .case-card {
+                padding: 22px;
+            }
+
+            .case-table {
+                min-width: 650px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+
+<header class="navbar">
+    <div class="container nav-container">
+
+        <a href="index.html" class="logo">Neo Phosa</a>
+
+        <nav class="nav-links">
+            <a href="index.html#about">About</a>
+            <a href="index.html#projects">Projects</a>
+            <a href="index.html#skills">Skills</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+
+    </div>
+</header>
+
+<!-- HERO -->
+
+<section class="case-hero">
+    <div class="container">
+
+        <a href="index.html#projects" class="back-link">
+            ← Back to Projects
+        </a>
+
+        <span class="case-label">
+            BUSINESS ANALYSIS PROJECT 01
+        </span>
+
+        <h1>BUSINESS PROCESS ANALYSIS</h1>
+
+        <h2>Business Process Mapping &amp; Data Modelling</h2>
+
+        <p class="case-hero-description">
+            Requirements Analysis · Process Mapping · Gap Analysis ·
+            Data Modelling · Microsoft visio
+        </p>
+
+    </div>
+</section>
+
+<!-- BUSINESS PROBLEM -->
+
+<section class="case-section">
+    <div class="container">
+
+        <h2>Business Problem</h2>
+
+        <div class="case-card">
+            <p>
+                The organisation needed a clearer understanding of its business
+                process, the activities involved, the stakeholders responsible
+                for each stage, and the information required to support the
+                process.
+            </p>
+
+            <p>
+                The lack of a structured view made it difficult to identify
+                process gaps and understand how business activities connected
+                to the underlying data.
+            </p>
+        </div>
+
+        <h2 style="margin-top:55px">Objective</h2>
+
+        <div class="case-card">
+            <p>
+                Act as a Business Analyst to analyse the existing process,
+                identify business requirements, document process flows,
+                identify gaps and create a structured data model.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- BUSINESS REQUIREMENTS -->
+
+<section class="case-section section-light">
+    <div class="container">
+
+        <h2>Business Requirements</h2>
+
+        <p>The analysis focused on:</p>
+
+        <ul class="case-list">
+            <li>Understanding stakeholder needs</li>
+            <li>Defining the project scope</li>
+            <li>Identifying key business activities</li>
+            <li>Identifying process inputs and outputs</li>
+            <li>Identifying business rules</li>
+            <li>Defining information requirements</li>
+            <li>Establishing relationships between business entities</li>
+        </ul>
+
+    </div>
+</section>
+
+<!-- CURRENT-STATE PROCESS -->
+
+<section class="case-section">
+    <div class="container">
+
+        <h2>Current-State Process</h2>
+
+        <p>
+            I mapped the existing workflow using Microsoft Visio to visualise:
+        </p>
+
+        <ul class="case-list">
+            <li>Process activities</li>
+            <li>Decision points</li>
+            <li>Stakeholders</li>
+            <li>Inputs</li>
+            <li>Outputs</li>
+            <li>Process dependencies</li>
+        </ul>
+
+        <div class="case-image-grid">
+
+            <div class="case-image-card">
+                <img
+                    src="current%20state%20process%20map.png"
+                    alt="Current-State Process Map"
+                >
+
+                <div class="image-caption">
+                    Current-State Process Map
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- GAP ANALYSIS -->
+
+<section class="case-section section-light">
+    <div class="container">
+
+        <h2>Gap Analysis</h2>
+
+        <p>
+            I evaluated the current process to identify areas where business
+            requirements were not being fully addressed.
+        </p>
+
+        <div class="case-table-wrap">
+            <table class="case-table">
+
+                <thead>
+                    <tr>
+                        <th>Area</th>
+                        <th>Current State</th>
+                        <th>Identified Gap</th>
+                        <th>Improvement</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Process</td>
+                        <td>Multiple activities</td>
+                        <td>Limited visibility</td>
+                        <td>Standardised workflow</td>
+                    </tr>
+
+                    <tr>
+                        <td>Data</td>
+                        <td>Information spread across entities</td>
+                        <td>Poor structure</td>
+                        <td>Structured data model</td>
+                    </tr>
+
+                    <tr>
+                        <td>Reporting</td>
+                        <td>Limited visibility</td>
+                        <td>Difficult KPI tracking</td>
+                        <td>Defined reporting requirements</td>
+                    </tr>
+
+                    <tr>
+                        <td>Ownership</td>
+                        <td>Roles not clearly represented</td>
+                        <td>Process ambiguity</td>
+                        <td>Clear responsibility</td>
+                    </tr>
+                </tbody>
+
+            </table>
+        </div>
+
+        <div class="case-image-grid">
+
+            <div class="case-image-card">
+                <img
+                    src="Gap%20Analysis.png"
+                    alt="Gap Analysis"
+                >
+
+                <div class="image-caption">Gap Analysis</div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- FUTURE-STATE PROCESS -->
+
+<section class="case-section">
+    <div class="container">
+
+        <h2>Future-State Process</h2>
+
+        <p>
+            I designed a future-state process to improve information flow,
+            clarify responsibilities and better align the workflow with
+            business requirements.
+        </p>
+
+        <div class="case-image-grid">
+
+            <div class="case-image-card">
+                <img
+                    src="future%20state%20process%20map.png"
+                    alt="Future-State Process"
+                >
+
+                <div class="image-caption">Future-State Process</div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- DATA MODEL -->
+
+<section class="case-section section-light">
+    <div class="container">
+
+        <h2>Data Model</h2>
+
+        <p>
+            I identified the major business entities and their relationships.
+        </p>
+
+        <div class="case-image-grid">
+
+            <div class="case-image-card">
+                <img
+                    src="Data%20model.jpeg"
+                    alt="Data Model"
+                >
+
+                <div class="image-caption">Data Model</div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- DELIVERABLES -->
+
+<section class="case-section">
+    <div class="container">
+
+        <h2>Key BA Deliverables</h2>
+
+        <div class="case-card">
+            <p>
+                Requirements → Process Map → Gap Analysis →
+                Future-State Process → Data Model
+            </p>
+        </div>
+
+        <h2 style="margin-top:55px">Recommendations</h2>
+
+        <div class="case-card">
+            <ul class="case-list">
+                <li>Standardise the process</li>
+                <li>Clearly define process ownership</li>
+                <li>Improve data capture</li>
+                <li>Establish consistent business rules</li>
+                <li>Structure data around key business entities</li>
+                <li>Define reporting requirements before solution development</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<!-- WHAT I LEARNED -->
+
+<section class="case-section section-light">
+    <div class="container">
+
+        <h2>What I Learned</h2>
+
+        <div class="case-card">
+            <p>
+                This project demonstrated how a Business Analyst moves from
+                understanding the business problem to defining requirements,
+                modelling processes and translating business needs into a
+                structured solution.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+
+<section class="cta">
+    <div class="container">
+        <div class="cta-content">
+
+            <p class="section-label">LET’S CONNECT</p>
+
+            <h2>Have a business or data problem that needs solving?</h2>
+
+            <div class="cta-buttons">
+                <a href="index.html#contact" class="btn btn-white">
+                    Get in Touch
+                </a>
+
+                <a href="index.html#projects" class="btn btn-outline-white">
+                    View Projects
+                </a>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+
+<footer class="footer">
+    <div class="container footer-container">
+        <div>
+            <strong>Neo Phosa</strong>
+            <p>© 2026 Neo Phosa. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
